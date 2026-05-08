@@ -101,6 +101,17 @@ const Footer = () => {
               24x7 Tech On Call
             </a>
           </div>
+          <p className="mt-5 text-sm leading-6 text-slate-400">
+            Need a website for your business or nonprofit?
+          </p>
+          <a
+            href="https://www.reliablewebstudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 block rounded-md border border-slate-700 px-4 py-3 text-sm font-semibold text-white transition hover:border-blue-300 hover:bg-slate-900"
+          >
+            Website Referral: Reliable Web Studio
+          </a>
         </div>
       </div>
 

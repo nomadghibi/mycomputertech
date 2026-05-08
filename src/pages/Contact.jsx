@@ -118,6 +118,20 @@ const Contact = () => (
               ))}
             </ul>
           </div>
+          <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+            <h2 className="font-bold text-slate-950">Need a Website for Your Business or Nonprofit?</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              For website design and development referrals, we recommend Reliable Web Studio.
+            </p>
+            <a
+              href="https://www.reliablewebstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex rounded-md bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800"
+            >
+              Visit Reliable Web Studio
+            </a>
+          </div>
           <ReferralSection compact />
         </div>
 

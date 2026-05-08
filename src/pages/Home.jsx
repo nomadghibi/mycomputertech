@@ -203,6 +203,28 @@ const Home = () => (
       </div>
     </section>
 
+    <section className="bg-white py-14 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Website Referral</p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">
+            Need a website for your business or nonprofit?
+          </h2>
+          <p className="mt-3 text-slate-600">
+            For website design and development referrals, we recommend Reliable Web Studio.
+          </p>
+          <a
+            href="https://www.reliablewebstudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex w-full items-center justify-center rounded-md bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800 sm:w-auto"
+          >
+            Visit Reliable Web Studio
+          </a>
+        </div>
+      </div>
+    </section>
+
     <ServiceAreaSection />
     <ReferralSection />
   </>

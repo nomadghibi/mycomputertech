@@ -7,14 +7,14 @@ export const blogPosts = [
     description:
       'Looking for computer repair Indian Harbour Beach? Learn what services matter most, what to expect from local support, and how to get practical onsite tech help beachside.',
     keywords:
-      'computer repair Indian Harbour Beach, laptop repair Indian Harbour Beach, onsite computer repair beachside, local tech support Space Coast',
+      'computer repairs, computer repair Indian Harbour Beach, beachside computer repair, laptop repair Indian Harbour Beach, onsite computer repair beachside, local tech support Space Coast, computer repair near me beachside',
     publishedDate: '2026-05-08',
     category: 'Local Service',
     readTime: '6 min read',
     content: [
       {
         heading: 'What local customers usually need',
-        body: 'Most calls involve slow computers, startup errors, malware cleanup, Wi-Fi troubleshooting, printer setup, and laptop performance issues. A local computer repair provider should be able to handle these quickly without overcomplicating the process.',
+        body: 'Most computer repairs involve slow computers, startup errors, malware cleanup, Wi-Fi troubleshooting, printer setup, and laptop performance issues. A local beachside computer repair provider should be able to handle these quickly without overcomplicating the process.',
       },
       {
         heading: 'When onsite support is the best option',
@@ -34,7 +34,7 @@ export const blogPosts = [
     description:
       'Need virus removal Satellite Beach service? Follow this practical checklist for suspicious computer behavior and learn when professional malware cleanup is recommended.',
     keywords:
-      'virus removal Satellite Beach, malware removal beachside, computer virus cleanup Space Coast, popups and browser hijack fix',
+      'virus removal Satellite Beach, malware removal beachside, computer repairs after virus infection, computer virus cleanup Space Coast, popups and browser hijack fix',
     publishedDate: '2026-05-08',
     category: 'Security',
     readTime: '5 min read',
@@ -61,7 +61,7 @@ export const blogPosts = [
     description:
       'Planning Wi-Fi setup Indian Harbour Beach? Learn practical ways to improve signal quality, secure your network, and reduce dropouts across your home.',
     keywords:
-      'Wi-Fi setup Indian Harbour Beach, home network setup beachside, improve Wi-Fi signal Space Coast, router setup local support',
+      'Wi-Fi setup Indian Harbour Beach, home network setup beachside, beachside computer repair Wi-Fi help, improve Wi-Fi signal Space Coast, router setup local support',
     publishedDate: '2026-05-08',
     category: 'Home Network',
     readTime: '6 min read',
@@ -88,7 +88,7 @@ export const blogPosts = [
     description:
       'Need printer setup beachside support? This checklist helps home users and small offices configure wireless printing, scanner settings, and stable connectivity.',
     keywords:
-      'printer setup beachside, wireless printer setup Indian Harbour Beach, scanner setup support Space Coast, fix printer connection issues',
+      'printer setup beachside, my printer not working, printer not printing beachside, wireless printer setup Indian Harbour Beach, scanner setup support Space Coast, fix printer connection issues',
     publishedDate: '2026-05-08',
     category: 'Office Setup',
     readTime: '4 min read',
@@ -103,7 +103,34 @@ export const blogPosts = [
       },
       {
         heading: 'Common support requests',
-        body: 'Frequent requests include printer offline status, scanning to email, paper size mismatch, and intermittent Wi-Fi disconnections.',
+        body: 'Frequent requests include my printer not working, printer offline status, printer not printing, scanning to email, paper size mismatch, and intermittent Wi-Fi disconnections.',
+      },
+    ],
+  },
+  {
+    slug: 'my-printer-not-working-beachside-help',
+    title: 'My Printer Is Not Working: Beachside Troubleshooting Guide',
+    excerpt:
+      'Printer not printing, showing offline, or refusing to scan? Use this beachside troubleshooting guide before calling for service.',
+    description:
+      'Searches like my printer not working often point to Wi-Fi, driver, scanner, or offline printer problems. Learn what to check and when to call for beachside printer support.',
+    keywords:
+      'my printer not working, printer not printing, printer offline fix, printer repair beachside, printer setup beachside, wireless printer not working Indian Harbour Beach',
+    publishedDate: '2026-05-08',
+    category: 'Office Setup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Start with the basic connection checks',
+        body: 'Confirm the printer is powered on, connected to the same Wi-Fi network as the computer, and not showing an error light. Many printer not working calls come from a changed network name, router reset, or printer sleeping on the wrong connection.',
+      },
+      {
+        heading: 'Check offline and default printer settings',
+        body: 'If the printer says offline, restart the printer and computer, then check that the correct printer is selected as default. Remove duplicate printer entries when old drivers or previous installs are confusing the system.',
+      },
+      {
+        heading: 'When onsite help is worth it',
+        body: 'Onsite printer support is useful when multiple computers, scanners, Wi-Fi routers, and mobile devices need to print reliably. A local beachside computer repair visit can test the full setup instead of guessing from one device.',
       },
     ],
   },
@@ -115,7 +142,7 @@ export const blogPosts = [
     description:
       'Looking for small business IT support Indian Harbour Beach? Prioritize stability, backups, printer/network reliability, and responsive local support.',
     keywords:
-      'small business IT support Indian Harbour Beach, local IT support beachside, office computer support Space Coast, practical IT services',
+      'small business IT support Indian Harbour Beach, local IT support beachside, office computer repairs, printer not working office, office computer support Space Coast, practical IT services',
     publishedDate: '2026-05-08',
     category: 'Business IT',
     readTime: '7 min read',
@@ -135,6 +162,114 @@ export const blogPosts = [
     ],
   },
   {
+    slug: 'how-to-fix-a-slow-computer-beachside',
+    title: 'How to Fix a Slow Computer: Beachside Repair Checklist',
+    excerpt:
+      'Slow startup, freezing apps, and browser lag are common repair calls. This checklist explains what to check before scheduling service.',
+    description:
+      'Need slow computer repair or slow computer cleanup beachside? Learn the common causes of a slow PC and when local computer repairs make sense.',
+    keywords:
+      'how to fix a slow computer, slow computer repair, slow computer cleanup beachside, computer keeps freezing, PC repair Indian Harbour Beach, computer repairs beachside',
+    publishedDate: '2026-05-08',
+    category: 'Repair & Cleanup',
+    readTime: '6 min read',
+    content: [
+      {
+        heading: 'Start with startup and storage',
+        body: 'A slow computer often has too many startup apps, limited free storage, or background programs using memory. Cleaning startup items and reviewing storage can make the system easier to use.',
+      },
+      {
+        heading: 'Check for malware and browser issues',
+        body: 'Popups, browser redirects, and unwanted extensions can make a computer feel broken. Virus removal and browser cleanup are common parts of practical computer repairs.',
+      },
+      {
+        heading: 'When repair is better than replacement',
+        body: 'If the computer is only a few years old, performance cleanup, memory upgrades, or drive replacement may be more practical than buying a new machine.',
+      },
+    ],
+  },
+  {
+    slug: 'wifi-keeps-disconnecting-beachside',
+    title: 'Wi-Fi Keeps Disconnecting? Beachside Network Troubleshooting',
+    excerpt:
+      'Dropped Wi-Fi can come from router placement, weak signal, old equipment, or device conflicts. Here is what to check first.',
+    description:
+      'If your Wi-Fi keeps disconnecting in Indian Harbour Beach or nearby beachside areas, this guide explains common causes and when onsite network help is useful.',
+    keywords:
+      'Wi-Fi keeps disconnecting, Wi-Fi troubleshooting beachside, home network setup beachside, router setup Indian Harbour Beach, improve Wi-Fi signal Space Coast',
+    publishedDate: '2026-05-08',
+    category: 'Home Network',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Look at signal strength first',
+        body: 'Weak signal is one of the most common reasons Wi-Fi keeps disconnecting. Router placement, thick walls, and distance from the router all affect stability.',
+      },
+      {
+        heading: 'Check device and router age',
+        body: 'Older routers and devices may struggle with modern speeds and multiple connections. Updating firmware or replacing outdated equipment can improve reliability.',
+      },
+      {
+        heading: 'When onsite network setup helps',
+        body: 'If printers, laptops, phones, and smart devices are all having trouble, onsite support can test the whole network instead of only one computer.',
+      },
+    ],
+  },
+  {
+    slug: 'laptop-not-charging-indian-harbour-beach',
+    title: 'Laptop Not Charging? Indian Harbour Beach Repair Guide',
+    excerpt:
+      'A laptop that will not charge may have an adapter, battery, charging port, or software power issue. Here is how to narrow it down.',
+    description:
+      'Need laptop not charging repair or laptop repair Indian Harbour Beach? Learn common charging problems and when to bring the laptop in for service.',
+    keywords:
+      'laptop not charging repair, laptop repair Indian Harbour Beach, laptop charging port repair beachside, laptop battery issue, computer repairs Indian Harbour Beach',
+    publishedDate: '2026-05-08',
+    category: 'Repair & Cleanup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Check the charger and outlet',
+        body: 'Test a different outlet and inspect the charger for damage. A loose adapter, bent connector, or failing power brick can make the laptop appear dead.',
+      },
+      {
+        heading: 'Watch for charging port symptoms',
+        body: 'If the charger only works at a certain angle, the charging port or connector may need repair. Continuing to force it can make the damage worse.',
+      },
+      {
+        heading: 'Battery and software issues can look similar',
+        body: 'Battery health, power settings, and firmware issues can also stop charging. A proper diagnosis helps avoid replacing the wrong part.',
+      },
+    ],
+  },
+  {
+    slug: 'new-computer-setup-refurbished-laptops-indian-harbour-beach',
+    title: 'New Computer Setup and Refurbished Laptops in Indian Harbour Beach',
+    excerpt:
+      'Setting up a new or refurbished computer correctly helps avoid lost files, missing email, printer problems, and account confusion.',
+    description:
+      'Need new computer setup help or refurbished laptops Indian Harbour Beach? Learn what should be transferred and configured before you start using a replacement computer.',
+    keywords:
+      'new computer setup help, refurbished laptops Indian Harbour Beach, refurbished desktops beachside, data backup and transfer beachside, email setup beachside',
+    publishedDate: '2026-05-08',
+    category: 'Setup',
+    readTime: '6 min read',
+    content: [
+      {
+        heading: 'Transfer the right files first',
+        body: 'Documents, photos, browser bookmarks, and desktop folders are common transfer needs. A careful setup reduces the chance of leaving important files behind.',
+      },
+      {
+        heading: 'Set up email, printers, and backups',
+        body: 'A replacement computer is not fully ready until email, Microsoft 365, printers, scanners, and backup routines are configured and tested.',
+      },
+      {
+        heading: 'Refurbished can be practical for many users',
+        body: 'A refurbished laptop or desktop can be a reasonable option for basic home use, office tasks, email, browsing, and backup systems when selected and set up properly.',
+      },
+    ],
+  },
+  {
     slug: 'onsite-computer-repair-beachside-vs-remote-support',
     title: 'Onsite Computer Repair Beachside vs Remote Support: Which Is Better?',
     excerpt:
@@ -142,7 +277,7 @@ export const blogPosts = [
     description:
       'Comparing onsite computer repair beachside vs remote tech support? Learn which option fits malware cleanup, Wi-Fi issues, printer setup, and multi-device troubleshooting.',
     keywords:
-      'onsite computer repair beachside, remote tech support comparison, laptop troubleshooting Indian Harbour Beach, local computer service options',
+      'onsite computer repair beachside, beachside computer repair, computer repairs near me, remote tech support comparison, laptop troubleshooting Indian Harbour Beach, local computer service options',
     publishedDate: '2026-05-08',
     category: 'Support Options',
     readTime: '5 min read',

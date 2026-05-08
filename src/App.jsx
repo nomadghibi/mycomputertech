@@ -31,21 +31,21 @@ const pageMeta = {
     description:
       'My Computer Tech provides beachside computer repair, laptop repair, Wi-Fi help, printer setup, virus removal, and small business IT support for Indian Harbour Beach and nearby Space Coast communities.',
     keywords:
-      'computer repair Indian Harbour Beach, beachside computer repair Space Coast, laptop repair Indian Harbour Beach, onsite computer repair beachside, virus removal Satellite Beach',
+      'computer repairs, computer repair Indian Harbour Beach, beachside computer repair, beachside computer repair Space Coast, laptop repair Indian Harbour Beach, PC repair Indian Harbour Beach, onsite computer repair beachside, virus removal Satellite Beach, printer not working beachside, slow computer repair',
   },
   '/services': {
     title: 'Beachside Computer Repair Services | My Computer Tech',
     description:
       'Computer repair, laptop repair, virus removal, printer setup, Wi-Fi setup, data transfer, Microsoft 365 help, and onsite beachside service from My Computer Tech.',
     keywords:
-      'beachside computer services, printer setup beachside, Wi-Fi setup Indian Harbour Beach, small business IT support Indian Harbour Beach, laptop and PC repair beachside',
+      'computer repairs beachside, beachside computer repair, laptop and PC repair beachside, desktop computer repair beachside, printer setup beachside, my printer not working, Wi-Fi setup Indian Harbour Beach, slow computer cleanup beachside, data backup and transfer beachside, small business IT support Indian Harbour Beach',
   },
   '/service-areas': {
     title: 'Service Areas | Beachside Computer Repair Space Coast',
     description:
       'My Computer Tech serves Indian Harbour Beach, Satellite Beach, Indialantic, Melbourne Beach, Cocoa Beach, Cape Canaveral, and nearby beachside Space Coast communities.',
     keywords:
-      'computer repair Satellite Beach, computer repair Indialantic, computer repair Melbourne Beach, computer repair Cocoa Beach, computer repair Cape Canaveral',
+      'beachside computer repair near me, computer repairs Space Coast beachside, computer repair Satellite Beach, computer repair Indialantic, computer repair Melbourne Beach, computer repair Cocoa Beach, computer repair Cape Canaveral',
   },
   '/about': {
     title: 'About My Computer Tech | Local Beachside IT Support',
@@ -59,14 +59,14 @@ const pageMeta = {
     description:
       'Contact My Computer Tech for beachside onsite computer repair, printer setup, Wi-Fi help, virus removal, laptop repair, and practical local IT support.',
     keywords:
-      'contact computer repair Indian Harbour Beach, onsite tech support beachside, request computer service Space Coast, call local computer repair',
+      'contact computer repair Indian Harbour Beach, computer repairs near me, onsite tech support beachside, request computer service Space Coast, call local computer repair, printer not working help',
   },
   '/blog': {
     title: 'Beachside Computer Repair Blog | My Computer Tech',
     description:
       'Beachside computer repair blog with local Space Coast guides on laptop repair, virus removal, Wi-Fi setup, printer help, and small business IT support.',
     keywords:
-      'beachside computer repair blog, Indian Harbour Beach tech tips, virus removal guide Satellite Beach, Wi-Fi setup local support',
+      'beachside computer repair blog, computer repairs tips, Indian Harbour Beach tech tips, my printer not working, why is my printer offline, how to fix a slow computer, Wi-Fi keeps disconnecting, laptop not charging repair, virus removal guide Satellite Beach',
   },
 };
 
@@ -120,10 +120,13 @@ const localBusinessSchema = {
     })),
   knowsAbout: [
     'Computer repair',
+    'Computer repairs',
+    'Beachside computer repair',
     'Laptop repair',
     'Virus and malware removal',
     'Wi-Fi and network setup',
     'Printer setup',
+    'Printer not working troubleshooting',
     'Small business IT support',
     'Onsite computer repair beachside',
   ],

@@ -142,7 +142,7 @@ const Home = () => (
                 </div>
                 <div className="rounded-md border border-slate-200 bg-white/90 p-4 shadow-sm">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Hours</p>
-                  <p className="mt-2 font-bold text-slate-950">Mon-Fri, 9:30-3</p>
+                  <p className="mt-2 font-bold text-slate-950">Mon-Friday, 9:30 AM-3:00 PM</p>
                 </div>
               </div>
             </div>

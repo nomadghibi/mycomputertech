@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
-  FaCheckCircle, FaUsers, FaShieldAlt, FaPlay,
+  FaCheckCircle, FaShieldAlt, FaPlay,
   FaPhoneAlt, FaDatabase, FaCloud, FaCode,
   FaCogs, FaSearch, FaBolt, FaStar, FaHandshake,
   FaLock, FaChartLine, FaEnvelope, FaArrowRight,

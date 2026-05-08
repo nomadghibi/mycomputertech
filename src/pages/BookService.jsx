@@ -3,8 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import emailjs from 'emailjs-com';
 import {
-  FaEnvelope, FaPhone, FaClipboardList, FaCheckCircle,
-  FaPhoneAlt, FaClock, FaMapMarkerAlt, FaArrowRight,
+  FaEnvelope, FaPhone, FaCheckCircle,
+  FaPhoneAlt, FaClock, FaMapMarkerAlt,
 } from 'react-icons/fa';
 import socialImage from '../assets/optimized-hero/heroimage100-1152.jpg';
 

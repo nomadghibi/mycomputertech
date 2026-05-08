@@ -1,213 +1,279 @@
+import { Link } from 'react-router-dom';
+import {
+  FaBriefcase,
+  FaCheckCircle,
+  FaCloud,
+  FaDesktop,
+  FaEnvelope,
+  FaHdd,
+  FaLaptop,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaPrint,
+  FaShieldAlt,
+  FaShoppingCart,
+  FaTools,
+  FaWifi,
+} from 'react-icons/fa';
+import ReferralSection from '../components/ReferralSection';
+import { businessInfo } from '../data/businessInfo';
 
-
-import React from 'react';
-import { FaTools, FaBug, FaNetworkWired, FaDatabase, FaLaptopHouse, FaQuestionCircle, FaChalkboardTeacher, FaUserTie, FaShieldAlt, FaSave, FaServer, FaHeadset, FaLifeRing, FaDigitalOcean, FaCloudUploadAlt, FaCheckCircle, FaUsers, FaDollarSign } from 'react-icons/fa';
-import { Helmet } from 'react-helmet-async';
-import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import HeroSection from '../components/HeroSection';
-import heroImage from '../assets/optimized-hero/ourservices-1152.jpg';
-
-const residentialServices = [
-  { id: 'pc-laptop-repairs', title: 'PC and Laptop Repairs', icon: <FaTools className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/pc-laptop-repairs' },
-  { id: 'virus-malware-removal', title: 'Virus and Malware Removal', icon: <FaBug className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/virus-malware-removal' },
-  { id: 'software-troubleshooting', title: 'Software Troubleshooting', icon: <FaBug className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/software-troubleshooting' },
-  { id: 'data-recovery', title: 'Data Recovery', icon: <FaDatabase className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/data-recovery' },
-  { id: 'network-setup-support', title: 'Network Setup and Support', icon: <FaNetworkWired className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/network-setup-support' },
-  { id: 'remote-support', title: 'Remote Support', icon: <FaLaptopHouse className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/remote-support' },
-  { id: 'tech-consultation', title: 'Personalized Tech Consultation', icon: <FaQuestionCircle className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/tech-consultation' },
-  { id: 'computer-training', title: 'Computer Training', icon: <FaChalkboardTeacher className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/computer-training' },
-  { id: 'home-office-setup', title: 'Home Office Setup', icon: <FaNetworkWired className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/home-office-setup' },
-  { id: 'backup-data-protection', title: 'Backup and Data Protection', icon: <FaSave className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/backup-data-protection' },
-  { id: 'cybersecurity-home', title: 'Cybersecurity for Home Users', icon: <FaShieldAlt className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/residential-support/cybersecurity-home' }
-];
-
-const businessSolutions = [
-  { id: 'it-consulting', title: 'IT Consulting', icon: <FaUserTie className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/it-consulting' },
-  { id: 'network-setup', title: 'Network Setup', icon: <FaNetworkWired className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/network-setup' },
-  { id: 'managed-it-services', title: 'Managed IT Services', icon: <FaServer className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/managed-it-services' },
-  { id: 'data-recovery', title: 'Data Recovery', icon: <FaDatabase className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/data-recovery' },
-  { id: 'cloud-solutions', title: 'Cloud Solutions', icon: <FaCloudUploadAlt className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/cloud-solutions' },
-  { id: 'cybersecurity', title: 'Cybersecurity', icon: <FaShieldAlt className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/cybersecurity' },
-  { id: 'it-support', title: 'IT Support', icon: <FaHeadset className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/it-support' },
-  { id: 'business-continuity', title: 'Business Continuity', icon: <FaLifeRing className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/business-continuity' },
-  { id: 'computer-training', title: 'Computer Training', icon: <FaChalkboardTeacher className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/computer-training' },
-  { id: 'digital-transformation', title: 'Digital Transformation', icon: <FaDigitalOcean className="mx-auto mb-4 text-4xl text-cyan-500" />, path: '/business-solutions/digital-transformation' }
-];
-
-function Services() {
-  const navigate = useNavigate();
-  const canonicalUrl = 'https://bestcomputertec.com/services';
-  const servicesPageSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Computer Repair and IT Support Services',
-    serviceType: [
-      'Computer Repair',
-      'Laptop Repair',
-      'Virus and Malware Removal',
-      'Network Setup and Support',
-      'Data Recovery',
-      'Managed IT Services',
-    ],
-    areaServed: [
-      { '@type': 'City', name: 'Palm Bay' },
-      { '@type': 'City', name: 'Melbourne' },
-      { '@type': 'City', name: 'West Melbourne' },
-      { '@type': 'AdministrativeArea', name: 'Brevard County' },
-    ],
-    provider: {
-      '@type': 'LocalBusiness',
-      '@id': 'https://bestcomputertec.com/#localbusiness',
-      name: 'Best Computer Tech LLC',
-      url: 'https://bestcomputertec.com/',
-      telephone: '+1-321-953-5199',
-      email: '365techoncall@gmail.com',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '602 Hurst Rd NE',
-        addressLocality: 'Palm Bay',
-        addressRegion: 'FL',
-        postalCode: '32907',
-        addressCountry: 'US',
+const serviceGroups = [
+  {
+    title: 'Repair & Cleanup',
+    description: 'Core computer repair services for home users, seniors, and beachside residents.',
+    items: [
+      {
+        icon: FaDesktop,
+        title: 'Computer repair',
+        description: 'Troubleshooting for desktops, startup issues, crashes, updates, software problems, and everyday repair needs.',
       },
-    },
-  };
+      {
+        icon: FaLaptop,
+        title: 'Laptop repair',
+        description: 'Help with slow laptops, charging concerns, setup problems, hardware issues, and usability problems.',
+      },
+      {
+        icon: FaShieldAlt,
+        title: 'Virus and malware removal',
+        description: 'Cleanup for suspicious popups, browser hijacks, unwanted programs, and virus removal in Satellite Beach and nearby areas.',
+      },
+      {
+        icon: FaTools,
+        title: 'Slow computer cleanup',
+        description: 'Startup cleanup, storage review, performance tuning, and practical recommendations when a computer is hard to use.',
+      },
+    ],
+  },
+  {
+    title: 'Setup & Everyday Tech Help',
+    description: 'Practical help for the devices and accounts that keep a home or small office running.',
+    items: [
+      {
+        icon: FaWifi,
+        title: 'Wi-Fi and network setup',
+        description: 'Router setup, weak signal troubleshooting, secure Wi-Fi configuration, and Wi-Fi setup in Indian Harbour Beach.',
+      },
+      {
+        icon: FaPrint,
+        title: 'Printer setup',
+        description: 'Printer installation, wireless printing, scanner setup, and beachside printer setup for homes and small offices.',
+      },
+      {
+        icon: FaHdd,
+        title: 'Data backup and transfer',
+        description: 'Move files to a new computer, set up backup routines, and protect important photos, documents, and business files.',
+      },
+      {
+        icon: FaEnvelope,
+        title: 'Email and Microsoft 365 help',
+        description: 'Email setup, Outlook troubleshooting, Microsoft 365 setup, password recovery guidance, and account cleanup.',
+      },
+    ],
+  },
+  {
+    title: 'Business, Remote & Replacement Options',
+    description: 'Flexible support for small businesses, remote issues, onsite visits, and replacement computer needs.',
+    items: [
+      {
+        icon: FaBriefcase,
+        title: 'Small business IT support',
+        description: 'Support for computers, networks, printers, email, Microsoft 365, and daily operations for beachside small businesses.',
+      },
+      {
+        icon: FaCloud,
+        title: 'Remote tech support',
+        description: 'Remote help for many software, email, setup, and troubleshooting issues when an onsite visit is not required.',
+      },
+      {
+        icon: FaMapMarkerAlt,
+        title: 'Onsite beachside service',
+        description: 'Onsite computer repair beachside for homeowners, seniors, and small businesses across local Space Coast communities.',
+      },
+      {
+        icon: FaShoppingCart,
+        title: 'Refurbished laptop and desktop sales',
+        description: 'Sales of refurbished laptops and desktops for customers who need a practical replacement or backup computer.',
+      },
+    ],
+  },
+];
 
-  const handleServiceClick = (path) => {
-    navigate(path);
-  };
+const expectations = [
+  'Clear explanation of the issue and recommended next step',
+  'Practical repair-first guidance before replacement is suggested',
+  'Support for homeowners, seniors, and small beachside businesses',
+  'Beachside-focused service with mainland referrals handled clearly',
+];
 
-  return (
-    <div>
-        <Helmet>
-        <title>Computer Repair Services in Palm Bay & Melbourne, FL | Best Computer Tech</title>
-        <meta
-          name="description"
-          content="Explore local computer repair and IT support services in Palm Bay, Melbourne, and Brevard County, FL. Best Computer Tech offers laptop repair, virus removal, network setup, and data recovery."
-        />
-        <meta
-          name="keywords"
-          content="computer repair Palm Bay FL, computer repair Melbourne FL, laptop repair Brevard County, local IT support, virus removal, network setup, data recovery"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Computer Repair Services in Palm Bay & Melbourne, FL | Best Computer Tech" />
-        <meta
-          property="og:description"
-          content="Local computer repair and IT support services for Palm Bay, Melbourne, and nearby Brevard County areas."
-        />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content={heroImage} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Best Computer Tech Services | Palm Bay & Melbourne, FL" />
-        <meta
-          name="twitter:description"
-          content="Browse local computer repair and IT support services from Best Computer Tech in Palm Bay and Melbourne, Florida."
-        />
-        <meta name="twitter:image" content={heroImage} />
-        <script type="application/ld+json">{JSON.stringify(servicesPageSchema)}</script>
-      </Helmet>
-      <HeroSection title="Our Services" image={heroImage} />
-
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto text-center">
-          <h2 className="mb-12 text-4xl font-bold text-gray-800">Why Choose Us?</h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="relative flex items-center justify-center p-6 text-gray-900 bg-cyan-500 rounded-full shadow-md">
-              <div className="flex flex-col items-center">
-                <FaCheckCircle className="mb-4 text-5xl" />
-                <h3 className="mb-2 text-2xl font-semibold">Expert Technicians</h3>
-                <p className="text-white">Our certified technicians are experienced in handling all kinds of computer issues.</p>
-              </div>
+const Services = () => (
+  <>
+    <section className="relative isolate overflow-hidden bg-slate-950 py-16 text-white sm:py-20">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(20,184,166,0.28),transparent_35%),linear-gradient(135deg,#082f49_0%,#0f172a_58%,#134e4a_100%)]" />
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-[repeating-linear-gradient(170deg,rgba(125,211,252,0.12)_0px,rgba(125,211,252,0.12)_2px,transparent_2px,transparent_22px)]" />
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.85fr] lg:items-center lg:px-8">
+        <div>
+          <p className="inline-flex rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-100">
+            Services
+          </p>
+          <h1 className="mt-5 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            Professional beachside computer repair and IT support
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-slate-200">
+            My Computer Tech helps with laptop and PC repairs, refurbished computer sales, virus
+            removal, Wi-Fi setup, printer help, data transfer, email support, remote help, and
+            onsite service from Indian Harbour Beach.
+          </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href={businessInfo.phoneHref}
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+            >
+              <FaPhoneAlt className="h-3.5 w-3.5" />
+              Call {businessInfo.phone}
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+            >
+              Request Service
+            </Link>
+          </div>
+        </div>
+        <div className="rounded-lg border border-white/15 bg-white p-6 text-slate-900 shadow-2xl">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-700">Service Snapshot</p>
+          <h2 className="mt-3 text-2xl font-bold text-slate-950">Focused support for real-world problems</h2>
+          <div className="mt-5 grid gap-3">
+            <div className="rounded-md bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-800">
+              Shop location: Indian Harbour Beach
             </div>
-            <div className="relative flex items-center justify-center p-6 text-white bg-green-500 rounded-full shadow-md">
-              <div className="flex flex-col items-center">
-                <FaUsers className="mb-4 text-5xl" />
-                <h3 className="mb-2 text-2xl font-semibold">Customer Satisfaction</h3>
-                <p className="text-white">We prioritize our customers' satisfaction and strive to provide top-notch service.</p>
-              </div>
+            <div className="rounded-md bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-800">
+              Main focus: laptops, desktops, Wi-Fi, printers, and cleanup
             </div>
-            <div className="relative flex items-center justify-center p-6 text-white bg-red-500 rounded-full shadow-md">
-              <div className="flex flex-col items-center">
-                <FaDollarSign className="mb-4 text-5xl" />
-                <h3 className="mb-2 text-2xl font-semibold">Affordable Rates</h3>
-                <p className="text-white">We offer competitive pricing without compromising on quality.</p>
-              </div>
+            <div className="rounded-md bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-800">
+              Best fit: home users, seniors, and small businesses
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      {/* Residential Services Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto text-center">
-          <h2 className="mb-12 text-4xl font-bold text-gray-800">Residential Services</h2>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            {residentialServices.map((service) => (
-              <motion.div
-                key={service.id}
-                className="block"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: residentialServices.indexOf(service) * 0.1 }}
-              >
-                <div
-                  className="flex flex-col h-full p-6 text-center transition-transform duration-300 transform bg-gray-100 rounded-full shadow-lg cursor-pointer hover:scale-105 hover:shadow-2xl"
-                  onClick={() => handleServiceClick(service.path)}
-                >
-                  {service.icon}
-                  <h2 className="mt-4 text-xl font-semibold text-gray-800">{service.title}</h2>
-                </div>
-              </motion.div>
+    <section className="bg-white py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-4 md:grid-cols-3">
+          {[
+            { label: 'Shop location', value: 'Indian Harbour Beach', detail: '296 E Eau Gallie Blvd' },
+            { label: 'Main focus', value: 'Laptops, PCs & setup', detail: 'Repairs, cleanup, sales, and support' },
+            { label: 'Best fit', value: 'Home & small business', detail: 'Friendly, practical local service' },
+          ].map((item) => (
+            <div key={item.label} className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-700">{item.label}</p>
+              <h2 className="mt-2 text-xl font-bold text-slate-950">{item.value}</h2>
+              <p className="mt-2 text-sm text-slate-600">{item.detail}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-slate-50 py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Service Menu</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Organized support for common computer problems
+          </h2>
+          <p className="mt-4 text-lg leading-8 text-slate-600">
+            The service menu is intentionally focused so customers can quickly find the right help
+            without sorting through unnecessary enterprise IT language.
+          </p>
+        </div>
+
+        <div className="mt-12 space-y-10">
+          {serviceGroups.map((group) => (
+            <div key={group.title} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="max-w-3xl">
+                <h3 className="text-2xl font-bold text-slate-950">{group.title}</h3>
+                <p className="mt-2 text-slate-600">{group.description}</p>
+              </div>
+              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {group.items.map((service) => (
+                  <article
+                    key={service.title}
+                    className="rounded-md border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-md"
+                  >
+                    <div className="flex h-11 w-11 items-center justify-center rounded-md bg-cyan-50 text-cyan-700">
+                      <service.icon className="h-5 w-5" />
+                    </div>
+                    <h4 className="mt-4 text-base font-bold text-slate-950">{service.title}</h4>
+                    <p className="mt-2 text-sm leading-6 text-slate-600">{service.description}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-white py-16">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">What To Expect</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Straightforward help, not a confusing sales pitch
+          </h2>
+          <p className="mt-4 text-lg leading-8 text-slate-600">
+            Whether you need laptop repair in Indian Harbour Beach, virus removal in Satellite
+            Beach, printer setup beachside, or Wi-Fi setup near the beach, the goal is practical
+            service and clear next steps.
+          </p>
+        </div>
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-6">
+          <ul className="space-y-4">
+            {expectations.map((item) => (
+              <li key={item} className="flex gap-3">
+                <FaCheckCircle className="mt-1 h-5 w-5 shrink-0 text-cyan-700" />
+                <span className="text-slate-700">{item}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      {/* Business Solutions Section */}
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto text-center">
-          <h2 className="mb-12 text-4xl font-bold text-gray-800">Business Solutions</h2>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            {businessSolutions.map((service) => (
-              <motion.div
-                key={service.id}
-                className="block"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: businessSolutions.indexOf(service) * 0.1 }}
-              >
-                <div
-                  className="flex flex-col h-full p-6 text-center transition-transform duration-300 transform bg-white rounded-full shadow-lg cursor-pointer hover:scale-105 hover:shadow-2xl"
-                  onClick={() => handleServiceClick(service.path)}
-                >
-                  {service.icon}
-                  <h2 className="mt-4 text-xl font-semibold text-gray-800">{service.title}</h2>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+    <section className="bg-gradient-to-br from-blue-700 to-cyan-700 py-16 text-white">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_auto] lg:items-center lg:px-8">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-100">Ready For Help?</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+            Call the Indian Harbour Beach shop or request service online.
+          </h2>
+          <p className="mt-4 max-w-3xl text-blue-50">
+            My Computer Tech is best for beachside customers. Palm Bay, Melbourne, and mainland
+            Brevard customers are directed to the right referral links below.
+          </p>
         </div>
-      </section>
+        <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
+          <a
+            href={businessInfo.phoneHref}
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-sm font-semibold text-blue-800 transition hover:bg-blue-50"
+          >
+            <FaPhoneAlt className="h-3.5 w-3.5" />
+            Call Now
+          </a>
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Request Service
+          </Link>
+        </div>
+      </div>
+    </section>
 
-      {/* CTA Section */}
-      <section className="py-16 mt-16 text-center bg-cyan-50">
-        <div className="container mx-auto">
-          <h2 className="mb-8 text-4xl font-bold">Get in Touch with Us</h2>
-          <p className="mb-8 text-lg text-gray-700">We'd love to hear from you! Whether you need tech support, want to book a service, or have questions, feel free to reach out.</p>
-          <div className="flex justify-center space-x-4">
-            <button onClick={() => navigate('/contact')} className="px-6 py-3 font-semibold text-gray-900 bg-cyan-500 rounded-full hover:bg-cyan-400">Contact Us</button>
-            <button onClick={() => navigate('/book-service')} className="px-6 py-3 font-semibold text-white bg-green-500 rounded-full hover:bg-green-700">Book a Service</button>
-            <button onClick={() => navigate('/subscribe')} className="px-6 py-3 font-semibold text-white bg-purple-500 rounded-full hover:bg-purple-700">Subscribe to Newsletter</button>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+    <ReferralSection />
+  </>
+);
 
 export default Services;

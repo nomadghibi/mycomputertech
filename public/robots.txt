@@ -1,9 +1,4 @@
 User-agent: *
-Disallow: /private/
-Disallow: /checkout
-Disallow: /paynow
-Disallow: /confirmation
-Disallow: /buy-confirmation
 Allow: /
 
-Sitemap: https://bestcomputertec.com/sitemap.xml
+Sitemap: https://mycomputertech.example.com/sitemap.xml

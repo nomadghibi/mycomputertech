@@ -1,148 +1,117 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-  FaFacebook, FaInstagram, FaGoogle,
-  FaPhoneAlt, FaMapMarkerAlt, FaClock, FaEnvelope, FaArrowRight,
-} from 'react-icons/fa';
+import { FaArrowRight, FaClock, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import { businessInfo } from '../data/businessInfo';
 
 const quickLinks = [
-  { label: 'Home',        to: '/' },
-  { label: 'About Us',    to: '/about-us' },
-  { label: 'Pricing',     to: '/pricing' },
-  { label: 'Blog',        to: '/blog' },
-  { label: 'How To',      to: '/how-to' },
-  { label: 'Contact',     to: '/contact' },
+  { label: 'Home', to: '/' },
+  { label: 'Services', to: '/services' },
+  { label: 'Service Areas', to: '/service-areas' },
+  { label: 'About', to: '/about' },
+  { label: 'Contact', to: '/contact' },
 ];
 
-const serviceLinks = [
-  { label: 'PC & Laptop Repairs',      to: '/residential-support/pc-laptop-repairs' },
-  { label: 'Virus & Malware Removal',  to: '/residential-support/virus-malware-removal' },
-  { label: 'Network Setup & Support',  to: '/residential-support/network-setup-support' },
-  { label: 'Remote Support',           to: '/residential-support/remote-support' },
-  { label: 'Managed IT Services',      to: '/business-solutions/managed-it-services' },
-  { label: 'Cybersecurity',            to: '/business-solutions/cybersecurity' },
+const footerAreas = [
+  'Indian Harbour Beach',
+  'Satellite Beach',
+  'Indialantic',
+  'Melbourne Beach',
+  'Cocoa Beach',
+  'Cape Canaveral',
 ];
 
-function Footer() {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300 border-t-4 border-cyan-500">
-
-      {/* ── Main columns ── */}
-      <div className="container mx-auto px-6 py-16 max-w-7xl">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
-
-          {/* Brand */}
-          <div>
-            <div className="mb-4">
-              <span className="text-2xl font-extrabold text-white tracking-tight">BEST</span>
-              <span className="block text-xs font-bold tracking-widest text-cyan-400 uppercase">Computer Tech</span>
-            </div>
-            <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-              Your local IT experts serving Palm Bay, Melbourne, and all of Brevard County, FL since 2009.
-            </p>
-            <div className="flex items-center gap-3">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-cyan-500 hover:text-gray-900 transition-colors text-gray-400">
-                <FaFacebook className="w-4 h-4" />
+    <footer className="border-t border-slate-200 bg-slate-950 text-slate-300">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div>
+          <h2 className="text-xl font-bold text-white">{businessInfo.name}</h2>
+          <p className="mt-4 text-sm leading-6 text-slate-400">
+            {businessInfo.shortDescription} Practical IT support for Indian Harbour Beach and nearby
+            Space Coast beachside communities.
+          </p>
+          <ul className="mt-5 space-y-3 text-sm">
+            <li className="flex gap-3">
+              <FaPhoneAlt className="mt-1 h-3.5 w-3.5 text-blue-300" />
+              <a href={businessInfo.phoneHref} className="hover:text-white">
+                {businessInfo.phone}
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-cyan-500 hover:text-gray-900 transition-colors text-gray-400">
-                <FaInstagram className="w-4 h-4" />
+            </li>
+            <li className="flex gap-3">
+              <FaEnvelope className="mt-1 h-3.5 w-3.5 text-blue-300" />
+              <a href={businessInfo.emailHref} className="hover:text-white">
+                {businessInfo.email}
               </a>
-              <a href="https://www.google.com/search?q=best+computer+tech+palm+bay+fl" target="_blank" rel="noopener noreferrer" aria-label="Google Reviews"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-cyan-500 hover:text-gray-900 transition-colors text-gray-400">
-                <FaGoogle className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
+            </li>
+            <li className="flex gap-3">
+              <FaMapMarkerAlt className="mt-1 h-3.5 w-3.5 text-blue-300" />
+              <span>{businessInfo.primaryArea}</span>
+            </li>
+            <li className="flex gap-3">
+              <FaClock className="mt-1 h-3.5 w-3.5 text-blue-300" />
+              <span>Mon-Fri: 9:30 AM-3:00 PM</span>
+            </li>
+          </ul>
+        </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-5 border-l-2 border-cyan-500 pl-3">Quick Links</h3>
-            <ul className="space-y-2.5">
-              {quickLinks.map((link) => (
-                <li key={link.to}>
-                  <Link to={link.to} className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-cyan-400 transition-colors group">
-                    <FaArrowRight className="w-2.5 h-2.5 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Quick Links</h3>
+          <ul className="mt-4 space-y-2.5">
+            {quickLinks.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to} className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white">
+                  <FaArrowRight className="h-2.5 w-2.5 text-blue-300" />
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-5 border-l-2 border-cyan-500 pl-3">Services</h3>
-            <ul className="space-y-2.5">
-              {serviceLinks.map((link) => (
-                <li key={link.to}>
-                  <Link to={link.to} className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-cyan-400 transition-colors group">
-                    <FaArrowRight className="w-2.5 h-2.5 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Beachside Areas</h3>
+          <ul className="mt-4 space-y-2 text-sm text-slate-400">
+            {footerAreas.map((area) => (
+              <li key={area}>{area}</li>
+            ))}
+          </ul>
+        </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-5 border-l-2 border-cyan-500 pl-3">Contact Us</h3>
-            <ul className="space-y-4">
-              <li>
-                <a href="tel:3219535199" className="flex items-start gap-3 text-sm text-gray-400 hover:text-cyan-400 transition-colors group">
-                  <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center shrink-0 group-hover:bg-cyan-500/20 transition-colors">
-                    <FaPhoneAlt className="w-3.5 h-3.5 text-cyan-400" />
-                  </div>
-                  <span className="pt-1">(321) 953-5199</span>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:support@bestcomputertec.com" className="flex items-start gap-3 text-sm text-gray-400 hover:text-cyan-400 transition-colors group">
-                  <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center shrink-0 group-hover:bg-cyan-500/20 transition-colors">
-                    <FaEnvelope className="w-3.5 h-3.5 text-cyan-400" />
-                  </div>
-                  <span className="pt-1">support@bestcomputertec.com</span>
-                </a>
-              </li>
-              <li className="flex items-start gap-3 text-sm text-gray-400">
-                <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center shrink-0">
-                  <FaMapMarkerAlt className="w-3.5 h-3.5 text-cyan-400" />
-                </div>
-                <span className="pt-1">Palm Bay &amp; Melbourne, FL<br />Brevard County</span>
-              </li>
-              <li className="flex items-start gap-3 text-sm text-gray-400">
-                <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center shrink-0">
-                  <FaClock className="w-3.5 h-3.5 text-cyan-400" />
-                </div>
-                <span className="pt-1">Mon – Fri: 9:00 AM – 6:00 PM</span>
-              </li>
-            </ul>
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Referral Links</h3>
+          <p className="mt-4 text-sm leading-6 text-slate-400">
+            Need service in Palm Bay, Melbourne, or a mainland Brevard area?
+          </p>
+          <div className="mt-5 space-y-3">
+            <a
+              href={businessInfo.referrals.bestComputerTech}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-md border border-slate-700 px-4 py-3 text-sm font-semibold text-white transition hover:border-blue-300 hover:bg-slate-900"
+            >
+              Best Computer Tech LLC
+            </a>
+            <a
+              href={businessInfo.referrals.remoteSupport}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-md border border-slate-700 px-4 py-3 text-sm font-semibold text-white transition hover:border-blue-300 hover:bg-slate-900"
+            >
+              24x7 Tech On Call
+            </a>
           </div>
-
         </div>
       </div>
 
-      {/* ── Bottom bar ── */}
-      <div className="border-t border-gray-800">
-        <div className="container mx-auto px-6 py-5 max-w-7xl flex flex-col items-center justify-between gap-2 sm:flex-row">
-          <p className="text-xs text-gray-500">
-            &copy; 2009–{currentYear} Best Computer Tech LLC. All rights reserved.
-          </p>
-          <p className="text-xs text-gray-500">
-            Designed by{' '}
-            <a href="https://reliablewebstudio.com" target="_blank" rel="noopener noreferrer"
-              className="text-cyan-500 hover:text-cyan-400 transition-colors">
-              reliablewebstudio.com
-            </a>
-          </p>
+      <div className="border-t border-slate-800">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+          <p>&copy; {currentYear} {businessInfo.name}. All rights reserved.</p>
+          <p>Beachside computer repair and IT support for the Space Coast.</p>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

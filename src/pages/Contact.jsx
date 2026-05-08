@@ -5,7 +5,7 @@ import { businessInfo } from '../data/businessInfo';
 
 const Contact = () => (
   <>
-    <section className="relative isolate overflow-hidden bg-slate-950 py-16 text-white sm:py-20">
+    <section className="relative isolate overflow-hidden bg-slate-950 py-12 text-white sm:py-20">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(20,184,166,0.28),transparent_35%),linear-gradient(135deg,#082f49_0%,#0f172a_58%,#134e4a_100%)]" />
       <div className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-[repeating-linear-gradient(170deg,rgba(125,211,252,0.12)_0px,rgba(125,211,252,0.12)_2px,transparent_2px,transparent_22px)]" />
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.85fr] lg:items-center lg:px-8">
@@ -13,24 +13,24 @@ const Contact = () => (
           <p className="inline-flex rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-100">
             Contact
           </p>
-          <h1 className="mt-5 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
             Request beachside computer repair or IT support
           </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-200">
+          <p className="mt-5 text-base leading-7 text-slate-200 sm:text-lg sm:leading-8">
             Contact My Computer Tech for computer repair, laptop repair, printer setup, Wi-Fi
             help, virus removal, and onsite computer repair beachside.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href={businessInfo.phoneHref}
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 sm:w-auto"
             >
               <FaPhoneAlt className="h-3.5 w-3.5" />
               Call {businessInfo.phone}
             </a>
             <Link
               to="/service-areas"
-              className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+              className="inline-flex w-full items-center justify-center rounded-md border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15 sm:w-auto"
             >
               View Service Areas
             </Link>
@@ -39,7 +39,7 @@ const Contact = () => (
 
         <div className="rounded-lg border border-white/15 bg-white p-6 text-slate-900 shadow-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-700">Contact Snapshot</p>
-          <h2 className="mt-3 text-2xl font-bold text-slate-950">Indian Harbour Beach local support</h2>
+          <h2 className="mt-3 text-xl font-bold text-slate-950 sm:text-2xl">Indian Harbour Beach local support</h2>
           <div className="mt-5 space-y-3">
             <a href={businessInfo.phoneHref} className="flex items-center gap-3 rounded-md bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-cyan-50">
               <FaPhoneAlt className="h-4 w-4 text-cyan-700" />
@@ -63,7 +63,7 @@ const Contact = () => (
       </div>
     </section>
 
-    <section className="bg-white py-16">
+    <section className="bg-white py-14 sm:py-16">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
         <div className="space-y-4">
           <div className="rounded-lg border border-slate-200 p-5">
@@ -122,7 +122,7 @@ const Contact = () => (
         </div>
 
         <form className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-slate-950">Request Service</h2>
+          <h2 className="text-xl font-bold text-slate-950 sm:text-2xl">Request Service</h2>
           <p className="mt-2 text-sm text-slate-600">
             Share a few details and we can follow up with the right next step.
           </p>

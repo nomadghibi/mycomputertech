@@ -67,22 +67,28 @@ const Contact = () => (
       <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
         <div className="space-y-4">
           <div className="rounded-lg border border-slate-200 p-5">
-            <FaPhoneAlt className="h-5 w-5 text-blue-700" />
-            <h2 className="mt-3 font-bold text-slate-950">Phone</h2>
+            <h2 className="flex items-center gap-2 font-bold text-slate-950">
+              <FaPhoneAlt className="h-5 w-5 text-blue-700" />
+              Phone
+            </h2>
             <a href={businessInfo.phoneHref} className="mt-1 block text-slate-600 hover:text-blue-800">
               {businessInfo.phone}
             </a>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
-            <FaEnvelope className="h-5 w-5 text-blue-700" />
-            <h2 className="mt-3 font-bold text-slate-950">Email</h2>
+            <h2 className="flex items-center gap-2 font-bold text-slate-950">
+              <FaEnvelope className="h-5 w-5 text-blue-700" />
+              Email
+            </h2>
             <a href={businessInfo.emailHref} className="mt-1 block text-slate-600 hover:text-blue-800">
               {businessInfo.email}
             </a>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
-            <FaMapMarkerAlt className="h-5 w-5 text-blue-700" />
-            <h2 className="mt-3 font-bold text-slate-950">Address</h2>
+            <h2 className="flex items-center gap-2 font-bold text-slate-950">
+              <FaMapMarkerAlt className="h-5 w-5 text-blue-700" />
+              Address
+            </h2>
             <p className="mt-1 text-slate-600">{businessInfo.serviceAddress}</p>
             <p className="mt-2 text-sm text-slate-500">{businessInfo.primaryArea}</p>
             <a
@@ -95,8 +101,10 @@ const Contact = () => (
             </a>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
-            <FaClock className="h-5 w-5 text-blue-700" />
-            <h2 className="mt-3 font-bold text-slate-950">Hours</h2>
+            <h2 className="flex items-center gap-2 font-bold text-slate-950">
+              <FaClock className="h-5 w-5 text-blue-700" />
+              Hours
+            </h2>
             <div className="mt-3 space-y-1 text-sm">
               <p className="text-slate-600">Mon-Fri</p>
               <p className="font-semibold text-slate-900">9:30 AM-3:00 PM</p>

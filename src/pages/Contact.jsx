@@ -64,7 +64,7 @@ const Contact = () => (
     </section>
 
     <section className="bg-white py-14 sm:py-16">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
         <div className="space-y-4">
           <div className="rounded-lg border border-slate-200 p-5">
             <FaPhoneAlt className="h-5 w-5 text-blue-700" />

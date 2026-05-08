@@ -106,7 +106,7 @@ const Contact = () => (
               Hours
             </h2>
             <div className="mt-3 space-y-1 text-sm">
-              <p className="text-slate-600">Mon-Fri</p>
+              <p className="text-slate-600">Mon-Friday</p>
               <p className="font-semibold text-slate-900">9:30 AM-3:00 PM</p>
               <p className="pt-1 text-slate-600">Sat-Sun</p>
               <p className="font-semibold text-slate-900">Closed</p>

@@ -9,7 +9,10 @@ import Services from './pages/Services';
 import ServiceAreas from './pages/ServiceAreas';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import { businessInfo } from './data/businessInfo';
+import { blogPosts } from './data/blogPosts';
 import './index.css';
 
 const ScrollToTop = () => {
@@ -58,7 +61,25 @@ const pageMeta = {
     keywords:
       'contact computer repair Indian Harbour Beach, onsite tech support beachside, request computer service Space Coast, call local computer repair',
   },
+  '/blog': {
+    title: 'Beachside Computer Repair Blog | My Computer Tech',
+    description:
+      'Beachside computer repair blog with local Space Coast guides on laptop repair, virus removal, Wi-Fi setup, printer help, and small business IT support.',
+    keywords:
+      'beachside computer repair blog, Indian Harbour Beach tech tips, virus removal guide Satellite Beach, Wi-Fi setup local support',
+  },
 };
+
+const blogMeta = Object.fromEntries(
+  blogPosts.map((post) => [
+    `/blog/${post.slug}`,
+    {
+      title: `${post.title} | ${businessInfo.name}`,
+      description: post.description,
+      keywords: post.keywords,
+    },
+  ])
+);
 
 const areaServed = businessInfo.serviceAreas.map((area) => ({
   '@type': 'City',
@@ -135,7 +156,7 @@ const NotFound = () => (
 const App = () => {
   const location = useLocation();
   const normalizedPath = location.pathname === '/' ? '/' : location.pathname.replace(/\/+$/, '');
-  const meta = pageMeta[normalizedPath] || pageMeta['/'];
+  const meta = pageMeta[normalizedPath] || blogMeta[normalizedPath] || pageMeta['/'];
   const canonicalUrl =
     normalizedPath === '/'
       ? `${businessInfo.siteUrl}/`
@@ -178,6 +199,8 @@ const App = () => {
               <Route path="/service-areas" element={<ServiceAreas />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </ErrorBoundary>

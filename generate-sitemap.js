@@ -3,16 +3,19 @@ import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { businessInfo } from './src/data/businessInfo.js';
+import { blogPosts } from './src/data/blogPosts.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = resolve(__filename, '..');
 
-const staticRoutes = ['/', '/services', '/service-areas', '/about', '/contact'];
+const staticRoutes = ['/', '/services', '/service-areas', '/about', '/contact', '/blog'];
+const blogRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
+const allRoutes = [...staticRoutes, ...blogRoutes];
 
-const links = staticRoutes.map((route) => ({
+const links = allRoutes.map((route) => ({
   url: route,
-  changefreq: 'weekly',
-  priority: route === '/' ? 1 : 0.8,
+  changefreq: route.startsWith('/blog/') ? 'monthly' : 'weekly',
+  priority: route === '/' ? 1 : route.startsWith('/blog/') ? 0.7 : 0.8,
   lastmodISO: new Date().toISOString(),
 }));
 

@@ -105,10 +105,14 @@ const Contact = () => (
             </div>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
-            <FaStar className="h-5 w-5 text-amber-500" />
+            <div className="flex items-center gap-1">
+              {[...Array(5)].map((_, idx) => (
+                <FaStar key={`star-${idx}`} className="h-5 w-5 text-amber-500" />
+              ))}
+            </div>
             <h2 className="mt-3 font-bold text-slate-950">Google Reviews</h2>
             <p className="mt-1 text-slate-600">
-              {businessInfo.googleRating} rating from {businessInfo.googleReviewCount} Google reviews.
+              5-star service reputation with {businessInfo.googleReviewCount} Google reviews.
             </p>
             <ul className="mt-3 space-y-2 text-sm text-slate-600">
               {businessInfo.reviewSnippets.map((review) => (
@@ -184,6 +188,19 @@ const Contact = () => (
             >
               Visit Reliable Web Studio
             </a>
+          </div>
+
+          <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
+            <h2 className="px-2 pb-2 text-sm font-bold text-slate-950">Find Us in Indian Harbour Beach</h2>
+            <div className="overflow-hidden rounded-md border border-slate-200">
+              <iframe
+                title="My Computer Tech Map"
+                src={businessInfo.mapEmbedUrl}
+                className="h-48 w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </div>
       </div>

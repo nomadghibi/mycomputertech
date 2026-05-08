@@ -10,6 +10,8 @@ export const businessInfo = {
   serviceAddress: '296 E Eau Gallie Blvd, Indian Harbour Beach, FL 32937',
   primaryArea: 'Indian Harbour Beach and Space Coast beachside communities',
   directionsUrl: 'https://www.google.com/maps/search/?api=1&query=296%20E%20Eau%20Gallie%20Blvd%2C%20Indian%20Harbour%20Beach%2C%20FL%2032937',
+  mapEmbedUrl:
+    'https://www.google.com/maps?q=296%20E%20Eau%20Gallie%20Blvd%2C%20Indian%20Harbour%20Beach%2C%20FL%2032937&output=embed',
   shortDescription: 'Repairs on laptops and PCs, plus sales of refurbished models.',
   businessProfileDescription: 'Computer Repair and Services. Refurbished Laptops and Desktops.',
   hours: [

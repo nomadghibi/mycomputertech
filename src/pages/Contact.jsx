@@ -97,14 +97,12 @@ const Contact = () => (
           <div className="rounded-lg border border-slate-200 p-5">
             <FaClock className="h-5 w-5 text-blue-700" />
             <h2 className="mt-3 font-bold text-slate-950">Hours</h2>
-            <dl className="mt-3 space-y-2 text-sm">
-              {businessInfo.hours.map((entry) => (
-                <div key={entry.day} className="flex justify-between gap-4">
-                  <dt className="text-slate-600">{entry.day}</dt>
-                  <dd className="font-semibold text-slate-900">{entry.time}</dd>
-                </div>
-              ))}
-            </dl>
+            <div className="mt-3 space-y-1 text-sm">
+              <p className="text-slate-600">Mon-Fri</p>
+              <p className="font-semibold text-slate-900">9:30 AM-3:00 PM</p>
+              <p className="pt-1 text-slate-600">Sat-Sun</p>
+              <p className="font-semibold text-slate-900">Closed</p>
+            </div>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
             <FaStar className="h-5 w-5 text-amber-500" />
@@ -118,6 +116,61 @@ const Contact = () => (
               ))}
             </ul>
           </div>
+          <ReferralSection compact />
+        </div>
+
+        <div className="space-y-6">
+          <form className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm">
+            <h2 className="text-xl font-bold text-slate-950 sm:text-2xl">Request Service</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              Share a few details and we can follow up with the right next step.
+            </p>
+            <div className="mt-6 grid gap-5 sm:grid-cols-2">
+              <label className="block">
+                <span className="text-sm font-semibold text-slate-800">Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="Your name"
+                />
+              </label>
+              <label className="block">
+                <span className="text-sm font-semibold text-slate-800">Phone</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="Best callback number"
+                />
+              </label>
+              <label className="block sm:col-span-2">
+                <span className="text-sm font-semibold text-slate-800">Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="you@example.com"
+                />
+              </label>
+              <label className="block sm:col-span-2">
+                <span className="text-sm font-semibold text-slate-800">How can we help?</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="Tell us what is happening with your computer, laptop, Wi-Fi, printer, email, or business technology."
+                />
+              </label>
+            </div>
+            <button
+              type="button"
+              className="mt-6 w-full rounded-md bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800 sm:w-auto"
+            >
+              Request Service
+            </button>
+          </form>
+
           <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
             <h2 className="font-bold text-slate-950">Need a Website for Your Business or Nonprofit?</h2>
             <p className="mt-2 text-sm text-slate-600">
@@ -132,59 +185,7 @@ const Contact = () => (
               Visit Reliable Web Studio
             </a>
           </div>
-          <ReferralSection compact />
         </div>
-
-        <form className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-slate-950 sm:text-2xl">Request Service</h2>
-          <p className="mt-2 text-sm text-slate-600">
-            Share a few details and we can follow up with the right next step.
-          </p>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2">
-            <label className="block">
-              <span className="text-sm font-semibold text-slate-800">Name</span>
-              <input
-                type="text"
-                name="name"
-                className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="Your name"
-              />
-            </label>
-            <label className="block">
-              <span className="text-sm font-semibold text-slate-800">Phone</span>
-              <input
-                type="tel"
-                name="phone"
-                className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="Best callback number"
-              />
-            </label>
-            <label className="block sm:col-span-2">
-              <span className="text-sm font-semibold text-slate-800">Email</span>
-              <input
-                type="email"
-                name="email"
-                className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="you@example.com"
-              />
-            </label>
-            <label className="block sm:col-span-2">
-              <span className="text-sm font-semibold text-slate-800">How can we help?</span>
-              <textarea
-                name="message"
-                rows="6"
-                className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="Tell us what is happening with your computer, laptop, Wi-Fi, printer, email, or business technology."
-              />
-            </label>
-          </div>
-          <button
-            type="button"
-            className="mt-6 w-full rounded-md bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800 sm:w-auto"
-          >
-            Request Service
-          </button>
-        </form>
       </div>
     </section>
   </>

@@ -119,7 +119,18 @@ const Footer = () => {
       <div className="border-t border-slate-800">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>&copy; {currentYear} {businessInfo.name}. All rights reserved.</p>
-          <p>Beachside computer repair and IT support for the Space Coast.</p>
+          <p>
+            Beachside computer repair and IT support for the Space Coast. Website design by{' '}
+            <a
+              href="https://www.reliablewebstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white"
+            >
+              reliablewebstudio.com
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>

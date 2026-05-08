@@ -184,9 +184,6 @@ const Contact = () => (
           >
             Request Service
           </button>
-          <p className="mt-3 text-xs text-slate-500">
-            Form UI only for now. Add a form provider or backend later when ready.
-          </p>
         </form>
       </div>
     </section>

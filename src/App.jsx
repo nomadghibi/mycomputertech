@@ -50,7 +50,7 @@ const pageMeta = {
   '/about': {
     title: 'About My Computer Tech | Local Beachside IT Support',
     description:
-      'Learn about My Computer Tech, a locally known beachside computer repair and IT support business with roots in Space Coast computer repair shops dating back to 2009.',
+      'Learn about My Computer Tech, a locally known beachside computer repair and IT support business serving from the same Indian Harbour Beach location since 2010.',
     keywords:
       'local computer repair Indian Harbour Beach, Space Coast IT support, beachside technology support, trusted local computer technician',
   },

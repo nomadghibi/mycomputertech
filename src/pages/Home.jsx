@@ -21,8 +21,8 @@ const featuredServices = services.slice(0, 6);
 const trustItems = [
   {
     icon: FaClock,
-    title: 'Serving since 2009',
-    text: 'Roots in long-running local Space Coast computer repair shops.',
+    title: 'Same location since 2010',
+    text: 'Serving from the same Indian Harbour Beach location for over a decade.',
   },
   {
     icon: FaMapMarkerAlt,

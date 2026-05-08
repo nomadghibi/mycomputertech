@@ -116,11 +116,11 @@ const About = () => (
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Local Experience</p>
-          <h2 className="mt-3 text-3xl font-bold text-slate-950">Roots going back to 2009</h2>
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">Same location since 2010</h2>
           <p className="mt-4 leading-7 text-slate-600">
-            The business has roots in the original Space Coast computer repair shops started around
-            2009. That history gives My Computer Tech a familiar local foundation while keeping the
-            current website focused on the beachside customers it serves today.
+            My Computer Tech has served customers from the same Indian Harbour Beach location since
+            2010. That continuity gives beachside residents and local businesses a familiar,
+            reliable place to get practical computer repair and IT support.
           </p>
         </div>
         <div className="space-y-5 text-lg leading-8 text-slate-600">

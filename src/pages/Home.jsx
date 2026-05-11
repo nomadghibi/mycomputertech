@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import {
   FaBriefcase,
   FaClock,
@@ -42,8 +43,41 @@ const trustItems = [
   },
 ];
 
-const Home = () => (
-  <>
+const Home = () => {
+  const [showRefurbishedCta, setShowRefurbishedCta] = useState(false);
+
+  useEffect(() => {
+    const openTimer = setTimeout(() => setShowRefurbishedCta(true), 900);
+    const closeTimer = setTimeout(() => setShowRefurbishedCta(false), 7200);
+
+    return () => {
+      clearTimeout(openTimer);
+      clearTimeout(closeTimer);
+    };
+  }, []);
+
+  return (
+    <>
+      <div
+        className={`fixed right-0 top-28 z-40 w-[18rem] max-w-[calc(100vw-1rem)] p-3 transition-transform duration-500 sm:top-32 sm:w-[20rem] ${
+          showRefurbishedCta ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="rounded-lg border border-cyan-200 bg-white p-4 shadow-xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-700">Now Available</p>
+          <h2 className="mt-2 text-lg font-bold text-slate-950">Refurbished computers for sale</h2>
+          <p className="mt-2 text-sm leading-6 text-slate-600">
+            Quality refurbished desktops and laptops, ready for home and small business use.
+          </p>
+          <Link
+            to="/services"
+            className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800"
+          >
+            View Service Details
+          </Link>
+        </div>
+      </div>
+
     <section className="relative isolate overflow-hidden bg-slate-950 py-16 text-white sm:py-24">
       <div className="hero-gradient-motion absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(20,184,166,0.35),transparent_36%),linear-gradient(135deg,#082f49_0%,#0f172a_52%,#134e4a_100%)]" />
       <div className="hero-wave-motion absolute inset-x-0 bottom-0 -z-10 h-56 bg-[repeating-linear-gradient(170deg,rgba(125,211,252,0.14)_0px,rgba(125,211,252,0.14)_2px,transparent_2px,transparent_22px)]" />
@@ -228,7 +262,8 @@ const Home = () => (
 
     <ServiceAreaSection />
     <ReferralSection />
-  </>
-);
+    </>
+  );
+};
 
 export default Home;

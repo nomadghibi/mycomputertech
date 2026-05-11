@@ -86,7 +86,7 @@ const areaServed = businessInfo.serviceAreas.map((area) => ({
   name: area,
 }));
 
-const localBusinessSchema = {
+const baseLocalBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: businessInfo.name,
@@ -132,7 +132,7 @@ const localBusinessSchema = {
   ],
 };
 
-const websiteSchema = {
+const baseWebsiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: businessInfo.name,
@@ -158,12 +158,23 @@ const NotFound = () => (
 
 const App = () => {
   const location = useLocation();
+  const siteUrl = (import.meta.env.VITE_SITE_URL || businessInfo.siteUrl).replace(/\/+$/, '');
   const normalizedPath = location.pathname === '/' ? '/' : location.pathname.replace(/\/+$/, '');
   const meta = pageMeta[normalizedPath] || blogMeta[normalizedPath] || pageMeta['/'];
   const canonicalUrl =
     normalizedPath === '/'
-      ? `${businessInfo.siteUrl}/`
-      : `${businessInfo.siteUrl}${normalizedPath}`;
+      ? `${siteUrl}/`
+      : `${siteUrl}${normalizedPath}`;
+  const ogImageUrl = `${siteUrl}/hero-home-1024.jpg`;
+  const localBusinessSchema = {
+    ...baseLocalBusinessSchema,
+    url: siteUrl,
+    image: ogImageUrl,
+  };
+  const websiteSchema = {
+    ...baseWebsiteSchema,
+    url: siteUrl,
+  };
 
   return (
     <HelmetProvider>
@@ -178,11 +189,11 @@ const App = () => {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={businessInfo.name} />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content={`${businessInfo.siteUrl}/hero-home-1024.jpg`} />
+        <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={`${businessInfo.siteUrl}/hero-home-1024.jpg`} />
+        <meta name="twitter:image" content={ogImageUrl} />
         <link rel="canonical" href={canonicalUrl} />
         <meta name="geo.region" content="US-FL" />
         <meta name="geo.placename" content="Indian Harbour Beach" />

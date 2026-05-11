@@ -7,6 +7,7 @@ import { businessInfo } from '../data/businessInfo';
 const BlogPost = () => {
   const { slug } = useParams();
   const post = blogPosts.find((entry) => entry.slug === slug);
+  const siteUrl = (import.meta.env.VITE_SITE_URL || businessInfo.siteUrl).replace(/\/+$/, '');
 
   if (!post) {
     return (
@@ -21,7 +22,8 @@ const BlogPost = () => {
     );
   }
 
-  const canonicalUrl = `${businessInfo.siteUrl}/blog/${post.slug}`;
+  const canonicalUrl = `${siteUrl}/blog/${post.slug}`;
+  const ogImageUrl = `${siteUrl}/hero-home-1024.jpg`;
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -64,10 +66,11 @@ const BlogPost = () => {
         <meta property="og:description" content={post.description} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={businessInfo.name} />
-        <meta property="og:image" content={`${businessInfo.siteUrl}/hero-home-1024.jpg`} />
+        <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.description} />
+        <meta name="twitter:image" content={ogImageUrl} />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       </Helmet>

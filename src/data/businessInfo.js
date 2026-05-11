@@ -1,6 +1,6 @@
 export const businessInfo = {
   name: 'My Computer Tech',
-  siteUrl: 'https://mycomputertech.example.com',
+  siteUrl: 'https://mycomputertechfl.com',
   googleRating: '4.6',
   googleReviewCount: '47',
   phone: '(321) 777-0500',

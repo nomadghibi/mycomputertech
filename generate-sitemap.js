@@ -1,4 +1,4 @@
-import { createWriteStream } from 'fs';
+import { createWriteStream, writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { SitemapStream, streamToPromise } from 'sitemap';
@@ -7,6 +7,8 @@ import { blogPosts } from './src/data/blogPosts.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = resolve(__filename, '..');
+const rawSiteUrl = process.env.SITE_URL || process.env.VITE_SITE_URL || businessInfo.siteUrl;
+const siteUrl = rawSiteUrl.replace(/\/+$/, '');
 
 const staticRoutes = ['/', '/services', '/service-areas', '/about', '/contact', '/blog'];
 const blogRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
@@ -20,7 +22,7 @@ const links = allRoutes.map((route) => ({
 }));
 
 const sitemapPath = resolve(__dirname, 'public', 'sitemap.xml');
-const sitemapStream = new SitemapStream({ hostname: businessInfo.siteUrl });
+const sitemapStream = new SitemapStream({ hostname: siteUrl });
 const writeStream = createWriteStream(sitemapPath);
 
 sitemapStream.pipe(writeStream);
@@ -30,6 +32,11 @@ sitemapStream.end();
 
 streamToPromise(sitemapStream)
   .then(() => {
+    writeFileSync(
+      resolve(__dirname, 'public', 'robots.txt'),
+      `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`,
+      'utf8'
+    );
     console.log('Sitemap successfully created!');
   })
   .catch((err) => {

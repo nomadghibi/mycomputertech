@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mycomputertech.example.com/sitemap.xml
+Sitemap: https://mycomputertechfl.com/sitemap.xml

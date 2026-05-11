@@ -45,7 +45,7 @@ const pageMeta = {
     description:
       'My Computer Tech serves Indian Harbour Beach, Satellite Beach, Indialantic, Melbourne Beach, Cocoa Beach, Cape Canaveral, and nearby beachside Space Coast communities.',
     keywords:
-      'beachside computer repair near me, computer repairs Space Coast beachside, computer repair Satellite Beach, computer repair Indialantic, computer repair Melbourne Beach, computer repair Cocoa Beach, computer repair Cape Canaveral',
+      'computer repairs near me, best computer repair in beachside, beachside computer repair near me, computer repairs Space Coast beachside, computer repair Satellite Beach, computer repair Indialantic, computer repair Melbourne Beach, computer repair Cocoa Beach, computer repair Cape Canaveral',
   },
   '/about': {
     title: 'About My Computer Tech | Local Beachside IT Support',

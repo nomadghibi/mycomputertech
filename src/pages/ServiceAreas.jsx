@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import {
   FaCarSide,
   FaCheckCircle,
+  FaChevronRight,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaStar,
@@ -16,8 +18,58 @@ const areaNotes = [
   'Home and small business service calls',
 ];
 
+const localSearchLinks = [
+  {
+    label: 'Computer repair Indian Harbour Beach',
+    to: '/services',
+  },
+  {
+    label: 'Computer repair Satellite Beach',
+    to: '/services',
+  },
+  {
+    label: 'Laptop repair Indian Harbour Beach',
+    to: '/services',
+  },
+  {
+    label: 'Virus removal Satellite Beach',
+    to: '/blog/virus-removal-satellite-beach-steps',
+  },
+  {
+    label: 'Wi-Fi setup Indian Harbour Beach',
+    to: '/blog/wifi-setup-indian-harbour-beach-homes',
+  },
+  {
+    label: 'Printer setup beachside',
+    to: '/blog/printer-setup-beachside-home-office',
+  },
+  {
+    label: 'Computer repairs near me (beachside)',
+    to: '/contact',
+  },
+  {
+    label: 'Best computer repair in beachside',
+    to: '/about',
+  },
+];
+
 const ServiceAreas = () => (
   <>
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'My Computer Tech Service Areas',
+          itemListElement: businessInfo.serviceAreas.map((area, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: area,
+          })),
+        })}
+      </script>
+    </Helmet>
+
     <section className="relative isolate overflow-hidden bg-slate-950 py-16 text-white sm:py-20">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(20,184,166,0.28),transparent_35%),linear-gradient(135deg,#082f49_0%,#0f172a_58%,#134e4a_100%)]" />
       <div className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-[repeating-linear-gradient(170deg,rgba(125,211,252,0.12)_0px,rgba(125,211,252,0.12)_2px,transparent_2px,transparent_22px)]" />
@@ -124,6 +176,40 @@ const ServiceAreas = () => (
           <div className="mt-6 rounded-md border border-cyan-100 bg-cyan-50 p-4 text-sm text-cyan-900">
             Need support outside the beachside area? Use the referral links below for mainland and
             remote options.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-white py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+            Local Search
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Popular beachside service searches
+          </h2>
+          <p className="mt-4 text-lg leading-8 text-slate-600">
+            Customers in Indian Harbour Beach, Satellite Beach, Indialantic, and nearby communities
+            often search for these service topics.
+          </p>
+          <p className="mt-3 text-base leading-7 text-slate-600">
+            If you are searching for computer repairs near me or the best computer repair in
+            beachside Space Coast areas, My Computer Tech focuses on practical local support and
+            clear service coverage.
+          </p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {localSearchLinks.map((item) => (
+              <Link
+                key={item.label}
+                to={item.to}
+                className="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-cyan-300 hover:bg-cyan-50"
+              >
+                <FaChevronRight className="h-3 w-3 text-cyan-700" />
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

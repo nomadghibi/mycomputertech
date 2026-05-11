@@ -51,6 +51,14 @@ const localSearchLinks = [
     label: 'Best computer repair in beachside',
     to: '/about',
   },
+  {
+    label: 'Computer repair shop Indian Harbour Beach',
+    to: '/contact',
+  },
+  {
+    label: 'Printer offline fix beachside',
+    to: '/blog/my-printer-not-working-beachside-help',
+  },
 ];
 
 const ServiceAreas = () => (

@@ -59,6 +59,22 @@ const localSearchLinks = [
     label: 'Printer offline fix beachside',
     to: '/blog/my-printer-not-working-beachside-help',
   },
+  {
+    label: 'Senior computer help Indian Harbour Beach',
+    to: '/services',
+  },
+  {
+    label: 'Home computer repair beachside',
+    to: '/services',
+  },
+  {
+    label: 'Computer won’t turn on repair beachside',
+    to: '/services',
+  },
+  {
+    label: 'Same day computer repair beachside',
+    to: '/contact',
+  },
 ];
 
 const ServiceAreas = () => (

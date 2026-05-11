@@ -7,7 +7,7 @@ export const blogPosts = [
     description:
       'Looking for computer repair Indian Harbour Beach? Learn what services matter most, what to expect from local support, and how to get practical onsite tech help beachside.',
     keywords:
-      'computer repairs, computer repair Indian Harbour Beach, beachside computer repair, laptop repair Indian Harbour Beach, onsite computer repair beachside, local tech support Space Coast, computer repair near me beachside',
+      'computer repairs, computer repair Indian Harbour Beach, beachside computer repair, laptop repair Indian Harbour Beach, onsite computer repair beachside, local tech support Space Coast, computer repair near me beachside, local computer repair near me, best computer repair Indian Harbour Beach',
     publishedDate: '2026-05-08',
     category: 'Local Service',
     readTime: '6 min read',
@@ -34,7 +34,7 @@ export const blogPosts = [
     description:
       'Need virus removal Satellite Beach service? Follow this practical checklist for suspicious computer behavior and learn when professional malware cleanup is recommended.',
     keywords:
-      'virus removal Satellite Beach, malware removal beachside, computer repairs after virus infection, computer virus cleanup Space Coast, popups and browser hijack fix',
+      'virus removal Satellite Beach, malware removal beachside, computer repairs after virus infection, computer virus cleanup Space Coast, popups and browser hijack fix, virus removal near me beachside, spyware cleanup Indian Harbour Beach',
     publishedDate: '2026-05-08',
     category: 'Security',
     readTime: '5 min read',
@@ -61,7 +61,7 @@ export const blogPosts = [
     description:
       'Planning Wi-Fi setup Indian Harbour Beach? Learn practical ways to improve signal quality, secure your network, and reduce dropouts across your home.',
     keywords:
-      'Wi-Fi setup Indian Harbour Beach, home network setup beachside, beachside computer repair Wi-Fi help, improve Wi-Fi signal Space Coast, router setup local support',
+      'Wi-Fi setup Indian Harbour Beach, home network setup beachside, beachside computer repair Wi-Fi help, improve Wi-Fi signal Space Coast, router setup local support, Wi-Fi repair near me beachside, weak Wi-Fi signal fix Indian Harbour Beach',
     publishedDate: '2026-05-08',
     category: 'Home Network',
     readTime: '6 min read',

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{subject}}</title>
+  </head>
+  <body style="margin:0; padding:24px; background:#f8fafc; font-family:Arial, sans-serif; color:#0f172a;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px; margin:0 auto; background:#ffffff; border:1px solid #e2e8f0; border-radius:8px;">
+      <tr>
+        <td style="padding:24px;">
+          <p style="margin:0 0 16px; font-size:20px; font-weight:700; color:#0f172a;">
+            New contact form request from {{business_name}}
+          </p>
+
+          <div style="border-left:4px solid #0ea5e9; padding-left:16px; margin:16px 0;">
+            <p style="margin:0 0 10px;"><strong>Name:</strong> {{from_name}}</p>
+            <p style="margin:0 0 10px;"><strong>Email:</strong> {{from_email}}</p>
+            <p style="margin:0 0 10px;"><strong>Phone:</strong> {{phone}}</p>
+            <p style="margin:0 0 10px;"><strong>Service Area:</strong> {{service_area}}</p>
+            <p style="margin:0 0 10px;"><strong>Form Source:</strong> {{form_source}}</p>
+            <p style="margin:0;"><strong>Message:</strong><br>{{message}}</p>
+          </div>
+
+          <p style="margin:24px 0 0; font-size:12px; color:#64748b;">
+            Reply directly to this email to respond to {{from_name}}.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

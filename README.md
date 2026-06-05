@@ -1,6 +1,6 @@
-# Best Computer Tech
+# My Computer Tech
 
-Marketing and service-booking site built with React + Vite.
+Marketing and service-booking site for My Computer Tech, built with React + Vite.
 
 ## Setup
 

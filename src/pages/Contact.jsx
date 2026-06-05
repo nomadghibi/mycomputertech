@@ -7,9 +7,23 @@ import { businessInfo } from '../data/businessInfo';
 import { emailPublicKey, emailServiceId, emailTemplateId } from '../utils/emailjsConfig';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((current) => ({
+      ...current,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,15 +37,40 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
+    const templateParams = {
+      to_email: businessInfo.email,
+      to_name: businessInfo.name,
+      subject: `New service request from ${businessInfo.name} website`,
+      business_name: businessInfo.name,
+      service_area: businessInfo.primaryArea,
+      form_source: 'Contact Page',
+      from_name: formData.name,
+      from_email: formData.email,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      problem: formData.message,
+      repairType: 'General computer repair',
+      serviceType: 'Beachside computer support',
+      serviceDeliveryMethod: 'To be confirmed',
+    };
     emailjs
-      .sendForm(emailServiceId, emailTemplateId, e.target, emailPublicKey)
+      .send(emailServiceId, emailTemplateId, templateParams, emailPublicKey)
       .then(() => {
         setSubmitted(true);
-        e.target.reset();
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
       })
-      .catch(() => {
+      .catch((error) => {
+        const details =
+          error?.text || error?.message || 'Unknown EmailJS error.';
         setSubmitError(
-          `We could not send your request right now. Please try again, or contact us at ${businessInfo.phone}.`
+          `We could not send your request right now. ${details} Please try again, or contact us at ${businessInfo.phone}.`
         );
       })
       .finally(() => {
@@ -189,15 +228,6 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm"
             >
-              <input type="hidden" name="to_email" value={businessInfo.email} />
-              <input
-                type="hidden"
-                name="subject"
-                value={`New service request from ${businessInfo.name} website`}
-              />
-              <input type="hidden" name="business_name" value={businessInfo.name} />
-              <input type="hidden" name="service_area" value={businessInfo.primaryArea} />
-              <input type="hidden" name="form_source" value="Contact Page" />
               <h2 className="text-xl font-bold text-slate-950 sm:text-2xl">Request Service</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Share a few details and we can follow up with the right next step.
@@ -218,8 +248,10 @@ const Contact = () => {
                   <span className="text-sm font-semibold text-slate-800">Name</span>
                   <input
                     type="text"
-                    name="from_name"
+                    name="name"
                     required
+                    value={formData.name}
+                    onChange={handleChange}
                     className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     placeholder="Your name"
                   />
@@ -230,6 +262,8 @@ const Contact = () => {
                     type="tel"
                     name="phone"
                     required
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     placeholder="Best callback number"
                   />
@@ -238,8 +272,10 @@ const Contact = () => {
                   <span className="text-sm font-semibold text-slate-800">Email</span>
                   <input
                     type="email"
-                    name="from_email"
+                    name="email"
                     required
+                    value={formData.email}
+                    onChange={handleChange}
                     className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     placeholder="you@example.com"
                   />
@@ -250,6 +286,8 @@ const Contact = () => {
                     name="message"
                     rows="6"
                     required
+                    value={formData.message}
+                    onChange={handleChange}
                     className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     placeholder="Tell us what is happening with your computer, laptop, Wi-Fi, printer, email, or business technology."
                   />

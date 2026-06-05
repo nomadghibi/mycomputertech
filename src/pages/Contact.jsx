@@ -189,6 +189,15 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm"
             >
+              <input type="hidden" name="to_email" value={businessInfo.email} />
+              <input
+                type="hidden"
+                name="subject"
+                value={`New service request from ${businessInfo.name} website`}
+              />
+              <input type="hidden" name="business_name" value={businessInfo.name} />
+              <input type="hidden" name="service_area" value={businessInfo.primaryArea} />
+              <input type="hidden" name="form_source" value="Contact Page" />
               <h2 className="text-xl font-bold text-slate-950 sm:text-2xl">Request Service</h2>
               <p className="mt-2 text-sm text-slate-600">
                 Share a few details and we can follow up with the right next step.
@@ -209,7 +218,7 @@ const Contact = () => {
                   <span className="text-sm font-semibold text-slate-800">Name</span>
                   <input
                     type="text"
-                    name="name"
+                    name="from_name"
                     required
                     className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     placeholder="Your name"
@@ -229,7 +238,7 @@ const Contact = () => {
                   <span className="text-sm font-semibold text-slate-800">Email</span>
                   <input
                     type="email"
-                    name="email"
+                    name="from_email"
                     required
                     className="mt-2 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     placeholder="you@example.com"

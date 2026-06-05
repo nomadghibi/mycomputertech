@@ -4,15 +4,12 @@ import emailjs from 'emailjs-com';
 import { FaClock, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaStar } from 'react-icons/fa';
 import ReferralSection from '../components/ReferralSection';
 import { businessInfo } from '../data/businessInfo';
+import { emailPublicKey, emailServiceId, emailTemplateId } from '../utils/emailjsConfig';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
-
-  const emailServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const emailTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const emailPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleSubmit = (e) => {
     e.preventDefault();

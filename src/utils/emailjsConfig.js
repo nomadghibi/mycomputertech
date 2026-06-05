@@ -3,7 +3,7 @@ export const emailServiceId =
 export const emailTemplateId =
   import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_bqkydgp';
 export const emailPublicKey =
-  import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'nxjxNLKAsXURgUex';
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'nxjxvNLKAsXURgUex';
 
 export const isEmailJsConfigured =
   Boolean(emailServiceId) &&

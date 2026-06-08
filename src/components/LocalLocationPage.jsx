@@ -3,6 +3,31 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight, FaCheckCircle, FaPhoneAlt } from 'react-icons/fa';
 import { businessInfo } from '../data/businessInfo';
 
+const relatedServiceLinksByCity = {
+  'Indian Harbour Beach': [
+    { label: 'Indian Harbour Beach computer repair', to: '/location/indian-harbour-beach-fl' },
+    { label: 'Computer repair services', to: '/services' },
+    { label: 'Virus removal in Melbourne FL', to: '/virus-removal-melbourne-fl' },
+    { label: 'Printer setup in Melbourne FL', to: '/printer-setup-melbourne-fl' },
+  ],
+  Melbourne: [
+    { label: 'Computer repair in Melbourne FL', to: '/computer-repair-melbourne-fl' },
+    { label: 'Virus removal in Melbourne FL', to: '/virus-removal-melbourne-fl' },
+    { label: 'Printer setup in Melbourne FL', to: '/printer-setup-melbourne-fl' },
+    { label: 'Wi-Fi troubleshooting in Melbourne FL', to: '/wifi-troubleshooting-melbourne-fl' },
+  ],
+  PalmBay: [
+    { label: 'Computer repair in Palm Bay FL', to: '/computer-repair-palm-bay-fl' },
+    { label: 'Computer repair services', to: '/services' },
+    { label: 'Contact My Computer Tech', to: '/contact' },
+  ],
+  SatelliteBeach: [
+    { label: 'Computer repair in Satellite Beach FL', to: '/computer-repair-satellite-beach-fl' },
+    { label: 'Computer repair services', to: '/services' },
+    { label: 'Contact My Computer Tech', to: '/contact' },
+  ],
+};
+
 const LocalLocationPage = ({ page }) => {
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -41,6 +66,15 @@ const LocalLocationPage = ({ page }) => {
       { '@type': 'ListItem', position: 3, name: page.h1, item: `${businessInfo.siteUrl}${page.path}` },
     ],
   };
+
+  const relatedLinks =
+    relatedServiceLinksByCity[page.city.replace(/\s+/g, '')] ||
+    relatedServiceLinksByCity[page.city] ||
+    [
+      { label: 'Computer repair services', to: '/services' },
+      { label: 'Service areas', to: '/service-areas' },
+      { label: 'Contact My Computer Tech', to: '/contact' },
+    ];
 
   return (
     <>
@@ -155,6 +189,30 @@ const LocalLocationPage = ({ page }) => {
                 <p className="mt-3 text-sm leading-6 text-slate-600">{item.answer}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-14 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+              Related Services
+            </p>
+            <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+              More local pages that match this service area
+            </h2>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {relatedLinks.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.to}
+                  className="rounded-md border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-cyan-300 hover:bg-cyan-50 hover:text-blue-800"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

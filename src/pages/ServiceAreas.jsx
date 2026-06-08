@@ -172,6 +172,18 @@ const localSearchLinks = [
     to: '/blog/scanner-setup-beachside',
   },
   {
+    label: 'Outlook troubleshooting Melbourne FL',
+    to: '/blog/outlook-troubleshooting-melbourne-fl',
+  },
+  {
+    label: 'Tablet setup beachside',
+    to: '/blog/tablet-setup-beachside',
+  },
+  {
+    label: 'Computer maintenance tips beachside',
+    to: '/blog/computer-maintenance-tips-beachside',
+  },
+  {
     label: 'Laptop screen repair Indian Harbour Beach',
     to: '/blog/laptop-screen-repair-indian-harbour-beach',
   },

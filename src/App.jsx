@@ -11,8 +11,12 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import ComputerRepairMelbourneFL from './pages/ComputerRepairMelbourneFL';
+import ComputerRepairPalmBayFL from './pages/ComputerRepairPalmBayFL';
+import ComputerRepairSatelliteBeachFL from './pages/ComputerRepairSatelliteBeachFL';
 import { businessInfo } from './data/businessInfo';
 import { blogPosts } from './data/blogPosts';
+import { localServicePages } from './data/localServicePages';
 import './index.css';
 
 const ScrollToTop = () => {
@@ -27,11 +31,11 @@ const ScrollToTop = () => {
 
 const pageMeta = {
   '/': {
-    title: 'My Computer Tech | Beachside Computer Repair & IT Support',
+    title: 'Computer Repair Satellite Beach FL | My Computer Tech',
     description:
-      'My Computer Tech provides beachside computer repair, laptop repair, Wi-Fi help, printer setup, virus removal, and small business IT support for Indian Harbour Beach and nearby Space Coast communities.',
+      'Local computer repair, laptop help, Wi-Fi troubleshooting, virus removal, printer setup, and small business IT support in Satellite Beach FL.',
     keywords:
-      'computer repairs, computer repair Indian Harbour Beach, beachside computer repair, beachside computer repair Space Coast, laptop repair Indian Harbour Beach, PC repair Indian Harbour Beach, onsite computer repair beachside, virus removal Satellite Beach, printer not working beachside, slow computer repair, computer repairs near me, best computer repair in beachside, local computer technician beachside, computer help near me',
+      'computer repair Satellite Beach FL, laptop repair Melbourne FL, virus removal Melbourne FL, Wi-Fi troubleshooting Melbourne FL, business IT support Melbourne FL',
   },
   '/services': {
     title: 'Beachside Computer Repair Services | My Computer Tech',
@@ -68,6 +72,16 @@ const pageMeta = {
     keywords:
       'beachside computer repair blog, computer repairs tips, Indian Harbour Beach tech tips, my printer not working, why is my printer offline, printer offline fix, how to fix a slow computer, Wi-Fi keeps disconnecting, laptop not charging repair, virus removal guide Satellite Beach, computer troubleshooting tips beachside, home office tech support beachside',
   },
+  ...Object.fromEntries(
+    Object.values(localServicePages).map((page) => [
+      page.path,
+      {
+        title: page.seoTitle,
+        description: page.description,
+        keywords: page.keywords,
+      },
+    ])
+  ),
 };
 
 const blogMeta = Object.fromEntries(
@@ -215,6 +229,9 @@ const App = () => {
               <Route path="/contact" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/computer-repair-melbourne-fl" element={<ComputerRepairMelbourneFL />} />
+              <Route path="/computer-repair-satellite-beach-fl" element={<ComputerRepairSatelliteBeachFL />} />
+              <Route path="/computer-repair-palm-bay-fl" element={<ComputerRepairPalmBayFL />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </ErrorBoundary>

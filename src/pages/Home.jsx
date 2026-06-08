@@ -24,12 +24,12 @@ const trustItems = [
   {
     icon: FaClock,
     title: 'Same location since 2010',
-    text: 'Serving from the same Indian Harbour Beach location for over a decade.',
+    text: 'Serving the Space Coast from the same local shop for over a decade.',
   },
   {
     icon: FaMapMarkerAlt,
     title: 'Beachside local',
-    text: 'Focused on Indian Harbour Beach and nearby barrier island communities.',
+    text: 'Focused on Satellite Beach, Indian Harbour Beach, and nearby beachside communities.',
   },
   {
     icon: FaHome,
@@ -45,6 +45,28 @@ const trustItems = [
 
 const Home = () => {
   const [showRefurbishedCta, setShowRefurbishedCta] = useState(false);
+  const homeFaqs = [
+    {
+      question: 'Do you offer computer repair in Satellite Beach FL?',
+      answer:
+        'Yes. My Computer Tech serves Satellite Beach and nearby Space Coast communities with practical computer repair and IT support.',
+    },
+    {
+      question: 'Can you help with laptops, Wi-Fi, and printers?',
+      answer:
+        'Yes. Laptop repair, Wi-Fi troubleshooting, printer setup, virus removal, and software cleanup are all common requests.',
+    },
+    {
+      question: 'Do you work with seniors and small businesses?',
+      answer:
+        'Yes. The service style is direct, patient, and practical for homeowners, seniors, and small businesses that need dependable support.',
+    },
+    {
+      question: 'Do you offer remote support?',
+      answer:
+        'Yes. Remote support is available for many software, account, and troubleshooting issues when an onsite visit is not needed.',
+    },
+  ];
 
   useEffect(() => {
     const openTimer = setTimeout(() => setShowRefurbishedCta(true), 900);
@@ -87,16 +109,16 @@ const Home = () => {
         <div>
           <p className="fade-up inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-100 shadow-sm backdrop-blur">
             <FaShieldAlt className="h-3.5 w-3.5 text-cyan-200" />
-            Indian Harbour Beach Computer Repair
+            Satellite Beach FL Computer Repair
           </p>
           <h1 className="fade-up fade-delay-1 mt-5 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Professional Florida Beachside Computer Repair & IT Support
+            Computer Repair & IT Support in Satellite Beach FL
           </h1>
           <p className="fade-up fade-delay-2 mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-            My Computer Tech provides practical computer repair, Wi-Fi help, printer setup, virus
-            removal, refurbished laptop and desktop sales, and small business IT support for Indian
-            Harbour Beach, Satellite Beach, Indialantic, Melbourne Beach, and nearby Space Coast
-            beachside communities.
+            My Computer Tech provides practical computer repair, laptop help, Wi-Fi troubleshooting,
+            printer setup, virus removal, refurbished computer sales, and small business IT support
+            for Satellite Beach, Indian Harbour Beach, Indialantic, Melbourne Beach, and nearby
+            Space Coast communities.
           </p>
           <div className="fade-up fade-delay-3 mt-6 grid gap-3 text-sm text-cyan-50 sm:grid-cols-3">
             {['Local beachside shop', '4.6 Google rating', 'Home & business support'].map((item) => (
@@ -173,7 +195,7 @@ const Home = () => {
               <div className="relative mt-5 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-md border border-slate-200 bg-white/90 p-4 shadow-sm">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Service Area</p>
-                  <p className="mt-2 font-bold text-slate-950">Beachside communities</p>
+                  <p className="mt-2 font-bold text-slate-950">Satellite Beach and nearby areas</p>
                 </div>
                 <div className="rounded-md border border-slate-200 bg-white/90 p-4 shadow-sm">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Hours</p>
@@ -261,6 +283,28 @@ const Home = () => {
     </section>
 
     <ServiceAreaSection />
+
+    <section className="bg-slate-50 py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader
+          eyebrow="FAQ"
+          title="Questions local customers ask before they call"
+          description="Clear answers help customers decide whether repair, cleanup, onsite support, or remote help is the right next step."
+          align="center"
+        />
+        <div className="mt-10 grid gap-4 lg:grid-cols-2">
+          {homeFaqs.map((faq) => (
+            <details key={faq.question} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+              <summary className="cursor-pointer list-none text-lg font-bold text-slate-950">
+                {faq.question}
+              </summary>
+              <p className="mt-3 text-sm leading-6 text-slate-600">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
     <ReferralSection />
     </>
   );

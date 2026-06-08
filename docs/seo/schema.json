@@ -1,0 +1,112 @@
+{
+  "LocalBusiness": {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "My Computer Tech",
+    "url": "https://www.mycomputertechfl.com",
+    "telephone": "(321) 777-0500",
+    "email": "mycomputertech@cfl.rr.com",
+    "image": "https://www.mycomputertechfl.com/hero-home-1024.jpg",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "296 E Eau Gallie Blvd",
+      "addressLocality": "Indian Harbour Beach",
+      "addressRegion": "FL",
+      "postalCode": "32937",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Satellite Beach",
+      "Melbourne",
+      "Melbourne Beach",
+      "Palm Bay",
+      "Indialantic",
+      "Indian Harbour Beach",
+      "West Melbourne",
+      "Rockledge",
+      "Viera",
+      "Brevard County"
+    ]
+  },
+  "ComputerRepair": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "{{SERVICE_NAME}}",
+    "serviceType": "Computer Repair",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "My Computer Tech",
+      "url": "https://www.mycomputertechfl.com"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "{{TARGET_CITY}}"
+    },
+    "description": "{{SERVICE_DESCRIPTION}}",
+    "url": "https://www.mycomputertechfl.com/{{SERVICE_SLUG}}"
+  },
+  "Service": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "{{SERVICE_NAME}}",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "My Computer Tech",
+      "url": "https://www.mycomputertechfl.com"
+    },
+    "description": "{{SERVICE_DESCRIPTION}}",
+    "areaServed": [
+      "{{CITY_1}}",
+      "{{CITY_2}}",
+      "{{CITY_3}}"
+    ],
+    "url": "https://www.mycomputertechfl.com/{{SERVICE_SLUG}}"
+  },
+  "FAQPage": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "{{FAQ_QUESTION_1}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ_ANSWER_1}}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "{{FAQ_QUESTION_2}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ_ANSWER_2}}"
+        }
+      }
+    ]
+  },
+  "BreadcrumbList": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.mycomputertechfl.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{PARENT_LABEL}}",
+        "item": "https://www.mycomputertechfl.com/{{PARENT_SLUG}}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{CURRENT_LABEL}}",
+        "item": "https://www.mycomputertechfl.com/{{CURRENT_SLUG}}"
+      }
+    ]
+  }
+}

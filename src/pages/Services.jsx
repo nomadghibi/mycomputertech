@@ -17,6 +17,25 @@ import {
 } from 'react-icons/fa';
 import ReferralSection from '../components/ReferralSection';
 import { businessInfo } from '../data/businessInfo';
+import { localServicePages } from '../data/localServicePages';
+
+const localPageLinks = [
+  {
+    path: localServicePages.satelliteBeach.path,
+    title: 'Computer Repair in Satellite Beach FL',
+    description: 'Local repair-first support for beachside homes, seniors, and small businesses.',
+  },
+  {
+    path: localServicePages.melbourne.path,
+    title: 'Computer Repair in Melbourne FL',
+    description: 'Practical help for slow PCs, startup issues, malware cleanup, and troubleshooting.',
+  },
+  {
+    path: localServicePages.palmBay.path,
+    title: 'Computer Repair in Palm Bay FL',
+    description: 'Repair, cleanup, printer help, Wi-Fi support, and straightforward local service.',
+  },
+];
 
 const serviceGroups = [
   {
@@ -211,6 +230,72 @@ const Services = () => (
                 ))}
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-white py-14 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Local Pages</p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            City pages built for local search intent
+          </h2>
+          <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+            These pages help customers find the right local repair page quickly and give search engines
+            a clear signal for Melbourne, Satellite Beach, and Palm Bay.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          {localPageLinks.map((page) => (
+            <Link
+              key={page.path}
+              to={page.path}
+              className="group rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-md"
+            >
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-700">Local Page</p>
+              <h3 className="mt-3 text-lg font-bold text-slate-950 group-hover:text-blue-800">
+                {page.title}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{page.description}</p>
+              <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-800">
+                View page
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-white py-14 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Local Pages</p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            City pages built for local search intent
+          </h2>
+          <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+            These pages help customers find the right local repair page quickly and give search engines
+            a clear signal for Melbourne, Satellite Beach, and Palm Bay.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          {localPageLinks.map((page) => (
+            <Link
+              key={page.path}
+              to={page.path}
+              className="group rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-md"
+            >
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-700">Local Page</p>
+              <h3 className="mt-3 text-lg font-bold text-slate-950 group-hover:text-blue-800">
+                {page.title}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{page.description}</p>
+              <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-800">
+                View page
+              </span>
+            </Link>
           ))}
         </div>
       </div>

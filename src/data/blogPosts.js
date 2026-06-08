@@ -918,6 +918,87 @@ export const blogPosts = [
     ],
   },
   {
+    slug: 'browser-hijack-removal-beachside',
+    title: 'Browser Hijack Removal Beachside: Signs Your Browser Needs Cleanup',
+    excerpt:
+      'If your homepage changes or search results look wrong, the browser may be hijacked. This guide covers the common signs and fixes.',
+    description:
+      'Need browser hijack removal beachside? Learn common warning signs and when malware cleanup is the right next step.',
+    keywords:
+      'browser hijack removal beachside, browser hijack fix, virus removal beachside, malware symptoms, computer virus cleanup',
+    publishedDate: '2026-06-08',
+    category: 'Security',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Look for changed search or home settings',
+        body: 'A hijacked browser often changes the homepage, search engine, or new-tab behavior without permission. That is one of the first signs to check.',
+      },
+      {
+        heading: 'Watch for redirects and popups',
+        body: 'Repeated redirects, fake alerts, and odd extensions can point to unwanted software that needs cleanup.',
+      },
+      {
+        heading: 'Why local cleanup helps',
+        body: 'A local repair visit can inspect the browser, the system, and any related accounts together so the issue is less likely to return.',
+      },
+    ],
+  },
+  {
+    slug: 'password-reset-email-lockout-melbourne-fl',
+    title: 'Password Reset and Email Lockout Help in Melbourne FL',
+    excerpt:
+      'A password change or account lockout can stop email on one device while still working elsewhere. Here is how to troubleshoot it.',
+    description:
+      'Need password reset or email lockout help in Melbourne FL? Learn what usually causes login issues and when support is useful.',
+    keywords:
+      'password reset Melbourne FL, email lockout help Melbourne FL, email troubleshooting Melbourne FL, Microsoft 365 help Melbourne FL, account login problem',
+    publishedDate: '2026-06-08',
+    category: 'Business IT',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Start with the account itself',
+        body: 'If email stops syncing after a password reset or security prompt, the issue may be account-related rather than a computer failure.',
+      },
+      {
+        heading: 'Check for old passwords and stale profiles',
+        body: 'Outdated mail profiles or devices still using the old password can create repeated lockout loops or send problems.',
+      },
+      {
+        heading: 'Local support can reduce the guesswork',
+        body: 'A local technician can test the account, device, and sync settings together so the fix is faster and more reliable.',
+      },
+    ],
+  },
+  {
+    slug: 'scanner-setup-beachside',
+    title: 'Scanner Setup Beachside: What to Check When Scans Fail',
+    excerpt:
+      'If your printer scans do not work or the scanner is missing, this guide covers the most common setup issues.',
+    description:
+      'Need scanner setup beachside? Learn what usually blocks scan-to-email or scan-to-computer setup and when to get local help.',
+    keywords:
+      'scanner setup beachside, scanning to email, printer scanner setup, printer not working beachside, beachside computer repair',
+    publishedDate: '2026-06-08',
+    category: 'Office Setup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Confirm the scanner is installed correctly',
+        body: 'Some multifunction printers work for printing but need separate setup for scanning features. Drivers and software often matter here.',
+      },
+      {
+        heading: 'Check network and destination settings',
+        body: 'If scans are sent to the wrong folder or email address, the issue is often configuration rather than the scanner hardware itself.',
+      },
+      {
+        heading: 'When a local visit makes sense',
+        body: 'If multiple users, devices, or a wireless printer are involved, onsite help can test the whole workflow and get scanning reliable again.',
+      },
+    ],
+  },
+  {
     slug: 'onsite-computer-repair-beachside-vs-remote-support',
     title: 'Onsite Computer Repair Beachside vs Remote Support: Which Is Better?',
     excerpt:

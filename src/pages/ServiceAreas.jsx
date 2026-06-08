@@ -160,6 +160,18 @@ const localSearchLinks = [
     to: '/blog/computer-repair-shop-indian-harbour-beach-guide',
   },
   {
+    label: 'Browser hijack removal beachside',
+    to: '/blog/browser-hijack-removal-beachside',
+  },
+  {
+    label: 'Password reset and email lockout Melbourne FL',
+    to: '/blog/password-reset-email-lockout-melbourne-fl',
+  },
+  {
+    label: 'Scanner setup beachside',
+    to: '/blog/scanner-setup-beachside',
+  },
+  {
     label: 'Laptop screen repair Indian Harbour Beach',
     to: '/blog/laptop-screen-repair-indian-harbour-beach',
   },

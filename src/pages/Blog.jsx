@@ -50,6 +50,11 @@ const Blog = () => {
         <p className="inline-flex rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-100">
           Beachside Tech Blog
         </p>
+        <nav aria-label="Breadcrumb" className="mt-4 flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-100/80">
+          <Link to="/" className="transition hover:text-white">Home</Link>
+          <span>/</span>
+          <span className="text-white">Blog</span>
+        </nav>
         <h1 className="mt-5 max-w-4xl text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
           Indian Harbour Beach computer repair guides for Space Coast communities
         </h1>

@@ -48,6 +48,10 @@ const localSearchLinks = [
     to: '/contact',
   },
   {
+    label: 'Computer repairs near me in Indian Harbour Beach',
+    to: '/blog/computer-repairs-near-me-indian-harbour-beach',
+  },
+  {
     label: 'Best computer repair in beachside',
     to: '/about',
   },
@@ -86,6 +90,14 @@ const localSearchLinks = [
   {
     label: 'Data recovery in Melbourne FL',
     to: '/blog/data-recovery-melbourne-fl',
+  },
+  {
+    label: 'Windows 11 upgrade help in Melbourne FL',
+    to: '/blog/windows-11-upgrade-help-melbourne-fl',
+  },
+  {
+    label: 'Wi-Fi keeps disconnecting in Melbourne FL',
+    to: '/blog/wifi-keeps-disconnecting-melbourne-fl',
   },
 ];
 

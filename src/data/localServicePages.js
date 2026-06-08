@@ -455,4 +455,156 @@ export const localServicePages = {
     ],
     cta: 'Request remote computer support in Florida.',
   },
+  windows11Upgrade: {
+    path: '/windows-11-upgrade-help',
+    city: 'Indian Harbour Beach',
+    seoTitle: 'Windows 11 Upgrade Help | My Computer Tech',
+    description:
+      'Windows 11 upgrade help for compatibility checks, backups, cleanup, and practical setup guidance before you upgrade.',
+    keywords:
+      'Windows 11 upgrade help, Windows 11 compatibility check, Windows 11 setup help, computer upgrade help, backup before upgrade',
+    h1: 'Windows 11 Upgrade Help',
+    eyebrow: 'Indian Harbour Beach',
+    heroSummary:
+      'Practical help before, during, and after a Windows 11 upgrade so the process is less risky and easier to manage.',
+    heroCards: [
+      { label: 'Common issues', value: 'Compatibility and setup uncertainty', detail: 'Know what to expect before you upgrade.' },
+      { label: 'Best fit', value: 'Home users and small offices', detail: 'Help for one computer or a small set of systems.' },
+      { label: 'Typical help', value: 'Backups, cleanup, and configuration', detail: 'Prepare the machine and reduce upgrade problems.' },
+    ],
+    intro: [
+      'Windows 11 upgrade help is useful when a customer is not sure whether a computer is ready, whether files are backed up, or whether the upgrade will disrupt email, printers, or daily use. My Computer Tech can help make the process more predictable and less stressful.',
+      'A practical upgrade page should explain the prep work, the risk points, and the post-upgrade steps that keep the computer usable. That gives customers a clear path instead of forcing them to guess through the process alone.',
+    ],
+    sections: [
+      {
+        heading: 'Check readiness before the upgrade',
+        paragraphs: [
+          'Some computers need compatibility checks, storage cleanup, or settings review before Windows 11 is installed. It is better to know that first than to run into problems halfway through the process.',
+          'A good support session should also consider backups, printer compatibility, email access, and software that must remain available after the upgrade is complete.',
+        ],
+      },
+      {
+        heading: 'What can go wrong during an upgrade',
+        paragraphs: [
+          'Upgrade issues can include missing drivers, slow installs, account login problems, or settings that do not carry over correctly. These are common enough that they should be expected and planned for instead of treated as surprises.',
+          'The service should not be treated as just clicking an install button. It should include setup review, backup protection, and enough follow-through to make sure the system is actually ready to use after the upgrade.',
+        ],
+      },
+      {
+        heading: 'Why local help is valuable',
+        paragraphs: [
+          'Local help is useful because the technician can look at the full setup: computer, printer, email, and connected devices. That reduces the chance that one upgrade creates several new problems elsewhere.',
+          'This page also supports strong search intent for customers who are actively comparing whether to upgrade now or wait. The goal is to help them move forward with confidence and fewer surprises.',
+        ],
+      },
+    ],
+    services: [
+      'Windows 11 compatibility checks',
+      'Backup and file protection before upgrade',
+      'Cleanup and preparation before installation',
+      'Post-upgrade setup and troubleshooting',
+      'Printer and email reconnection help',
+      'Support for home and small business computers',
+    ],
+    faq: [
+      {
+        question: 'Do you help with Windows 11 upgrades?',
+        answer:
+          'Yes. My Computer Tech can help with compatibility checks, backups, cleanup, and setup before or after a Windows 11 upgrade.',
+      },
+      {
+        question: 'Should I back up files before upgrading?',
+        answer:
+          'Yes. Backups are a core part of the process because they reduce risk if the upgrade needs extra troubleshooting.',
+      },
+      {
+        question: 'Can you help if a printer stops working after the upgrade?',
+        answer:
+          'Yes. Printer setup and reconnect help are common follow-up steps after a major Windows change.',
+      },
+      {
+        question: 'Is this only for new computers?',
+        answer:
+          'No. Existing computers can often be checked and prepared before a Windows 11 upgrade if they are a reasonable fit.',
+      },
+    ],
+    cta: 'Request Windows 11 upgrade help.',
+  },
+  refurbishedBrevard: {
+    path: '/refurbished-computers-brevard-county',
+    city: 'Brevard County',
+    seoTitle: 'Refurbished Computers Brevard County | My Computer Tech',
+    description:
+      'Refurbished computers in Brevard County for home users, small businesses, and backup systems that need a practical replacement.',
+    keywords:
+      'refurbished computers Brevard County, refurbished laptops Brevard County, refurbished desktops Brevard County, used computer sales Brevard County',
+    h1: 'Refurbished Computers in Brevard County',
+    eyebrow: 'Brevard County',
+    heroSummary:
+      'Practical refurbished laptops and desktops for customers who need a dependable replacement or backup computer.',
+    heroCards: [
+      { label: 'Common need', value: 'A practical replacement system', detail: 'Get a machine that fits everyday use without overspending.' },
+      { label: 'Best fit', value: 'Homes, students, and small businesses', detail: 'Good for basic work, browsing, and office tasks.' },
+      { label: 'Typical help', value: 'Selection, setup, and transfer', detail: 'Choose the right unit and make it ready to use.' },
+    ],
+    intro: [
+      'Refurbished computers in Brevard County should be presented as practical tools, not as a flashy sales category. Customers usually want a dependable desktop or laptop that works for everyday use, basic office work, email, and browser tasks without paying for more machine than they need.',
+      'My Computer Tech can position refurbished systems as a sensible option when replacement makes more sense than repair. The goal is to help customers choose a machine that fits their budget and use case, then make sure it is set up correctly.',
+    ],
+    sections: [
+      {
+        heading: 'Who refurbished computers are good for',
+        paragraphs: [
+          'Refurbished systems work well for home users, students, seniors, and small businesses that need reliable basic computing. They are also a good choice as backup machines or secondary workstations.',
+          'A useful page should explain that the value is in getting the right machine for the job, not in overselling specs the customer will never use.',
+        ],
+      },
+      {
+        heading: 'What setup help should include',
+        paragraphs: [
+          'If a customer chooses a refurbished system, the service should include setup, account login, printer connection, email setup, and file transfer help if needed. That is what makes the replacement actually useful.',
+          'The page should also make it easy to understand the difference between repair and replacement so customers can choose the path that makes the most sense.',
+        ],
+      },
+      {
+        heading: 'Why local refurbished sales can convert well',
+        paragraphs: [
+          'People searching for refurbished computers are often close to making a purchase decision. They are comparing cost, reliability, and convenience. A local page that explains the options clearly can convert well because it answers the practical questions up front.',
+          'This also gives the site another strong route into local search, especially for customers who do not want to overinvest in a new machine for light or moderate use.',
+        ],
+      },
+    ],
+    services: [
+      'Refurbished laptop sales',
+      'Refurbished desktop sales',
+      'Replacement computer guidance',
+      'Setup and account transfer help',
+      'Printer and email reconnection support',
+      'Practical system selection for budget-conscious buyers',
+    ],
+    faq: [
+      {
+        question: 'Do you sell refurbished computers in Brevard County?',
+        answer:
+          'Yes. My Computer Tech can help customers who want a practical refurbished laptop or desktop for home or small business use.',
+      },
+      {
+        question: 'Can you help set up the computer after purchase?',
+        answer:
+          'Yes. Setup, account access, printer connection, and transfer help can be part of the service.',
+      },
+      {
+        question: 'Are refurbished computers good for everyday use?',
+        answer:
+          'Yes, when the device is matched to the customer’s needs. They are often a smart fit for browsing, email, office work, and general use.',
+      },
+      {
+        question: 'Can refurbished systems be used as backup computers?',
+        answer:
+          'Yes. A refurbished desktop or laptop can be a practical backup or secondary machine for home or business use.',
+      },
+    ],
+    cta: 'Request refurbished computer help.',
+  },
 };

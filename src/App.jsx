@@ -17,6 +17,8 @@ import ComputerRepairSatelliteBeachFL from './pages/ComputerRepairSatelliteBeach
 import BusinessITSupportMelbourneFL from './pages/BusinessITSupportMelbourneFL';
 import WiFiTroubleshootingMelbourneFL from './pages/WiFiTroubleshootingMelbourneFL';
 import RemoteComputerSupportFlorida from './pages/RemoteComputerSupportFlorida';
+import Windows11UpgradeHelp from './pages/Windows11UpgradeHelp';
+import RefurbishedComputersBrevardCounty from './pages/RefurbishedComputersBrevardCounty';
 import { businessInfo } from './data/businessInfo';
 import { blogPosts } from './data/blogPosts';
 import { localServicePages } from './data/localServicePages';
@@ -238,6 +240,8 @@ const App = () => {
               <Route path="/business-it-support-melbourne-fl" element={<BusinessITSupportMelbourneFL />} />
               <Route path="/wifi-troubleshooting-melbourne-fl" element={<WiFiTroubleshootingMelbourneFL />} />
               <Route path="/remote-computer-support-florida" element={<RemoteComputerSupportFlorida />} />
+              <Route path="/windows-11-upgrade-help" element={<Windows11UpgradeHelp />} />
+              <Route path="/refurbished-computers-brevard-county" element={<RefurbishedComputersBrevardCounty />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </ErrorBoundary>

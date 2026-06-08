@@ -123,6 +123,18 @@ const localSearchLinks = [
     label: 'Remote support Florida',
     to: '/blog/remote-support-florida-when-to-use-it',
   },
+  {
+    label: 'Home computer repair beachside',
+    to: '/blog/home-computer-repair-beachside-for-seniors',
+  },
+  {
+    label: 'Same-day computer repair beachside',
+    to: '/blog/same-day-computer-repair-beachside',
+  },
+  {
+    label: 'Small business backup Indian Harbour Beach',
+    to: '/blog/small-business-backup-recovery-indian-harbour-beach',
+  },
 ];
 
 const locationLinks = [

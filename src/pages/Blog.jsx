@@ -2,6 +2,16 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaCalendarAlt, FaTag } from 'react-icons/fa';
 import { blogPosts } from '../data/blogPosts';
+import { localServicePages } from '../data/localServicePages';
+
+const topLocalPages = [
+  { label: 'Computer Repair in Indian Harbour Beach FL', to: '/location/indian-harbour-beach-fl' },
+  { label: 'Computer Repair in Melbourne FL', to: localServicePages.melbourne.path },
+  { label: 'Virus Removal in Melbourne FL', to: localServicePages.virusRemovalMelbourne.path },
+  { label: 'Printer Setup in Melbourne FL', to: localServicePages.printerSetupMelbourne.path },
+  { label: 'Wi-Fi Troubleshooting in Melbourne FL', to: localServicePages.wifiMelbourne.path },
+  { label: 'Service Areas', to: '/service-areas' },
+];
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -33,6 +43,34 @@ const Blog = () => {
           Local articles focused on computer repair, virus removal, Wi-Fi setup, printer support,
           and small business IT support with practical recommendations for beachside customers.
         </p>
+      </div>
+    </section>
+
+    <section className="bg-white py-14 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+            Popular Local Pages
+          </p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Quick links into the strongest local service pages
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+            These links give readers a fast path from research articles into the local service pages
+            that match the most common repair searches.
+          </p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {topLocalPages.map((page) => (
+              <Link
+                key={page.label}
+                to={page.to}
+                className="rounded-md border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-cyan-300 hover:bg-cyan-50 hover:text-blue-800"
+              >
+                {page.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
 

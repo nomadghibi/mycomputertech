@@ -159,6 +159,18 @@ const localSearchLinks = [
     label: 'Computer repair shop Indian Harbour Beach',
     to: '/blog/computer-repair-shop-indian-harbour-beach-guide',
   },
+  {
+    label: 'Laptop screen repair Indian Harbour Beach',
+    to: '/blog/laptop-screen-repair-indian-harbour-beach',
+  },
+  {
+    label: 'Blue screen error beachside',
+    to: '/blog/blue-screen-error-beachside-fix',
+  },
+  {
+    label: 'Desktop computer repair Melbourne FL',
+    to: '/blog/desktop-computer-repair-melbourne-fl',
+  },
 ];
 
 const locationLinks = [

@@ -196,6 +196,18 @@ const localSearchLinks = [
     to: '/blog/power-outage-computer-repair-beachside',
   },
   {
+    label: 'Cloud backup beachside',
+    to: '/blog/cloud-backup-beachside',
+  },
+  {
+    label: 'Restore deleted photos beachside',
+    to: '/blog/restore-deleted-photos-beachside',
+  },
+  {
+    label: 'Hard drive clicking beachside',
+    to: '/blog/hard-drive-clicking-repair-beachside',
+  },
+  {
     label: 'Laptop screen repair Indian Harbour Beach',
     to: '/blog/laptop-screen-repair-indian-harbour-beach',
   },

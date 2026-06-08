@@ -531,6 +531,234 @@ export const localServicePages = {
     ],
     cta: 'Request Windows 11 upgrade help.',
   },
+  laptopRepairMelbourne: {
+    path: '/laptop-repair-melbourne-fl',
+    city: 'Melbourne',
+    seoTitle: 'Laptop Repair Melbourne FL | My Computer Tech',
+    description:
+      'Laptop repair in Melbourne FL for charging problems, slow performance, startup issues, and practical local help.',
+    keywords:
+      'laptop repair Melbourne FL, laptop charging repair Melbourne FL, laptop screen issues Melbourne FL, slow laptop repair Melbourne FL, laptop troubleshooting Melbourne FL',
+    h1: 'Laptop Repair in Melbourne FL',
+    eyebrow: 'Melbourne FL',
+    heroSummary:
+      'Repair-first laptop support for Melbourne customers who need clear help with performance, charging, setup, or startup problems.',
+    heroCards: [
+      { label: 'Common issues', value: 'Charging, slowdown, and startup trouble', detail: 'Fix everyday laptop issues with a clear plan.' },
+      { label: 'Best fit', value: 'Home users and small offices', detail: 'Support that makes sense for real-world laptop use.' },
+      { label: 'Typical help', value: 'Troubleshooting and cleanup', detail: 'Software, power, and setup issues all fit here.' },
+    ],
+    intro: [
+      'Laptop repair in Melbourne FL should focus on the issues people actually experience: charging problems, overheating, a slow system, startup failure, or a machine that no longer behaves consistently. My Computer Tech can help customers understand what the laptop needs before they decide whether to repair or replace it.',
+      'The page should keep the language practical and local. Most laptop problems do not need a long lecture; they need a clear diagnosis, a repair-first recommendation, and a straightforward next step.',
+    ],
+    sections: [
+      {
+        heading: 'Common laptop problems',
+        paragraphs: [
+          'Charging concerns, worn batteries, slow performance, hot-running systems, and startup issues are some of the most common laptop problems customers search for. These are exactly the kinds of issues a local repair page should address.',
+          'A good repair page should also explain that some laptop problems are software-related rather than hardware-related, which means the fix may be simpler than expected.',
+        ],
+      },
+      {
+        heading: 'Repair or replace',
+        paragraphs: [
+          'Not every laptop needs to be replaced. In many cases, a tune-up, cleanup, or configuration fix can make the machine usable again. That matters because it gives the customer options and avoids unnecessary spending.',
+          'If a replacement does make more sense, the page should still guide the user through setup, transfer, and printer or email reconnect steps so the transition is smooth.',
+        ],
+      },
+      {
+        heading: 'How local support helps',
+        paragraphs: [
+          'Local support is useful because the technician can look at the laptop, the charger, the setup, and the connected devices together. That often reveals the real cause faster than trying to guess remotely.',
+          'The page should also support search intent for laptop repair Melbourne FL without sounding artificial or overworked.',
+        ],
+      },
+    ],
+    services: [
+      'Laptop charging and power troubleshooting',
+      'Slow laptop cleanup and optimization',
+      'Startup and login troubleshooting',
+      'Laptop setup and email reconnection',
+      'Battery and usability issue assessment',
+      'Support for home and small business laptops',
+    ],
+    faq: [
+      {
+        question: 'Do you offer laptop repair in Melbourne FL?',
+        answer:
+          'Yes. My Computer Tech provides practical laptop repair and troubleshooting for Melbourne customers.',
+      },
+      {
+        question: 'Can you help if the laptop will not charge?',
+        answer:
+          'Yes. Charging issues are a common reason customers request laptop service.',
+      },
+      {
+        question: 'Can you fix slow laptops too?',
+        answer:
+          'Yes. Slow performance is often tied to cleanup, storage, or software issues that can be improved.',
+      },
+      {
+        question: 'Do you help with laptop setup after replacement?',
+        answer:
+          'Yes. Setup, file transfer, email, and printer reconnection are part of the support path when needed.',
+      },
+    ],
+    cta: 'Request laptop repair in Melbourne FL.',
+  },
+  virusRemovalMelbourne: {
+    path: '/virus-removal-melbourne-fl',
+    city: 'Melbourne',
+    seoTitle: 'Virus Removal Melbourne FL | My Computer Tech',
+    description:
+      'Virus removal in Melbourne FL for suspicious popups, malware symptoms, browser hijacks, and practical cleanup.',
+    keywords:
+      'virus removal Melbourne FL, malware removal Melbourne FL, computer virus cleanup Melbourne FL, popup removal Melbourne FL, browser hijack removal Melbourne FL',
+    h1: 'Virus Removal in Melbourne FL',
+    eyebrow: 'Melbourne FL',
+    heroSummary:
+      'Practical malware and virus cleanup for Melbourne customers who want the computer back to normal without unnecessary confusion.',
+    heroCards: [
+      { label: 'Common issues', value: 'Popups, hijacks, and suspicious behavior', detail: 'Identify signs of malware quickly and clearly.' },
+      { label: 'Best fit', value: 'Homes and small offices', detail: 'Cleanup for everyday systems and user accounts.' },
+      { label: 'Typical help', value: 'Scanning, cleanup, and prevention steps', detail: 'Reduce the chance of the problem coming back.' },
+    ],
+    intro: [
+      'Virus removal in Melbourne FL should address the real symptoms customers see: popups, strange browser behavior, slow performance, redirects, or unfamiliar programs showing up on their machine. My Computer Tech can help identify and remove the problem without making the process more complicated than it needs to be.',
+      'A good local malware page should explain the difference between a true infection, a suspicious program, a browser issue, and general system clutter. That keeps expectations realistic and gives the customer a better understanding of what to do next.',
+    ],
+    sections: [
+      {
+        heading: 'Signs the computer may need cleanup',
+        paragraphs: [
+          'Common warning signs include repeated popups, browser redirects, search changes, odd startup behavior, unexplained slowdowns, or programs that seem to appear without being installed on purpose.',
+          'Those symptoms do not always mean one exact problem, so the page should present virus and malware removal as practical cleanup rather than a one-click guarantee.',
+        ],
+      },
+      {
+        heading: 'Cleanup should include prevention',
+        paragraphs: [
+          'Removing the issue is only part of the job. The page should also talk about reducing repeat problems through software cleanup, browser corrections, and safer settings where appropriate.',
+          'That helps the customer see the service as a repair and stabilization process, not just a scan-and-leave visit.',
+        ],
+      },
+      {
+        heading: 'Why local support is useful',
+        paragraphs: [
+          'Local support can verify the symptoms directly and make sure the cleanup actually improved the machine. That matters when a device is acting strangely and the user wants confidence that it is safe to use again.',
+          'This page should support searches like virus removal Melbourne FL and malware removal Melbourne FL without sounding like keyword stuffing.',
+        ],
+      },
+    ],
+    services: [
+      'Virus and malware cleanup',
+      'Suspicious popup and browser hijack removal',
+      'Performance review after cleanup',
+      'Software cleanup and protection guidance',
+      'Support for home and small business systems',
+      'Follow-up recommendations to prevent repeat issues',
+    ],
+    faq: [
+      {
+        question: 'Do you offer virus removal in Melbourne FL?',
+        answer:
+          'Yes. My Computer Tech helps Melbourne customers with virus and malware cleanup.',
+      },
+      {
+        question: 'Can you fix popups and browser hijacks?',
+        answer:
+          'Yes. Those are common malware-related symptoms and are a good fit for cleanup support.',
+      },
+      {
+        question: 'Will virus removal also improve performance?',
+        answer:
+          'Often yes, especially if the system was slowed down by unwanted software or browser issues.',
+      },
+      {
+        question: 'Is this good for small business computers too?',
+        answer:
+          'Yes. Small business systems can benefit from the same practical cleanup and stabilization approach.',
+      },
+    ],
+    cta: 'Request virus removal in Melbourne FL.',
+  },
+  dataRecoveryMelbourne: {
+    path: '/data-recovery-melbourne-fl',
+    city: 'Melbourne',
+    seoTitle: 'Data Recovery Melbourne FL | My Computer Tech',
+    description:
+      'Data recovery in Melbourne FL for deleted files, inaccessible drives, backup issues, and practical file retrieval support.',
+    keywords:
+      'data recovery Melbourne FL, file recovery Melbourne FL, hard drive data recovery Melbourne FL, deleted file recovery Melbourne FL, backup recovery Melbourne FL',
+    h1: 'Data Recovery in Melbourne FL',
+    eyebrow: 'Melbourne FL',
+    heroSummary:
+      'Practical data recovery help for Melbourne customers who need access to files, photos, documents, or backups.',
+    heroCards: [
+      { label: 'Common issues', value: 'Deleted files and inaccessible drives', detail: 'Figure out whether the data is recoverable.' },
+      { label: 'Best fit', value: 'Home and small business users', detail: 'Recovery guidance for important personal or work files.' },
+      { label: 'Typical help', value: 'Assessment and retrieval support', detail: 'Focus on the safest path for the data first.' },
+    ],
+    intro: [
+      'Data recovery in Melbourne FL should be handled carefully because the problem is often urgent and emotional. Customers are usually trying to recover photos, tax files, work documents, or other information they cannot easily replace. My Computer Tech can help assess the situation and guide the next step.',
+      'The page should set realistic expectations. Some files can be recovered through simple methods. Others require more specialized handling. A clear local page should explain the difference without overpromising what cannot be guaranteed.',
+    ],
+    sections: [
+      {
+        heading: 'When data recovery may help',
+        paragraphs: [
+          'Data recovery requests often involve deleted files, a drive that will not open normally, a computer that stopped booting, or a system where the user can see the drive but cannot access the contents.',
+          'A local support page should help the customer understand that the first step is an assessment of what happened and whether the data can be reached safely.',
+        ],
+      },
+      {
+        heading: 'Why careful handling matters',
+        paragraphs: [
+          'Trying random fixes can make data recovery harder. That is why the page should focus on cautious assessment and practical next steps rather than shortcuts.',
+          'If the issue turns out to be hardware failure, the page should make it clear that the next move may require a different repair path or replacement device.',
+        ],
+      },
+      {
+        heading: 'Use cases for home and business',
+        paragraphs: [
+          'Home users often need help with photos, personal files, and documents. Small businesses often need access to records, invoices, or project files. Both groups need the same careful approach.',
+          'The page should support searches like data recovery Melbourne FL and file recovery Melbourne FL while remaining honest about the limits of recovery.',
+        ],
+      },
+    ],
+    services: [
+      'Deleted file recovery assessment',
+      'Inaccessible drive review',
+      'Backup issue troubleshooting',
+      'Photo and document recovery guidance',
+      'Support for home and small business data issues',
+      'Recommendations for safe next steps',
+    ],
+    faq: [
+      {
+        question: 'Do you offer data recovery in Melbourne FL?',
+        answer:
+          'Yes. My Computer Tech can help assess data recovery situations for Melbourne customers.',
+      },
+      {
+        question: 'Can you recover deleted files?',
+        answer:
+          'Sometimes. It depends on what happened to the files and whether the drive can still be accessed safely.',
+      },
+      {
+        question: 'What if the drive will not open?',
+        answer:
+          'That can still be recoverable, but it needs careful evaluation to avoid making the problem worse.',
+      },
+      {
+        question: 'Is this good for business documents too?',
+        answer:
+          'Yes. Both personal and small business files are common reasons customers ask for recovery help.',
+      },
+    ],
+    cta: 'Request data recovery help in Melbourne FL.',
+  },
   refurbishedBrevard: {
     path: '/refurbished-computers-brevard-county',
     city: 'Brevard County',

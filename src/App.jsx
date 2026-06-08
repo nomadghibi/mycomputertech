@@ -27,6 +27,9 @@ import PatrickSpaceForceBaseAreaLocation from './pages/PatrickSpaceForceBaseArea
 import VieraFLLocation from './pages/VieraFLLocation';
 import WestMelbourneFLLocation from './pages/WestMelbourneFLLocation';
 import BusinessITSupportMelbourneFL from './pages/BusinessITSupportMelbourneFL';
+import LaptopRepairMelbourneFL from './pages/LaptopRepairMelbourneFL';
+import VirusRemovalMelbourneFL from './pages/VirusRemovalMelbourneFL';
+import DataRecoveryMelbourneFL from './pages/DataRecoveryMelbourneFL';
 import WiFiTroubleshootingMelbourneFL from './pages/WiFiTroubleshootingMelbourneFL';
 import RemoteComputerSupportFlorida from './pages/RemoteComputerSupportFlorida';
 import Windows11UpgradeHelp from './pages/Windows11UpgradeHelp';
@@ -273,6 +276,9 @@ const App = () => {
               <Route path="/location/cape-canaveral-fl" element={<CapeCanaveralFLLocation />} />
               <Route path="/location/patrick-space-force-base-area" element={<PatrickSpaceForceBaseAreaLocation />} />
               <Route path="/business-it-support-melbourne-fl" element={<BusinessITSupportMelbourneFL />} />
+              <Route path="/laptop-repair-melbourne-fl" element={<LaptopRepairMelbourneFL />} />
+              <Route path="/virus-removal-melbourne-fl" element={<VirusRemovalMelbourneFL />} />
+              <Route path="/data-recovery-melbourne-fl" element={<DataRecoveryMelbourneFL />} />
               <Route path="/wifi-troubleshooting-melbourne-fl" element={<WiFiTroubleshootingMelbourneFL />} />
               <Route path="/remote-computer-support-florida" element={<RemoteComputerSupportFlorida />} />
               <Route path="/windows-11-upgrade-help" element={<Windows11UpgradeHelp />} />

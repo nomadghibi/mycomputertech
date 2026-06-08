@@ -35,6 +35,21 @@ const localPageLinks = [
     title: 'Computer Repair in Palm Bay FL',
     description: 'Repair, cleanup, printer help, Wi-Fi support, and straightforward local service.',
   },
+  {
+    path: localServicePages.laptopRepairMelbourne.path,
+    title: 'Laptop Repair in Melbourne FL',
+    description: 'Charging help, slowdown troubleshooting, startup issues, and practical laptop support.',
+  },
+  {
+    path: localServicePages.virusRemovalMelbourne.path,
+    title: 'Virus Removal in Melbourne FL',
+    description: 'Cleanup for malware symptoms, suspicious popups, browser hijacks, and stability issues.',
+  },
+  {
+    path: localServicePages.dataRecoveryMelbourne.path,
+    title: 'Data Recovery in Melbourne FL',
+    description: 'Assessment and file recovery support for deleted files, drive problems, and backups.',
+  },
 ];
 
 const serviceGroups = [

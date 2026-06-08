@@ -184,6 +184,18 @@ const localSearchLinks = [
     to: '/blog/computer-maintenance-tips-beachside',
   },
   {
+    label: 'Laptop battery issues Indian Harbour Beach',
+    to: '/blog/laptop-battery-issues-indian-harbour-beach',
+  },
+  {
+    label: 'Photo transfer beachside',
+    to: '/blog/photo-transfer-beachside',
+  },
+  {
+    label: 'Power outage computer repair beachside',
+    to: '/blog/power-outage-computer-repair-beachside',
+  },
+  {
     label: 'Laptop screen repair Indian Harbour Beach',
     to: '/blog/laptop-screen-repair-indian-harbour-beach',
   },

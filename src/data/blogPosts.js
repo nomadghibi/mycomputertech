@@ -1080,6 +1080,87 @@ export const blogPosts = [
     ],
   },
   {
+    slug: 'laptop-battery-issues-indian-harbour-beach',
+    title: 'Laptop Battery Issues in Indian Harbour Beach: What to Check',
+    excerpt:
+      'A battery that drains too fast or will not charge can make a laptop hard to trust. Here are the common things to check first.',
+    description:
+      'Need laptop battery help in Indian Harbour Beach? Learn what causes charging and battery issues and when to bring the laptop in.',
+    keywords:
+      'laptop battery issues Indian Harbour Beach, laptop not charging repair, laptop battery issue, laptop repair beachside, computer repair near me',
+    publishedDate: '2026-06-08',
+    category: 'Repair & Cleanup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Check the charger and power path first',
+        body: 'A battery problem is not always the battery itself. Chargers, ports, adapters, and power settings can all affect charging behavior.',
+      },
+      {
+        heading: 'Watch for battery wear symptoms',
+        body: 'If the laptop shuts off early, holds charge poorly, or needs to stay plugged in constantly, the battery may be near the end of its useful life.',
+      },
+      {
+        heading: 'Why local diagnosis helps',
+        body: 'A local technician can test the battery, charger, and power behavior together so the fix is based on the actual device, not a guess.',
+      },
+    ],
+  },
+  {
+    slug: 'photo-transfer-beachside',
+    title: 'Photo Transfer Beachside: Moving Pictures to a New Computer or Backup',
+    excerpt:
+      'Photos are some of the most important files people keep. This guide covers practical ways to move them safely.',
+    description:
+      'Need photo transfer beachside help? Learn how to move pictures to a new computer or backup location without losing them.',
+    keywords:
+      'photo transfer beachside, file transfer beachside, data backup and transfer beachside, move photos to new computer, local computer support near me',
+    publishedDate: '2026-06-08',
+    category: 'Setup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Start with the source device',
+        body: 'If the original computer still works, copy photos from the main folders first and verify that the files actually open after the transfer.',
+      },
+      {
+        heading: 'Use a second copy when possible',
+        body: 'A backup copy on cloud storage or an external drive adds a layer of protection in case one transfer path fails.',
+      },
+      {
+        heading: 'Local help reduces mistakes',
+        body: 'Photo transfer is simple in concept but easy to get wrong if the files are scattered across multiple folders or devices. Local help can make the process safer.',
+      },
+    ],
+  },
+  {
+    slug: 'power-outage-computer-repair-beachside',
+    title: 'Power Outage Computer Repair Beachside: What to Check After the Lights Come Back',
+    excerpt:
+      'A power outage can leave a computer, router, or printer acting strangely. This guide explains the first checks to make.',
+    description:
+      'Need power outage computer repair beachside? Learn what can go wrong after a blackout and when local support helps.',
+    keywords:
+      'power outage computer repair beachside, router after power outage, printer not working after outage, computer repair near me, local computer repair',
+    publishedDate: '2026-06-08',
+    category: 'Repair & Cleanup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Restart devices in the right order',
+        body: 'After a power outage, routers, printers, and computers may need to be restarted in sequence to reconnect properly.',
+      },
+      {
+        heading: 'Watch for damaged power hardware',
+        body: 'A surge can affect chargers, power strips, or the device itself. If something no longer powers on, it may need a closer look.',
+      },
+      {
+        heading: 'When local help is the smart move',
+        body: 'If multiple devices stopped working after the outage, onsite troubleshooting can save time and uncover the actual issue faster.',
+      },
+    ],
+  },
+  {
     slug: 'onsite-computer-repair-beachside-vs-remote-support',
     title: 'Onsite Computer Repair Beachside vs Remote Support: Which Is Better?',
     excerpt:

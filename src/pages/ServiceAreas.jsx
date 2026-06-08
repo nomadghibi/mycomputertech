@@ -60,6 +60,10 @@ const localSearchLinks = [
     to: '/blog/my-printer-not-working-beachside-help',
   },
   {
+    label: 'Printer not working in Melbourne FL',
+    to: '/blog/printer-not-working-melbourne-fl',
+  },
+  {
     label: 'Senior computer help Indian Harbour Beach',
     to: '/services',
   },
@@ -74,6 +78,14 @@ const localSearchLinks = [
   {
     label: 'Same day computer repair beachside',
     to: '/contact',
+  },
+  {
+    label: 'Slow computer cleanup in Melbourne FL',
+    to: '/blog/slow-computer-cleanup-melbourne-fl',
+  },
+  {
+    label: 'Data recovery in Melbourne FL',
+    to: '/blog/data-recovery-melbourne-fl',
   },
 ];
 

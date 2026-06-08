@@ -147,6 +147,18 @@ const localSearchLinks = [
     label: 'Backup recovery after hard drive failure',
     to: '/blog/backup-recovery-after-hard-drive-failure',
   },
+  {
+    label: 'Printer offline fix beachside',
+    to: '/blog/printer-offline-fix-beachside',
+  },
+  {
+    label: 'Best computer repair beachside',
+    to: '/blog/best-computer-repair-beachside',
+  },
+  {
+    label: 'Computer repair shop Indian Harbour Beach',
+    to: '/blog/computer-repair-shop-indian-harbour-beach-guide',
+  },
 ];
 
 const locationLinks = [

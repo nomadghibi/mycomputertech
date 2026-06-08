@@ -82,6 +82,11 @@ const locationLinks = [
   { label: 'Melbourne computer repair', to: '/location/melbourne-fl' },
   { label: 'Palm Bay computer repair', to: '/location/palm-bay-fl' },
   { label: 'Satellite Beach computer repair', to: '/location/satellite-beach-fl' },
+  { label: 'Indialantic computer repair', to: '/location/indialantic-fl' },
+  { label: 'Melbourne Beach computer repair', to: '/location/melbourne-beach-fl' },
+  { label: 'West Melbourne computer repair', to: '/location/west-melbourne-fl' },
+  { label: 'Rockledge computer repair', to: '/location/rockledge-fl' },
+  { label: 'Viera computer repair', to: '/location/viera-fl' },
 ];
 
 const ServiceAreas = () => (

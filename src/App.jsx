@@ -15,9 +15,14 @@ import ComputerRepairMelbourneFL from './pages/ComputerRepairMelbourneFL';
 import ComputerRepairPalmBayFL from './pages/ComputerRepairPalmBayFL';
 import ComputerRepairSatelliteBeachFL from './pages/ComputerRepairSatelliteBeachFL';
 import IndianHarbourBeachFL from './pages/IndianHarbourBeachFL';
+import IndialanticFLLocation from './pages/IndialanticFLLocation';
 import MelbourneFLLocation from './pages/MelbourneFLLocation';
+import MelbourneBeachFLLocation from './pages/MelbourneBeachFLLocation';
 import PalmBayFLLocation from './pages/PalmBayFLLocation';
+import RockledgeFLLocation from './pages/RockledgeFLLocation';
 import SatelliteBeachFLLocation from './pages/SatelliteBeachFLLocation';
+import VieraFLLocation from './pages/VieraFLLocation';
+import WestMelbourneFLLocation from './pages/WestMelbourneFLLocation';
 import BusinessITSupportMelbourneFL from './pages/BusinessITSupportMelbourneFL';
 import WiFiTroubleshootingMelbourneFL from './pages/WiFiTroubleshootingMelbourneFL';
 import RemoteComputerSupportFlorida from './pages/RemoteComputerSupportFlorida';
@@ -256,6 +261,11 @@ const App = () => {
               <Route path="/location/melbourne-fl" element={<MelbourneFLLocation />} />
               <Route path="/location/palm-bay-fl" element={<PalmBayFLLocation />} />
               <Route path="/location/satellite-beach-fl" element={<SatelliteBeachFLLocation />} />
+              <Route path="/location/indialantic-fl" element={<IndialanticFLLocation />} />
+              <Route path="/location/melbourne-beach-fl" element={<MelbourneBeachFLLocation />} />
+              <Route path="/location/west-melbourne-fl" element={<WestMelbourneFLLocation />} />
+              <Route path="/location/rockledge-fl" element={<RockledgeFLLocation />} />
+              <Route path="/location/viera-fl" element={<VieraFLLocation />} />
               <Route path="/business-it-support-melbourne-fl" element={<BusinessITSupportMelbourneFL />} />
               <Route path="/wifi-troubleshooting-melbourne-fl" element={<WiFiTroubleshootingMelbourneFL />} />
               <Route path="/remote-computer-support-florida" element={<RemoteComputerSupportFlorida />} />

@@ -99,6 +99,18 @@ const localSearchLinks = [
     label: 'Wi-Fi keeps disconnecting in Melbourne FL',
     to: '/blog/wifi-keeps-disconnecting-melbourne-fl',
   },
+  {
+    label: 'Laptop overheating in Indian Harbour Beach',
+    to: '/blog/laptop-overheating-indian-harbour-beach',
+  },
+  {
+    label: 'Computer won’t turn on in Indian Harbour Beach',
+    to: '/blog/computer-wont-turn-on-indian-harbour-beach',
+  },
+  {
+    label: 'Microsoft 365 and email help in Melbourne FL',
+    to: '/blog/microsoft-365-email-help-melbourne-fl',
+  },
 ];
 
 const locationLinks = [

@@ -98,6 +98,16 @@ const BlogPost = () => {
     about: businessInfo.primaryArea,
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: canonicalUrl },
+    ],
+  };
+
   const relatedPosts = blogPosts
     .filter((entry) => entry.slug !== post.slug)
     .sort((a, b) => {
@@ -130,6 +140,7 @@ const BlogPost = () => {
         <meta name="twitter:image" content={ogImageUrl} />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <section className="bg-white py-14 sm:py-16">
@@ -138,6 +149,13 @@ const BlogPost = () => {
             <FaArrowLeft className="h-3 w-3" />
             Back to blog
           </Link>
+          <nav aria-label="Breadcrumb" className="mt-4 flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+            <Link to="/" className="transition hover:text-blue-800">Home</Link>
+            <span>/</span>
+            <Link to="/blog" className="transition hover:text-blue-800">Blog</Link>
+            <span>/</span>
+            <span className="text-slate-700">{post.title}</span>
+          </nav>
           <div className="mt-5 flex flex-wrap items-center gap-3 text-xs font-semibold text-slate-500">
             <span className="inline-flex items-center gap-2">
               <FaTag className="h-3 w-3 text-cyan-700" />

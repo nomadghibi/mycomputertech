@@ -208,6 +208,18 @@ const localSearchLinks = [
     to: '/blog/hard-drive-clicking-repair-beachside',
   },
   {
+    label: 'Computer keeps freezing beachside',
+    to: '/blog/computer-keeps-freezing-beachside',
+  },
+  {
+    label: 'Printer scanner not working beachside',
+    to: '/blog/printer-scanner-not-working-beachside',
+  },
+  {
+    label: 'Replace or repair a computer beachside',
+    to: '/blog/replace-or-repair-computer-beachside',
+  },
+  {
     label: 'Laptop screen repair Indian Harbour Beach',
     to: '/blog/laptop-screen-repair-indian-harbour-beach',
   },

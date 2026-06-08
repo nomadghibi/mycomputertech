@@ -1242,6 +1242,87 @@ export const blogPosts = [
     ],
   },
   {
+    slug: 'computer-keeps-freezing-beachside',
+    title: 'Computer Keeps Freezing Beachside: Common Causes and Fixes',
+    excerpt:
+      'If your computer keeps freezing, the issue could be storage, memory, software, or malware. Here is how to narrow it down.',
+    description:
+      'Need computer keeps freezing beachside help? Learn the common causes of freezes and when a repair-first approach makes sense.',
+    keywords:
+      'computer keeps freezing, slow computer repair beachside, computer repair near me, computer cleanup, beachside computer repair',
+    publishedDate: '2026-06-08',
+    category: 'Repair & Cleanup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Look at storage and memory first',
+        body: 'A computer that freezes often has a storage issue, not enough memory, or background tasks that are using too many resources.',
+      },
+      {
+        heading: 'Check for software and malware symptoms',
+        body: 'Freezing can also be caused by updates, corrupt software, or unwanted programs that need cleanup.',
+      },
+      {
+        heading: 'Why a local diagnosis helps',
+        body: 'A local technician can watch the problem happen, test the setup, and identify whether cleanup or repair is the right next step.',
+      },
+    ],
+  },
+  {
+    slug: 'printer-scanner-not-working-beachside',
+    title: 'Printer Scanner Not Working Beachside: What to Check First',
+    excerpt:
+      'A printer may print but fail to scan, or the scanner may not appear at all. This guide covers the most common causes.',
+    description:
+      'Need printer scanner not working beachside help? Learn what stops scan-to-computer or scan-to-email features from working.',
+    keywords:
+      'printer scanner not working beachside, scanning to email, scanner setup beachside, printer setup beachside, printer not working beachside',
+    publishedDate: '2026-06-08',
+    category: 'Office Setup',
+    readTime: '5 min read',
+    content: [
+      {
+        heading: 'Printing and scanning can fail for different reasons',
+        body: 'A printer may still print correctly even when the scanner portion is not installed or configured properly.',
+      },
+      {
+        heading: 'Check drivers, software, and destinations',
+        body: 'Scan workflows often depend on the correct software, the right driver, and a destination folder or email address that is configured correctly.',
+      },
+      {
+        heading: 'Local help can test the full workflow',
+        body: 'A local visit can verify the printer, scanner, network, and destination settings together to get the full process working again.',
+      },
+    ],
+  },
+  {
+    slug: 'replace-or-repair-computer-beachside',
+    title: 'Replace or Repair a Computer Beachside: How to Decide',
+    excerpt:
+      'Sometimes a repair is the smart move and sometimes replacement is better. This guide explains how to think it through.',
+    description:
+      'Need to decide whether to replace or repair a computer beachside? Learn the practical factors that usually matter most.',
+    keywords:
+      'replace or repair computer beachside, computer repair near me, slow computer repair, refurbished computers Brevard County, local computer repair',
+    publishedDate: '2026-06-08',
+    category: 'Local Service',
+    readTime: '6 min read',
+    content: [
+      {
+        heading: 'Age and condition matter',
+        body: 'Older systems with repeated problems may cost more to fix than they are worth, while newer systems often still have useful life left.',
+      },
+      {
+        heading: 'Repairs are best when the issue is isolated',
+        body: 'If the problem is a single part, a setup issue, or software clutter, repair is often the more practical move.',
+      },
+      {
+        heading: 'Replacement should still come with setup help',
+        body: 'If a replacement is the better choice, setup, transfer, and printer or email reconnection still need to be handled so the new machine is usable right away.',
+      },
+    ],
+  },
+  {
     slug: 'onsite-computer-repair-beachside-vs-remote-support',
     title: 'Onsite Computer Repair Beachside vs Remote Support: Which Is Better?',
     excerpt:

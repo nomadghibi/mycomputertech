@@ -1,0 +1,3 @@
+Reference note:
+- All proposed service and location page titles in `metadata.csv` are designed to stay under 60 characters.
+- Search volumes are directional assumptions and should be validated in Ahrefs or SEMrush before final publishing.

@@ -227,4 +227,232 @@ export const localServicePages = {
     ],
     cta: 'Request computer repair in Palm Bay FL.',
   },
+  businessITMelbourne: {
+    path: '/business-it-support-melbourne-fl',
+    city: 'Melbourne',
+    seoTitle: 'Business IT Support Melbourne FL | My Computer Tech',
+    description:
+      'Business IT support in Melbourne FL for office computers, printers, email, Wi-Fi, and practical small business help.',
+    keywords:
+      'business IT support Melbourne FL, small business IT support Melbourne FL, office computer support Melbourne FL, printer support Melbourne FL, email help Melbourne FL',
+    h1: 'Business IT Support in Melbourne FL',
+    eyebrow: 'Melbourne FL',
+    heroSummary:
+      'Practical business IT support for Melbourne offices that need dependable help with computers, printers, email, and Wi-Fi.',
+    heroCards: [
+      { label: 'Common issues', value: 'Downtime and daily workflow problems', detail: 'Keep office systems moving without needless complexity.' },
+      { label: 'Best fit', value: 'Small offices and local teams', detail: 'Support for everyday business systems, not enterprise overhead.' },
+      { label: 'Typical help', value: 'Computers, printers, email, and network support', detail: 'Handle the tools staff use every day.' },
+    ],
+    intro: [
+      'Business IT support in Melbourne FL should focus on uptime, clarity, and practical problem solving. Most small businesses do not need a large managed services contract to fix a printer that stopped working, an email account that will not sync, or a workstation that is running too slowly. They need a local technician who can step in, understand the issue, and keep work moving.',
+      'My Computer Tech is positioned to help Melbourne businesses with the day-to-day technology problems that interrupt service and create frustration. That includes office computer repair, printer setup, Wi-Fi troubleshooting, email issues, and support for Microsoft 365 or similar cloud services when something stops behaving the way it should.',
+    ],
+    sections: [
+      {
+        heading: 'Support that keeps the office moving',
+        paragraphs: [
+          'Business support should be practical. If a workstation is slow, a printer is offline, or an email account is locked out, the fix should be direct and well explained. Most teams do not want a long report; they want the problem reduced so they can continue serving customers.',
+          'Many small offices rely on a few devices doing a lot of work. That makes printer reliability, Wi-Fi stability, backups, and account access more important than fancy features. A good local IT support page should reflect those priorities clearly.',
+        ],
+      },
+      {
+        heading: 'Common Melbourne business support requests',
+        paragraphs: [
+          'Typical requests include printer setup, shared Wi-Fi problems, email configuration, data transfer to a replacement computer, and help when a laptop or desktop starts acting unpredictably. These are the issues that cause the most downtime in small offices.',
+          'The support model should be flexible. Some problems are best handled onsite when multiple devices and users are involved. Others can be solved remotely if the issue is software-based. Either way, the goal is the same: restore reliable workflow with minimal disruption.',
+        ],
+      },
+      {
+        heading: 'Why local businesses need practical support',
+        paragraphs: [
+          'Small businesses benefit from having a contact who understands the local setup and can explain the next step without pushing unnecessary replacement hardware. Repair, cleanup, and configuration changes can often solve the real issue faster than buying new equipment.',
+          'When replacement is required, the support should continue through setup, file transfer, printer configuration, and account access. That keeps the transition smooth and reduces the chance of lost work or recurring setup problems.',
+        ],
+      },
+    ],
+    services: [
+      'Office computer repair for desktops and laptops',
+      'Printer setup and troubleshooting for business devices',
+      'Email and Microsoft 365 help for staff accounts',
+      'Wi-Fi and network setup for offices and work areas',
+      'Remote support for software and login issues',
+      'Backup and data transfer support for replacements',
+    ],
+    faq: [
+      {
+        question: 'Do you provide business IT support in Melbourne FL?',
+        answer:
+          'Yes. My Computer Tech helps Melbourne small businesses with practical IT support for computers, printers, email, and Wi-Fi issues.',
+      },
+      {
+        question: 'Can you help if the office printer stops working?',
+        answer:
+          'Yes. Printer setup and printer troubleshooting are common business support requests and can often be resolved without replacing the device.',
+      },
+      {
+        question: 'Do you offer help with Microsoft 365 and email?',
+        answer:
+          'Yes. Email setup, login problems, Outlook issues, and Microsoft 365 troubleshooting are all part of business support when needed.',
+      },
+      {
+        question: 'Can you help remotely if the issue is software-based?',
+        answer:
+          'Yes. Remote support is available for many software, account, and setup problems when onsite service is not required.',
+      },
+    ],
+    cta: 'Request business IT support in Melbourne FL.',
+  },
+  wifiMelbourne: {
+    path: '/wifi-troubleshooting-melbourne-fl',
+    city: 'Melbourne',
+    seoTitle: 'WiFi Troubleshooting Melbourne FL | My Computer Tech',
+    description:
+      'WiFi troubleshooting in Melbourne FL for weak signal, dropped connections, router setup, and home or office network issues.',
+    keywords:
+      'WiFi troubleshooting Melbourne FL, WiFi setup Melbourne FL, weak WiFi signal Melbourne FL, router setup Melbourne FL, network repair Melbourne FL',
+    h1: 'WiFi Troubleshooting in Melbourne FL',
+    eyebrow: 'Melbourne FL',
+    heroSummary:
+      'Practical Wi-Fi troubleshooting for Melbourne homes and small offices dealing with weak signal, disconnects, or setup problems.',
+    heroCards: [
+      { label: 'Common issues', value: 'Weak signal and disconnects', detail: 'Find the real cause instead of guessing at random settings.' },
+      { label: 'Best fit', value: 'Homes and home offices', detail: 'Support for routers, printers, and connected devices.' },
+      { label: 'Typical help', value: 'Router setup and network cleanup', detail: 'Stabilize the network and improve usable coverage.' },
+    ],
+    intro: [
+      'Wi-Fi troubleshooting in Melbourne FL should start with the connection problem the customer actually sees. Maybe the internet drops in one room, the printer stops connecting, or a laptop keeps disconnecting even though the router is on. Those are common local support calls, and they usually need more than a quick reboot.',
+      'My Computer Tech can help Melbourne customers identify whether the issue is router placement, weak signal, device conflicts, an outdated network setting, or equipment that is no longer keeping up. That makes the service more useful than generic advice found online.',
+    ],
+    sections: [
+      {
+        heading: 'Weak signal, disconnects, and setup issues',
+        paragraphs: [
+          'The most common Wi-Fi complaints are weak coverage, unstable connections, and devices that do not reconnect after a power outage or router change. These issues can affect computers, printers, phones, and smart devices at the same time.',
+          'A local troubleshooting visit is useful because it checks the whole setup rather than just one device. That helps find dead zones, misconfigured routers, duplicate network names, and older equipment that should be adjusted or replaced.',
+        ],
+      },
+      {
+        heading: 'Why Wi-Fi problems often look like computer problems',
+        paragraphs: [
+          'When the network drops, the computer can seem broken even if the machine itself is fine. Email stops syncing, printers go offline, cloud apps fail to load, and users assume the PC is at fault. Good troubleshooting separates those issues quickly.',
+          'That distinction matters for SEO too because many customers search with problem terms rather than technical terms. A page targeting WiFi troubleshooting Melbourne FL should answer those real questions directly and encourage the user to request help before the issue spreads.',
+        ],
+      },
+      {
+        heading: 'What a practical fix should include',
+        paragraphs: [
+          'Practical help should cover router placement, signal strength, network naming, reconnect behavior, printer stability, and whether the equipment is still a good fit for the home or office. If a better setup is needed, the next recommendation should be easy to understand.',
+          'If replacement hardware is the answer, the support should continue through setup and testing so the customer does not end up with the same problem after the new equipment is installed.',
+        ],
+      },
+    ],
+    services: [
+      'Wi-Fi troubleshooting for weak signal and disconnects',
+      'Router setup and network configuration',
+      'Printer and device reconnect support',
+      'Home office network cleanup',
+      'Remote support for software-related network symptoms',
+      'Onsite help when multiple devices are affected',
+    ],
+    faq: [
+      {
+        question: 'Do you offer Wi-Fi troubleshooting in Melbourne FL?',
+        answer:
+          'Yes. My Computer Tech helps Melbourne customers with weak signal, disconnects, and other network problems that affect home and office use.',
+      },
+      {
+        question: 'Can you help if my printer keeps going offline?',
+        answer:
+          'Yes. Printer connectivity is often tied to the Wi-Fi setup, so troubleshooting usually includes the printer and the network together.',
+      },
+      {
+        question: 'Is router replacement always needed?',
+        answer:
+          'No. Many Wi-Fi issues can be improved with better placement, configuration, or cleanup before replacement is considered.',
+      },
+      {
+        question: 'Can you help with home office networks too?',
+        answer:
+          'Yes. Home offices are a common fit for this kind of support because printers, laptops, and email all depend on a stable connection.',
+      },
+    ],
+    cta: 'Request WiFi troubleshooting in Melbourne FL.',
+  },
+  remoteSupportFlorida: {
+    path: '/remote-computer-support-florida',
+    city: 'Florida',
+    seoTitle: 'Remote Computer Support Florida | My Computer Tech',
+    description:
+      'Remote computer support across Florida for software issues, email help, setup tasks, and guided troubleshooting.',
+    keywords:
+      'remote computer support Florida, remote tech support Florida, computer help online Florida, email support remote, software troubleshooting remote',
+    h1: 'Remote Computer Support in Florida',
+    eyebrow: 'Florida',
+    heroSummary:
+      'Remote support for software, email, account, and setup issues when an onsite visit is not necessary.',
+    heroCards: [
+      { label: 'Common issues', value: 'Software, email, and account problems', detail: 'Fix issues that can be handled without leaving the desk.' },
+      { label: 'Best fit', value: 'Users anywhere in Florida', detail: 'Useful when the problem is not hardware-focused.' },
+      { label: 'Typical help', value: 'Guided troubleshooting and setup', detail: 'Clear support with a practical next step.' },
+    ],
+    intro: [
+      'Remote computer support in Florida works best when the issue is software-based, account-based, or tied to a setup problem that can be solved over a secure remote session. That includes email issues, login problems, application errors, and guided cleanup steps that do not require physical hardware work.',
+      'My Computer Tech can use this page to explain what remote support can handle, what it cannot handle, and when onsite service is still the better choice. That keeps expectations clear and helps customers choose the right service from the start.',
+    ],
+    sections: [
+      {
+        heading: 'What remote support is good for',
+        paragraphs: [
+          'Remote support is a strong option for email configuration, account access, software glitches, printer setup issues, browser problems, and many types of cleanup or troubleshooting work. If the device can stay online, a technician can often guide the fix directly.',
+          'It is a useful alternative for customers who need help quickly or do not need a hardware inspection. It also gives Florida customers a way to get support without waiting for an onsite appointment when the issue is straightforward.',
+        ],
+      },
+      {
+        heading: 'What remote support cannot do',
+        paragraphs: [
+          'Remote support is not the right fit for broken hardware, damaged ports, failed screens, or hardware-level data recovery. Those problems need physical access to the device or a different service path altogether.',
+          'That line matters because the page should help customers choose wisely. A good remote support page explains the limits clearly so people know when a remote session is efficient and when onsite repair is necessary.',
+        ],
+      },
+      {
+        heading: 'How to use remote support well',
+        paragraphs: [
+          'Customers should be prepared to describe the issue clearly and stay near the computer while the remote session is active. That helps the technician confirm the problem, test the fix, and make sure the result is stable before the session ends.',
+          'For SEO, this page supports broader searches like remote computer support Florida and remote tech support Florida, while also helping people decide whether to use remote or onsite service for the issue they are facing.',
+        ],
+      },
+    ],
+    services: [
+      'Remote help for email and account issues',
+      'Software troubleshooting and cleanup',
+      'Browser and application support',
+      'Printer and setup guidance',
+      'General guided troubleshooting',
+      'Escalation to onsite service when needed',
+    ],
+    faq: [
+      {
+        question: 'Do you offer remote computer support across Florida?',
+        answer:
+          'Yes. My Computer Tech can provide remote support for many software, email, and account issues anywhere in Florida when the problem is a good fit.',
+      },
+      {
+        question: 'Can remote support fix hardware problems?',
+        answer:
+          'No. Hardware issues usually require onsite service or a different repair process because the device needs physical access.',
+      },
+      {
+        question: 'Is remote support good for email and software issues?',
+        answer:
+          'Yes. Those are some of the best use cases for remote support because the technician can often diagnose and fix them directly.',
+      },
+      {
+        question: 'When should I choose onsite service instead?',
+        answer:
+          'Choose onsite service when the issue involves hardware, multiple devices, network equipment, or anything that cannot be handled through a remote session.',
+      },
+    ],
+    cta: 'Request remote computer support in Florida.',
+  },
 };

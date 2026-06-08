@@ -14,6 +14,9 @@ import BlogPost from './pages/BlogPost';
 import ComputerRepairMelbourneFL from './pages/ComputerRepairMelbourneFL';
 import ComputerRepairPalmBayFL from './pages/ComputerRepairPalmBayFL';
 import ComputerRepairSatelliteBeachFL from './pages/ComputerRepairSatelliteBeachFL';
+import BusinessITSupportMelbourneFL from './pages/BusinessITSupportMelbourneFL';
+import WiFiTroubleshootingMelbourneFL from './pages/WiFiTroubleshootingMelbourneFL';
+import RemoteComputerSupportFlorida from './pages/RemoteComputerSupportFlorida';
 import { businessInfo } from './data/businessInfo';
 import { blogPosts } from './data/blogPosts';
 import { localServicePages } from './data/localServicePages';
@@ -232,6 +235,9 @@ const App = () => {
               <Route path="/computer-repair-melbourne-fl" element={<ComputerRepairMelbourneFL />} />
               <Route path="/computer-repair-satellite-beach-fl" element={<ComputerRepairSatelliteBeachFL />} />
               <Route path="/computer-repair-palm-bay-fl" element={<ComputerRepairPalmBayFL />} />
+              <Route path="/business-it-support-melbourne-fl" element={<BusinessITSupportMelbourneFL />} />
+              <Route path="/wifi-troubleshooting-melbourne-fl" element={<WiFiTroubleshootingMelbourneFL />} />
+              <Route path="/remote-computer-support-florida" element={<RemoteComputerSupportFlorida />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </ErrorBoundary>

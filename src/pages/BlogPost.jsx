@@ -3,6 +3,58 @@ import { Link, useParams } from 'react-router-dom';
 import { FaArrowLeft, FaCalendarAlt, FaTag } from 'react-icons/fa';
 import { blogPosts } from '../data/blogPosts';
 import { businessInfo } from '../data/businessInfo';
+import { localServicePages } from '../data/localServicePages';
+
+const relatedServiceLinksByCategory = {
+  'Repair & Cleanup': [
+    { label: 'Slow computer cleanup in Melbourne FL', to: localServicePages.slowComputerMelbourne.path },
+    { label: 'Laptop repair in Melbourne FL', to: localServicePages.laptopRepairMelbourne.path },
+    { label: 'Virus removal in Melbourne FL', to: localServicePages.virusRemovalMelbourne.path },
+    { label: 'Computer repair in Melbourne FL', to: localServicePages.melbourne.path },
+  ],
+  'Office Setup': [
+    { label: 'Printer setup in Melbourne FL', to: localServicePages.printerSetupMelbourne.path },
+    { label: 'Wi-Fi troubleshooting in Melbourne FL', to: localServicePages.wifiMelbourne.path },
+    { label: 'Scanner setup beachside', to: '/blog/scanner-setup-beachside' },
+    { label: 'Email and Microsoft 365 help', to: '/blog/microsoft-365-email-help-melbourne-fl' },
+  ],
+  'Business IT': [
+    { label: 'Business IT support in Melbourne FL', to: localServicePages.businessITMelbourne.path },
+    { label: 'Remote computer support in Florida', to: localServicePages.remoteSupportFlorida.path },
+    { label: 'Small business IT support in Indian Harbour Beach', to: '/blog/small-business-it-support-indian-harbour-beach' },
+    { label: 'Office computer repair beachside', to: '/blog/office-computer-repair-beachside' },
+  ],
+  'Home Network': [
+    { label: 'Wi-Fi troubleshooting in Melbourne FL', to: localServicePages.wifiMelbourne.path },
+    { label: 'Wi-Fi setup in Indian Harbour Beach', to: '/blog/wifi-setup-indian-harbour-beach-homes' },
+    { label: 'Service areas', to: '/service-areas' },
+    { label: 'Contact My Computer Tech', to: '/contact' },
+  ],
+  Recovery: [
+    { label: 'Data recovery in Melbourne FL', to: localServicePages.dataRecoveryMelbourne.path },
+    { label: 'Data backup beachside', to: '/blog/data-backup-beachside-how-to-avoid-losing-files' },
+    { label: 'Backup recovery after hard drive failure', to: '/blog/backup-recovery-after-hard-drive-failure' },
+    { label: 'Refurbished computers in Brevard County', to: localServicePages.refurbishedBrevard.path },
+  ],
+  Security: [
+    { label: 'Virus removal in Melbourne FL', to: localServicePages.virusRemovalMelbourne.path },
+    { label: 'Browser hijack removal beachside', to: '/blog/browser-hijack-removal-beachside' },
+    { label: 'Virus symptoms beachside', to: '/blog/virus-symptoms-beachside-what-to-watch-for' },
+    { label: 'Contact My Computer Tech', to: '/contact' },
+  ],
+  Setup: [
+    { label: 'Windows 11 upgrade help', to: localServicePages.windows11Upgrade.path },
+    { label: 'Tablet setup beachside', to: '/blog/tablet-setup-beachside' },
+    { label: 'New computer setup and transfer help', to: '/blog/new-computer-setup-refurbished-laptops-indian-harbour-beach' },
+    { label: 'Printer setup in Melbourne FL', to: localServicePages.printerSetupMelbourne.path },
+  ],
+  'Support Options': [
+    { label: 'Remote computer support in Florida', to: localServicePages.remoteSupportFlorida.path },
+    { label: 'Same-day computer repair beachside', to: '/blog/same-day-computer-repair-beachside' },
+    { label: 'Onsite computer repair beachside', to: '/blog/onsite-computer-repair-beachside-vs-remote-support' },
+    { label: 'Service areas', to: '/service-areas' },
+  ],
+};
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -54,6 +106,11 @@ const BlogPost = () => {
       return a.title.localeCompare(b.title);
     })
     .slice(0, 3);
+  const relatedServices = relatedServiceLinksByCategory[post.category] || [
+    { label: 'Computer repair services', to: '/services' },
+    { label: 'Service areas', to: '/service-areas' },
+    { label: 'Contact My Computer Tech', to: '/contact' },
+  ];
 
   return (
     <>
@@ -123,6 +180,24 @@ const BlogPost = () => {
               >
                 Request Service
               </Link>
+            </div>
+          </section>
+
+          <section className="mt-10">
+            <h2 className="text-2xl font-bold text-slate-950">Related local services</h2>
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              {relatedServices.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition hover:border-cyan-300 hover:bg-cyan-50"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-cyan-700">
+                    Local service
+                  </p>
+                  <h3 className="mt-2 text-base font-bold text-slate-950">{item.label}</h3>
+                </Link>
+              ))}
             </div>
           </section>
 

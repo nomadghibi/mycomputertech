@@ -111,6 +111,18 @@ const localSearchLinks = [
     label: 'Microsoft 365 and email help in Melbourne FL',
     to: '/blog/microsoft-365-email-help-melbourne-fl',
   },
+  {
+    label: 'Data backup beachside',
+    to: '/blog/data-backup-beachside-how-to-avoid-losing-files',
+  },
+  {
+    label: 'Virus symptoms beachside',
+    to: '/blog/virus-symptoms-beachside-what-to-watch-for',
+  },
+  {
+    label: 'Remote support Florida',
+    to: '/blog/remote-support-florida-when-to-use-it',
+  },
 ];
 
 const locationLinks = [

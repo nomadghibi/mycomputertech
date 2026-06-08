@@ -32,6 +32,16 @@ const LocalLocationPage = ({ page }) => {
     })),
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: businessInfo.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Service Areas', item: `${businessInfo.siteUrl}/service-areas` },
+      { '@type': 'ListItem', position: 3, name: page.h1, item: `${businessInfo.siteUrl}${page.path}` },
+    ],
+  };
+
   return (
     <>
       <Helmet>
@@ -41,6 +51,7 @@ const LocalLocationPage = ({ page }) => {
         <link rel="canonical" href={`${businessInfo.siteUrl}${page.path}`} />
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <section className="relative isolate overflow-hidden bg-slate-950 py-12 text-white sm:py-20">
@@ -51,6 +62,13 @@ const LocalLocationPage = ({ page }) => {
             <p className="inline-flex rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-100">
               {page.eyebrow}
             </p>
+            <nav aria-label="Breadcrumb" className="mt-4 flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-100/80">
+              <Link to="/" className="transition hover:text-white">Home</Link>
+              <span>/</span>
+              <Link to="/service-areas" className="transition hover:text-white">Service Areas</Link>
+              <span>/</span>
+              <span className="text-white">{page.h1}</span>
+            </nav>
             <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
               {page.h1}
             </h1>
@@ -173,4 +191,3 @@ const LocalLocationPage = ({ page }) => {
 };
 
 export default LocalLocationPage;
-

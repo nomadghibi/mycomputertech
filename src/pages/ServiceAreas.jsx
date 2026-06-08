@@ -77,6 +77,13 @@ const localSearchLinks = [
   },
 ];
 
+const locationLinks = [
+  { label: 'Indian Harbour Beach computer repair', to: '/location/indian-harbour-beach-fl' },
+  { label: 'Melbourne computer repair', to: '/location/melbourne-fl' },
+  { label: 'Palm Bay computer repair', to: '/location/palm-bay-fl' },
+  { label: 'Satellite Beach computer repair', to: '/location/satellite-beach-fl' },
+];
+
 const ServiceAreas = () => (
   <>
     <Helmet>
@@ -229,6 +236,35 @@ const ServiceAreas = () => (
                 key={item.label}
                 to={item.to}
                 className="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-cyan-300 hover:bg-cyan-50"
+              >
+                <FaChevronRight className="h-3 w-3 text-cyan-700" />
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-slate-50 py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+            City Pages
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Dedicated local pages for core service cities
+          </h2>
+          <p className="mt-4 text-lg leading-8 text-slate-600">
+            These pages help customers find the right local support faster and give search engines
+            a clearer view of the primary service cities around Indian Harbour Beach.
+          </p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {locationLinks.map((item) => (
+              <Link
+                key={item.label}
+                to={item.to}
+                className="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-cyan-300 hover:bg-cyan-50"
               >
                 <FaChevronRight className="h-3 w-3 text-cyan-700" />
                 {item.label}

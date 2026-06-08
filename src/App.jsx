@@ -14,6 +14,10 @@ import BlogPost from './pages/BlogPost';
 import ComputerRepairMelbourneFL from './pages/ComputerRepairMelbourneFL';
 import ComputerRepairPalmBayFL from './pages/ComputerRepairPalmBayFL';
 import ComputerRepairSatelliteBeachFL from './pages/ComputerRepairSatelliteBeachFL';
+import IndianHarbourBeachFL from './pages/IndianHarbourBeachFL';
+import MelbourneFLLocation from './pages/MelbourneFLLocation';
+import PalmBayFLLocation from './pages/PalmBayFLLocation';
+import SatelliteBeachFLLocation from './pages/SatelliteBeachFLLocation';
 import BusinessITSupportMelbourneFL from './pages/BusinessITSupportMelbourneFL';
 import WiFiTroubleshootingMelbourneFL from './pages/WiFiTroubleshootingMelbourneFL';
 import RemoteComputerSupportFlorida from './pages/RemoteComputerSupportFlorida';
@@ -22,6 +26,7 @@ import RefurbishedComputersBrevardCounty from './pages/RefurbishedComputersBreva
 import { businessInfo } from './data/businessInfo';
 import { blogPosts } from './data/blogPosts';
 import { localServicePages } from './data/localServicePages';
+import { locationPages } from './data/locationPages';
 import './index.css';
 
 const ScrollToTop = () => {
@@ -79,6 +84,16 @@ const pageMeta = {
   },
   ...Object.fromEntries(
     Object.values(localServicePages).map((page) => [
+      page.path,
+      {
+        title: page.seoTitle,
+        description: page.description,
+        keywords: page.keywords,
+      },
+    ])
+  ),
+  ...Object.fromEntries(
+    Object.values(locationPages).map((page) => [
       page.path,
       {
         title: page.seoTitle,
@@ -237,6 +252,10 @@ const App = () => {
               <Route path="/computer-repair-melbourne-fl" element={<ComputerRepairMelbourneFL />} />
               <Route path="/computer-repair-satellite-beach-fl" element={<ComputerRepairSatelliteBeachFL />} />
               <Route path="/computer-repair-palm-bay-fl" element={<ComputerRepairPalmBayFL />} />
+              <Route path="/location/indian-harbour-beach-fl" element={<IndianHarbourBeachFL />} />
+              <Route path="/location/melbourne-fl" element={<MelbourneFLLocation />} />
+              <Route path="/location/palm-bay-fl" element={<PalmBayFLLocation />} />
+              <Route path="/location/satellite-beach-fl" element={<SatelliteBeachFLLocation />} />
               <Route path="/business-it-support-melbourne-fl" element={<BusinessITSupportMelbourneFL />} />
               <Route path="/wifi-troubleshooting-melbourne-fl" element={<WiFiTroubleshootingMelbourneFL />} />
               <Route path="/remote-computer-support-florida" element={<RemoteComputerSupportFlorida />} />

@@ -5,6 +5,7 @@ import { SitemapStream, streamToPromise } from 'sitemap';
 import { businessInfo } from './src/data/businessInfo.js';
 import { blogPosts } from './src/data/blogPosts.js';
 import { localServicePages } from './src/data/localServicePages.js';
+import { locationPages } from './src/data/locationPages.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = resolve(__filename, '..');
@@ -13,8 +14,9 @@ const siteUrl = rawSiteUrl.replace(/\/+$/, '');
 
 const staticRoutes = ['/', '/services', '/service-areas', '/about', '/contact', '/blog'];
 const localServiceRoutes = Object.values(localServicePages).map((page) => page.path);
+const locationRoutes = Object.values(locationPages).map((page) => page.path);
 const blogRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
-const allRoutes = [...staticRoutes, ...localServiceRoutes, ...blogRoutes];
+const allRoutes = [...staticRoutes, ...localServiceRoutes, ...locationRoutes, ...blogRoutes];
 
 const links = allRoutes.map((route) => ({
   url: route,

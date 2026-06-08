@@ -30,7 +30,7 @@ const Footer = () => {
           <h2 className="text-xl font-bold text-white">{businessInfo.name}</h2>
           <p className="mt-4 text-sm leading-6 text-slate-400">
             {businessInfo.shortDescription} Practical IT support for Indian Harbour Beach and nearby
-            Space Coast beachside communities.
+            Space Coast communities.
           </p>
           <ul className="mt-5 space-y-3 text-sm">
             <li className="flex gap-3">

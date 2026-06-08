@@ -1,17 +1,17 @@
 # Homepage SEO Rewrite
 
 SEO Title:
-`Computer Repair Satellite Beach FL | My Computer Tech`
+`Computer Repair Indian Harbour Beach FL | My Computer Tech`
 
 Meta Description:
-`Local computer repair, laptop help, WiFi setup, virus removal, and small business IT support for Satellite Beach and nearby Brevard County.`
+`Local computer repair, laptop help, WiFi setup, virus removal, and small business IT support for Indian Harbour Beach and nearby Brevard County.`
 
 H1:
-`Computer Repair & IT Support in Satellite Beach FL`
+`Computer Repair & IT Support in Indian Harbour Beach FL`
 
 ## Intro Section
 
-My Computer Tech provides practical computer repair, laptop help, virus removal, WiFi troubleshooting, printer setup, remote support, and small business IT support for customers in Satellite Beach and across nearby Brevard County. When a computer is running slow, a laptop is not charging, a printer will not connect, or WiFi keeps dropping, the goal is simple: fix the real problem clearly and get you working again without unnecessary confusion.
+My Computer Tech provides practical computer repair, laptop help, virus removal, WiFi troubleshooting, printer setup, remote support, and small business IT support for customers in Indian Harbour Beach and across nearby Brevard County. When a computer is running slow, a laptop is not charging, a printer will not connect, or WiFi keeps dropping, the goal is simple: fix the real problem clearly and get you working again without unnecessary confusion.
 
 This is local support for homeowners, seniors, remote workers, and small businesses that need direct help from a nearby technician. We work with everyday repair and setup problems, explain the issue in plain language, and recommend the next step based on what makes sense for the device, the network, and the customer.
 
@@ -45,7 +45,7 @@ Refurbished laptops and desktops for customers who need a practical replacement 
 
 My Computer Tech serves customers in:
 
-- Satellite Beach
+- Indian Harbour Beach
 - Melbourne
 - Melbourne Beach
 - Palm Bay
@@ -56,7 +56,7 @@ My Computer Tech serves customers in:
 - Viera
 - Brevard County
 
-If you are searching for computer repair near me in Satellite Beach, laptop repair in Melbourne, virus removal in Melbourne, or local WiFi troubleshooting in Brevard County, My Computer Tech is positioned to help with practical support and clear service communication.
+If you are searching for computer repair near me in Indian Harbour Beach, laptop repair in Melbourne, virus removal in Melbourne, or local WiFi troubleshooting in Brevard County, My Computer Tech is positioned to help with practical support and clear service communication.
 
 ## Why Choose Us Section
 
@@ -74,8 +74,8 @@ Service areas are stated clearly so customers know whether they are in the right
 
 ## FAQ Section
 
-### Do you offer computer repair in Satellite Beach FL?
-Yes. My Computer Tech provides computer repair and IT support for Satellite Beach and other nearby Brevard County communities.
+### Do you offer computer repair in Indian Harbour Beach FL?
+Yes. My Computer Tech provides computer repair and IT support for Indian Harbour Beach and other nearby Brevard County communities.
 
 ### Do you work on laptops and desktop computers?
 Yes. We help with laptop repair, desktop troubleshooting, slow systems, startup errors, charging issues, and general repair needs.
@@ -94,6 +94,6 @@ Yes. Refurbished computers are available for customers who need a practical repl
 
 ## Call To Action
 
-Need computer repair or IT support in Satellite Beach FL?
+Need computer repair or IT support in Indian Harbour Beach FL?
 
 Call My Computer Tech to discuss the problem, request service, or ask about laptop repair, virus removal, WiFi troubleshooting, printer setup, business IT support, or refurbished computers.

@@ -27,7 +27,7 @@ const Blog = () => {
           Beachside Tech Blog
         </p>
         <h1 className="mt-5 max-w-4xl text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
-          Beachside computer repair guides for Indian Harbour Beach and Space Coast communities
+          Indian Harbour Beach computer repair guides for Space Coast communities
         </h1>
         <p className="mt-5 max-w-4xl text-base leading-7 text-slate-200 sm:text-lg sm:leading-8">
           Local articles focused on computer repair, virus removal, Wi-Fi setup, printer support,

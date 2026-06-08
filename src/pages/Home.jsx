@@ -29,7 +29,7 @@ const trustItems = [
   {
     icon: FaMapMarkerAlt,
     title: 'Beachside local',
-    text: 'Focused on Satellite Beach, Indian Harbour Beach, and nearby beachside communities.',
+    text: 'Focused on Indian Harbour Beach first, with nearby beachside communities served too.',
   },
   {
     icon: FaHome,
@@ -47,9 +47,9 @@ const Home = () => {
   const [showRefurbishedCta, setShowRefurbishedCta] = useState(false);
   const homeFaqs = [
     {
-      question: 'Do you offer computer repair in Satellite Beach FL?',
+      question: 'Do you offer computer repair in Indian Harbour Beach FL?',
       answer:
-        'Yes. My Computer Tech serves Satellite Beach and nearby Space Coast communities with practical computer repair and IT support.',
+        'Yes. My Computer Tech serves Indian Harbour Beach and nearby Space Coast communities with practical computer repair and IT support.',
     },
     {
       question: 'Can you help with laptops, Wi-Fi, and printers?',
@@ -109,15 +109,15 @@ const Home = () => {
         <div>
           <p className="fade-up inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-100 shadow-sm backdrop-blur">
             <FaShieldAlt className="h-3.5 w-3.5 text-cyan-200" />
-            Satellite Beach FL Computer Repair
+            Indian Harbour Beach FL Computer Repair
           </p>
           <h1 className="fade-up fade-delay-1 mt-5 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Computer Repair & IT Support in Satellite Beach FL
+            Computer Repair & IT Support in Indian Harbour Beach FL
           </h1>
           <p className="fade-up fade-delay-2 mt-6 max-w-3xl text-lg leading-8 text-slate-200">
             My Computer Tech provides practical computer repair, laptop help, Wi-Fi troubleshooting,
             printer setup, virus removal, refurbished computer sales, and small business IT support
-            for Satellite Beach, Indian Harbour Beach, Indialantic, Melbourne Beach, and nearby
+            for Indian Harbour Beach, Satellite Beach, Indialantic, Melbourne Beach, and nearby
             Space Coast communities.
           </p>
           <div className="fade-up fade-delay-3 mt-6 grid gap-3 text-sm text-cyan-50 sm:grid-cols-3">
@@ -195,7 +195,7 @@ const Home = () => {
               <div className="relative mt-5 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-md border border-slate-200 bg-white/90 p-4 shadow-sm">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Service Area</p>
-                  <p className="mt-2 font-bold text-slate-950">Satellite Beach and nearby areas</p>
+                  <p className="mt-2 font-bold text-slate-950">Indian Harbour Beach and nearby areas</p>
                 </div>
                 <div className="rounded-md border border-slate-200 bg-white/90 p-4 shadow-sm">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Hours</p>
@@ -262,7 +262,7 @@ const Home = () => {
 
     <section className="bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+          <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Website Referral</p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">
             Need a website for your business or nonprofit?

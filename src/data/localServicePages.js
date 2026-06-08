@@ -759,6 +759,158 @@ export const localServicePages = {
     ],
     cta: 'Request data recovery help in Melbourne FL.',
   },
+  printerSetupMelbourne: {
+    path: '/printer-setup-melbourne-fl',
+    city: 'Melbourne',
+    seoTitle: 'Printer Setup Melbourne FL | My Computer Tech',
+    description:
+      'Printer setup in Melbourne FL for wireless printers, scanner setup, reconnect issues, and practical local help.',
+    keywords:
+      'printer setup Melbourne FL, wireless printer setup Melbourne FL, printer troubleshooting Melbourne FL, printer not working Melbourne FL, scanner setup Melbourne FL',
+    h1: 'Printer Setup in Melbourne FL',
+    eyebrow: 'Melbourne FL',
+    heroSummary:
+      'Practical printer setup and troubleshooting for Melbourne homes and small offices that need the printer working correctly.',
+    heroCards: [
+      { label: 'Common issues', value: 'Offline, reconnect, and setup problems', detail: 'Get the printer back on the network and ready to use.' },
+      { label: 'Best fit', value: 'Homes and small offices', detail: 'Support for everyday printing and scanning needs.' },
+      { label: 'Typical help', value: 'Setup and connection troubleshooting', detail: 'Handle wireless, USB, and driver issues together.' },
+    ],
+    intro: [
+      'Printer setup in Melbourne FL is often more complicated than it should be. A printer may be new, but the computer cannot find it. It may be wireless, but the network settings are not right. Or it may have worked before and now it is suddenly offline. My Computer Tech can help get the printer connected and usable again.',
+      'A practical printer page should talk about both setup and troubleshooting because many printer problems are really network or driver problems. The goal is to keep the support clear, local, and easy for the customer to understand.',
+    ],
+    sections: [
+      {
+        heading: 'Common printer problems',
+        paragraphs: [
+          'Printers often stop working because of wireless changes, driver issues, spooler problems, or a router reboot that changed the network environment. Those are common enough that a dedicated local page should mention them directly.',
+          'Customers searching for printer setup Melbourne FL usually want a direct answer, not a generic explanation. This page should make the service fit obvious as soon as they land on it.',
+        ],
+      },
+      {
+        heading: 'Setup should include the whole workflow',
+        paragraphs: [
+          'A good setup includes printing, scanning if needed, and reconnecting the device to the right computer or network. If the printer uses a mobile app or email-based service, that should be part of the setup too.',
+          'That kind of support is helpful for home users, seniors, and small offices that just want a dependable printer again without wasting time on trial and error.',
+        ],
+      },
+      {
+        heading: 'Why local help is useful',
+        paragraphs: [
+          'Local help is useful because the technician can see the printer, the computer, and the network together. That often reveals the issue faster than trying to solve it in pieces.',
+          'This page should support printer setup Melbourne FL searches while also covering printer troubleshooting and reconnect issues naturally.',
+        ],
+      },
+    ],
+    services: [
+      'Wireless printer setup',
+      'USB printer setup',
+      'Scanner setup and testing',
+      'Printer reconnect troubleshooting',
+      'Driver and network assistance',
+      'Home and small office printer support',
+    ],
+    faq: [
+      {
+        question: 'Do you offer printer setup in Melbourne FL?',
+        answer:
+          'Yes. My Computer Tech helps Melbourne customers with printer setup and troubleshooting.',
+      },
+      {
+        question: 'Can you fix an offline printer?',
+        answer:
+          'Yes. Offline printers are often tied to Wi-Fi, drivers, or network setup and can usually be troubleshot directly.',
+      },
+      {
+        question: 'Can you help with wireless printers?',
+        answer:
+          'Yes. Wireless printer setup is one of the common support requests.',
+      },
+      {
+        question: 'Do you help with scanners too?',
+        answer:
+          'Yes. Scanner setup and testing can be included when the printer has scanning features.',
+      },
+    ],
+    cta: 'Request printer setup in Melbourne FL.',
+  },
+  slowComputerMelbourne: {
+    path: '/slow-computer-cleanup-melbourne-fl',
+    city: 'Melbourne',
+    seoTitle: 'Slow Computer Cleanup Melbourne FL | My Computer Tech',
+    description:
+      'Slow computer cleanup in Melbourne FL for sluggish PCs, startup delays, cluttered systems, and practical tune-up help.',
+    keywords:
+      'slow computer cleanup Melbourne FL, slow computer repair Melbourne FL, computer tune up Melbourne FL, slow laptop repair Melbourne FL, computer running slow Melbourne FL',
+    h1: 'Slow Computer Cleanup in Melbourne FL',
+    eyebrow: 'Melbourne FL',
+    heroSummary:
+      'Practical cleanup and troubleshooting for Melbourne computers that have become slow, cluttered, or frustrating to use.',
+    heroCards: [
+      { label: 'Common issues', value: 'Lag, startup delays, and clutter', detail: 'Identify what is slowing the machine down.' },
+      { label: 'Best fit', value: 'Home users and small offices', detail: 'Help for everyday systems that need to feel usable again.' },
+      { label: 'Typical help', value: 'Cleanup and tuning', detail: 'Address the cause instead of masking the symptom.' },
+    ],
+    intro: [
+      'Slow computer cleanup in Melbourne FL is a strong fit for customers who have a machine that still works but no longer feels responsive. The computer may take forever to start, programs may lag, or simple tasks may begin to feel frustrating. My Computer Tech can help identify what is causing the slowdown and what should be cleaned up first.',
+      'A useful cleanup page should explain that slowness can come from clutter, startup items, updates, low storage, browser issues, or malware-related problems. That keeps the support realistic and helps the customer understand why the machine changed over time.',
+    ],
+    sections: [
+      {
+        heading: 'What usually causes a slow computer',
+        paragraphs: [
+          'A slow computer can be caused by too many startup items, low storage, background tasks, browser clutter, or unwanted software. Sometimes the issue is simple; sometimes it points to a deeper cleanup need.',
+          'The page should help customers realize that slow performance is a common service request and not a sign they must immediately replace the machine.',
+        ],
+      },
+      {
+        heading: 'What a cleanup session should include',
+        paragraphs: [
+          'A cleanup session should review startup behavior, storage, obvious software clutter, and the general condition of the system. If malware or browser issues are contributing to the slowdown, those should be addressed too.',
+          'If the computer still has useful life left, cleanup and tuning can often make it feel significantly better without a new purchase.',
+        ],
+      },
+      {
+        heading: 'Why local support is helpful',
+        paragraphs: [
+          'Local support makes it easier to look at the full system and explain what changed. That is useful when the computer is still technically working but no longer feels dependable.',
+          'This page should support slow computer cleanup Melbourne FL searches naturally while also helping users decide when cleanup is enough and when replacement makes more sense.',
+        ],
+      },
+    ],
+    services: [
+      'Startup cleanup and optimization',
+      'Storage review and cleanup',
+      'Browser and software clutter removal',
+      'Performance troubleshooting',
+      'Malware-related slowdown checks',
+      'Practical tune-up recommendations',
+    ],
+    faq: [
+      {
+        question: 'Do you offer slow computer cleanup in Melbourne FL?',
+        answer:
+          'Yes. My Computer Tech helps Melbourne customers with slow computer cleanup and performance troubleshooting.',
+      },
+      {
+        question: 'Can cleanup make an old computer feel faster?',
+        answer:
+          'Often yes, especially when the slowdown is tied to clutter, startup items, or software issues.',
+      },
+      {
+        question: 'Do you check for malware too?',
+        answer:
+          'Yes. Malware-related slowdowns are a common part of the troubleshooting process.',
+      },
+      {
+        question: 'Is this better than buying a new computer right away?',
+        answer:
+          'In many cases, yes. Cleanup can be a sensible first step before replacement is considered.',
+      },
+    ],
+    cta: 'Request slow computer cleanup in Melbourne FL.',
+  },
   refurbishedBrevard: {
     path: '/refurbished-computers-brevard-county',
     city: 'Brevard County',

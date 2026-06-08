@@ -30,6 +30,8 @@ import BusinessITSupportMelbourneFL from './pages/BusinessITSupportMelbourneFL';
 import LaptopRepairMelbourneFL from './pages/LaptopRepairMelbourneFL';
 import VirusRemovalMelbourneFL from './pages/VirusRemovalMelbourneFL';
 import DataRecoveryMelbourneFL from './pages/DataRecoveryMelbourneFL';
+import PrinterSetupMelbourneFL from './pages/PrinterSetupMelbourneFL';
+import SlowComputerCleanupMelbourneFL from './pages/SlowComputerCleanupMelbourneFL';
 import WiFiTroubleshootingMelbourneFL from './pages/WiFiTroubleshootingMelbourneFL';
 import RemoteComputerSupportFlorida from './pages/RemoteComputerSupportFlorida';
 import Windows11UpgradeHelp from './pages/Windows11UpgradeHelp';
@@ -279,6 +281,8 @@ const App = () => {
               <Route path="/laptop-repair-melbourne-fl" element={<LaptopRepairMelbourneFL />} />
               <Route path="/virus-removal-melbourne-fl" element={<VirusRemovalMelbourneFL />} />
               <Route path="/data-recovery-melbourne-fl" element={<DataRecoveryMelbourneFL />} />
+              <Route path="/printer-setup-melbourne-fl" element={<PrinterSetupMelbourneFL />} />
+              <Route path="/slow-computer-cleanup-melbourne-fl" element={<SlowComputerCleanupMelbourneFL />} />
               <Route path="/wifi-troubleshooting-melbourne-fl" element={<WiFiTroubleshootingMelbourneFL />} />
               <Route path="/remote-computer-support-florida" element={<RemoteComputerSupportFlorida />} />
               <Route path="/windows-11-upgrade-help" element={<Windows11UpgradeHelp />} />

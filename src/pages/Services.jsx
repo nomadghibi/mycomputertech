@@ -50,6 +50,16 @@ const localPageLinks = [
     title: 'Data Recovery in Melbourne FL',
     description: 'Assessment and file recovery support for deleted files, drive problems, and backups.',
   },
+  {
+    path: localServicePages.printerSetupMelbourne.path,
+    title: 'Printer Setup in Melbourne FL',
+    description: 'Wireless printer setup, reconnect help, scanner setup, and troubleshooting.',
+  },
+  {
+    path: localServicePages.slowComputerMelbourne.path,
+    title: 'Slow Computer Cleanup in Melbourne FL',
+    description: 'Startup cleanup, clutter review, and practical tune-up help for sluggish systems.',
+  },
 ];
 
 const serviceGroups = [

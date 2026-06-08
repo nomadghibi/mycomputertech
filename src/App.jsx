@@ -18,9 +18,12 @@ import IndianHarbourBeachFL from './pages/IndianHarbourBeachFL';
 import IndialanticFLLocation from './pages/IndialanticFLLocation';
 import MelbourneFLLocation from './pages/MelbourneFLLocation';
 import MelbourneBeachFLLocation from './pages/MelbourneBeachFLLocation';
+import CocoaBeachFLLocation from './pages/CocoaBeachFLLocation';
+import CapeCanaveralFLLocation from './pages/CapeCanaveralFLLocation';
 import PalmBayFLLocation from './pages/PalmBayFLLocation';
 import RockledgeFLLocation from './pages/RockledgeFLLocation';
 import SatelliteBeachFLLocation from './pages/SatelliteBeachFLLocation';
+import PatrickSpaceForceBaseAreaLocation from './pages/PatrickSpaceForceBaseAreaLocation';
 import VieraFLLocation from './pages/VieraFLLocation';
 import WestMelbourneFLLocation from './pages/WestMelbourneFLLocation';
 import BusinessITSupportMelbourneFL from './pages/BusinessITSupportMelbourneFL';
@@ -266,6 +269,9 @@ const App = () => {
               <Route path="/location/west-melbourne-fl" element={<WestMelbourneFLLocation />} />
               <Route path="/location/rockledge-fl" element={<RockledgeFLLocation />} />
               <Route path="/location/viera-fl" element={<VieraFLLocation />} />
+              <Route path="/location/cocoa-beach-fl" element={<CocoaBeachFLLocation />} />
+              <Route path="/location/cape-canaveral-fl" element={<CapeCanaveralFLLocation />} />
+              <Route path="/location/patrick-space-force-base-area" element={<PatrickSpaceForceBaseAreaLocation />} />
               <Route path="/business-it-support-melbourne-fl" element={<BusinessITSupportMelbourneFL />} />
               <Route path="/wifi-troubleshooting-melbourne-fl" element={<WiFiTroubleshootingMelbourneFL />} />
               <Route path="/remote-computer-support-florida" element={<RemoteComputerSupportFlorida />} />

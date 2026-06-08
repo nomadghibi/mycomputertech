@@ -450,6 +450,168 @@ export const locationPages = {
     ],
     cta: 'Request computer repair in Viera FL.',
   },
+  cocoaBeach: {
+    path: '/location/cocoa-beach-fl',
+    city: 'Cocoa Beach',
+    seoTitle: 'Computer Repair Cocoa Beach FL | My Computer Tech',
+    description:
+      'Computer repair in Cocoa Beach FL for laptops, desktops, Wi-Fi issues, printer setup, malware cleanup, and local support.',
+    keywords:
+      'computer repair Cocoa Beach FL, laptop repair Cocoa Beach FL, virus removal Cocoa Beach FL, printer setup Cocoa Beach FL, local computer repair near me',
+    h1: 'Computer Repair in Cocoa Beach FL',
+    eyebrow: 'Cocoa Beach FL',
+    heroSummary:
+      'Practical computer repair and IT support for Cocoa Beach customers who need clear help from a local technician.',
+    intro: [
+      'Cocoa Beach customers often search for practical help when a computer is slow, a laptop will not connect, or a printer suddenly stops working. This page should make that support easy to understand.',
+      'It should also make clear that Cocoa Beach is part of the broader beachside service footprint while Indian Harbour Beach stays the primary local identity of the business.',
+    ],
+    sections: [
+      {
+        heading: 'Common local service requests',
+        paragraphs: [
+          'The usual issues include slow systems, malware symptoms, printer problems, and Wi-Fi disruptions. These are the problems that interrupt normal use and create the need for local repair.',
+          'A clear page should help visitors understand that the fix may involve more than one part of the setup.',
+        ],
+      },
+      {
+        heading: 'Helpful for homes and small offices',
+        paragraphs: [
+          'Home users and small teams in Cocoa Beach need straightforward support that gets the device working again without a lot of back-and-forth. That is the tone this page should keep.',
+          'The service fit should stay practical and local, with a direct call to action at the end.',
+        ],
+      },
+    ],
+    services: [
+      'Computer repair',
+      'Laptop repair',
+      'Virus removal',
+      'Printer setup',
+      'Wi-Fi troubleshooting',
+      'Remote support',
+    ],
+    faq: [
+      {
+        question: 'Do you serve Cocoa Beach FL?',
+        answer:
+          'Yes. Cocoa Beach is a supported beachside service area for My Computer Tech.',
+      },
+      {
+        question: 'Can you help with Wi-Fi and printer problems?',
+        answer:
+          'Yes. Wi-Fi troubleshooting and printer setup are common support requests.',
+      },
+    ],
+    cta: 'Request computer repair in Cocoa Beach FL.',
+  },
+  capeCanaveral: {
+    path: '/location/cape-canaveral-fl',
+    city: 'Cape Canaveral',
+    seoTitle: 'Computer Repair Cape Canaveral FL | My Computer Tech',
+    description:
+      'Computer repair in Cape Canaveral FL for laptops, desktops, malware cleanup, printer setup, Wi-Fi issues, and local support.',
+    keywords:
+      'computer repair Cape Canaveral FL, laptop repair Cape Canaveral FL, virus removal Cape Canaveral FL, printer setup Cape Canaveral FL, local computer repair near me',
+    h1: 'Computer Repair in Cape Canaveral FL',
+    eyebrow: 'Cape Canaveral FL',
+    heroSummary:
+      'Local computer repair and IT support for Cape Canaveral customers who need practical help and a clear next step.',
+    intro: [
+      'Cape Canaveral customers often need everyday support for slow machines, printer problems, Wi-Fi issues, and laptop setup. This page should make those use cases obvious.',
+      'It should also show that Cape Canaveral is a supported nearby area while Indian Harbour Beach remains the primary business location.',
+    ],
+    sections: [
+      {
+        heading: 'Repair-first support for common issues',
+        paragraphs: [
+          'The most common issues are the ones that interrupt work and normal use: startup trouble, slow performance, email problems, and printer setup.',
+          'That is why this page should emphasize repair-first troubleshooting and a simple path to contact.',
+        ],
+      },
+      {
+        heading: 'Practical support for homes and small businesses',
+        paragraphs: [
+          'Cape Canaveral homes and small teams need practical help that solves the problem without unnecessary complexity. The page should speak directly to that need.',
+          'Good local support means clear service descriptions and a direct call to action.',
+        ],
+      },
+    ],
+    services: [
+      'Computer repair',
+      'Laptop repair',
+      'Virus cleanup',
+      'Printer setup',
+      'Wi-Fi troubleshooting',
+      'Remote support',
+    ],
+    faq: [
+      {
+        question: 'Do you serve Cape Canaveral FL?',
+        answer:
+          'Yes. Cape Canaveral is a supported service area for My Computer Tech.',
+      },
+      {
+        question: 'Can you help with slow computers and setup issues?',
+        answer:
+          'Yes. Those are common repair and support requests and can often be addressed without replacing the machine.',
+      },
+    ],
+    cta: 'Request computer repair in Cape Canaveral FL.',
+  },
+  patrickSpaceForceBase: {
+    path: '/location/patrick-space-force-base-area',
+    city: 'Patrick Space Force Base Area',
+    seoTitle: 'Computer Repair Patrick Space Force Base Area | My Computer Tech',
+    description:
+      'Computer repair for the Patrick Space Force Base area, including laptops, desktops, Wi-Fi, printer setup, malware cleanup, and local support.',
+    keywords:
+      'computer repair Patrick Space Force Base area, laptop repair Patrick Space Force Base area, virus removal Patrick Space Force Base area, printer setup Patrick Space Force Base area, local computer repair near me',
+    h1: 'Computer Repair in the Patrick Space Force Base Area',
+    eyebrow: 'Patrick Space Force Base Area',
+    heroSummary:
+      'Practical computer repair and IT support for customers in and around the Patrick Space Force Base area.',
+    intro: [
+      'The Patrick Space Force Base area is a useful local search target because customers nearby often need the same practical support as other beachside communities. This page should make the service fit clear.',
+      'It should stay grounded in actual repair and support work, not abstract enterprise promises. That means the page should focus on the everyday issues people are trying to solve.',
+    ],
+    sections: [
+      {
+        heading: 'Useful local support',
+        paragraphs: [
+          'Common requests include slow systems, printer setup, Wi-Fi problems, malware cleanup, and laptop issues. Those are the kinds of problems a local technician should address directly.',
+          'A clear local page helps users understand whether the service area fits their needs and how to get help.',
+        ],
+      },
+      {
+        heading: 'Support that fits nearby communities',
+        paragraphs: [
+          'People near Patrick Space Force Base need the same kind of straightforward help as nearby beachside residents: quick diagnosis, practical repair, and clear next steps.',
+          'That makes this page a good support page for search intent around the area without overpromising anything outside the real service footprint.',
+        ],
+      },
+    ],
+    services: [
+      'Computer repair',
+      'Laptop repair',
+      'Virus removal',
+      'Printer setup',
+      'Wi-Fi troubleshooting',
+      'Remote support',
+    ],
+    faq: [
+      {
+        question: 'Do you serve the Patrick Space Force Base area?',
+        answer:
+          'Yes. My Computer Tech supports customers in and around the Patrick Space Force Base area.',
+      },
+      {
+        question: 'Can you help with printer and Wi-Fi issues there too?',
+        answer:
+          'Yes. Printer setup and Wi-Fi troubleshooting are common parts of the service.',
+      },
+    ],
+    cta: 'Request computer repair in the Patrick Space Force Base area.',
+  },
   satelliteBeach: {
     path: '/location/satellite-beach-fl',
     city: 'Satellite Beach',

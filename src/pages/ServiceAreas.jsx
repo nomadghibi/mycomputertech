@@ -87,6 +87,9 @@ const locationLinks = [
   { label: 'West Melbourne computer repair', to: '/location/west-melbourne-fl' },
   { label: 'Rockledge computer repair', to: '/location/rockledge-fl' },
   { label: 'Viera computer repair', to: '/location/viera-fl' },
+  { label: 'Cocoa Beach computer repair', to: '/location/cocoa-beach-fl' },
+  { label: 'Cape Canaveral computer repair', to: '/location/cape-canaveral-fl' },
+  { label: 'Patrick Space Force Base area repair', to: '/location/patrick-space-force-base-area' },
 ];
 
 const ServiceAreas = () => (

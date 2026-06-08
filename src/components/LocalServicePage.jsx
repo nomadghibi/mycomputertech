@@ -4,6 +4,29 @@ import { FaArrowRight, FaCheckCircle, FaPhoneAlt } from 'react-icons/fa';
 import { businessInfo } from '../data/businessInfo';
 
 const LocalServicePage = ({ page }) => {
+  const relatedLocationLinksByService = {
+    Melbourne: [
+      { label: 'Melbourne computer repair', to: '/location/melbourne-fl' },
+      { label: 'Indian Harbour Beach computer repair', to: '/location/indian-harbour-beach-fl' },
+      { label: 'Palm Bay computer repair', to: '/location/palm-bay-fl' },
+    ],
+    SatelliteBeach: [
+      { label: 'Satellite Beach computer repair', to: '/location/satellite-beach-fl' },
+      { label: 'Indian Harbour Beach computer repair', to: '/location/indian-harbour-beach-fl' },
+      { label: 'Service areas', to: '/service-areas' },
+    ],
+    PalmBay: [
+      { label: 'Palm Bay computer repair', to: '/location/palm-bay-fl' },
+      { label: 'Melbourne computer repair', to: '/location/melbourne-fl' },
+      { label: 'Service areas', to: '/service-areas' },
+    ],
+    default: [
+      { label: 'Indian Harbour Beach computer repair', to: '/location/indian-harbour-beach-fl' },
+      { label: 'Service areas', to: '/service-areas' },
+      { label: 'Contact My Computer Tech', to: '/contact' },
+    ],
+  };
+
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -41,6 +64,10 @@ const LocalServicePage = ({ page }) => {
       { '@type': 'ListItem', position: 3, name: page.h1, item: `${businessInfo.siteUrl}${page.path}` },
     ],
   };
+
+  const relatedLocations =
+    relatedLocationLinksByService[page.city?.replace(/\s+/g, '')] ||
+    relatedLocationLinksByService.default;
 
   return (
     <>
@@ -218,6 +245,20 @@ const LocalServicePage = ({ page }) => {
               <Link to="/contact" className="rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:text-blue-800">
                 Contact
               </Link>
+            </div>
+            <div className="mt-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Related Locations</p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {relatedLocations.map((item) => (
+                  <Link
+                    key={item.label}
+                    to={item.to}
+                    className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-cyan-300 hover:bg-cyan-50 hover:text-blue-800"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -135,6 +135,18 @@ const localSearchLinks = [
     label: 'Small business backup Indian Harbour Beach',
     to: '/blog/small-business-backup-recovery-indian-harbour-beach',
   },
+  {
+    label: 'Office computer repair beachside',
+    to: '/blog/office-computer-repair-beachside',
+  },
+  {
+    label: 'Email not syncing in Melbourne FL',
+    to: '/blog/email-not-syncing-melbourne-fl',
+  },
+  {
+    label: 'Backup recovery after hard drive failure',
+    to: '/blog/backup-recovery-after-hard-drive-failure',
+  },
 ];
 
 const locationLinks = [

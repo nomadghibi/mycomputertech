@@ -20,6 +20,39 @@ import './Home.css';
 
 const featuredServices = services.slice(0, 6);
 
+const popularLocalPages = [
+  {
+    title: 'Computer Repair in Indian Harbour Beach FL',
+    description: 'Primary local shop page for beachside computer repair and IT support.',
+    to: '/location/indian-harbour-beach-fl',
+  },
+  {
+    title: 'Computer Repair in Melbourne FL',
+    description: 'Practical repair and cleanup support for nearby mainland customers.',
+    to: '/computer-repair-melbourne-fl',
+  },
+  {
+    title: 'Computer Repair in Palm Bay FL',
+    description: 'Repair-first support for Palm Bay homes and small businesses.',
+    to: '/computer-repair-palm-bay-fl',
+  },
+  {
+    title: 'Virus Removal in Melbourne FL',
+    description: 'Cleanup for malware symptoms, popups, and browser hijacks.',
+    to: '/virus-removal-melbourne-fl',
+  },
+  {
+    title: 'Wi-Fi Troubleshooting in Melbourne FL',
+    description: 'Help with weak signals, disconnects, printers, and network setup.',
+    to: '/wifi-troubleshooting-melbourne-fl',
+  },
+  {
+    title: 'Service Areas',
+    description: 'Beachside coverage across Indian Harbour Beach and nearby communities.',
+    to: '/service-areas',
+  },
+];
+
 const trustItems = [
   {
     icon: FaClock,
@@ -262,7 +295,39 @@ const Home = () => {
 
     <section className="bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+            Popular Local Pages
+          </p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Quick links to the most searched local pages
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+            These links help customers get to the right service page faster and give search engines
+            a cleaner path into the most important local pages on the site.
+          </p>
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {popularLocalPages.map((page) => (
+              <Link
+                key={page.title}
+                to={page.to}
+                className="group rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-md"
+              >
+                <h3 className="text-lg font-bold text-slate-950 group-hover:text-blue-800">{page.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{page.description}</p>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-800">
+                  View page
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-white py-14 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Website Referral</p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">
             Need a website for your business or nonprofit?

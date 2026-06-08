@@ -62,6 +62,29 @@ const localPageLinks = [
   },
 ];
 
+const topServicePages = [
+  {
+    title: 'Computer Repair in Melbourne FL',
+    description: 'Repair-first support for slow computers, startup issues, and troubleshooting.',
+    path: localServicePages.melbourne.path,
+  },
+  {
+    title: 'Virus Removal in Melbourne FL',
+    description: 'Cleanup for malware symptoms, browser hijacks, and suspicious popups.',
+    path: localServicePages.virusRemovalMelbourne.path,
+  },
+  {
+    title: 'Printer Setup in Melbourne FL',
+    description: 'Wireless printer setup, scanner setup, and reconnect troubleshooting.',
+    path: localServicePages.printerSetupMelbourne.path,
+  },
+  {
+    title: 'Slow Computer Cleanup in Melbourne FL',
+    description: 'Practical tune-up help for sluggish desktops and laptops.',
+    path: localServicePages.slowComputerMelbourne.path,
+  },
+];
+
 const serviceGroups = [
   {
     title: 'Repair & Cleanup',
@@ -216,6 +239,41 @@ const Services = () => (
               <p className="mt-2 text-sm text-slate-600">{item.detail}</p>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-slate-50 py-12 sm:py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+            Top Service Pages
+          </p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Direct links to the highest-intent local pages
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+            These pages cover the most common repair and cleanup searches and send a clear signal to
+            customers and search engines about the strongest service matches.
+          </p>
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {topServicePages.map((page) => (
+              <Link
+                key={page.path}
+                to={page.path}
+                className="group rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-md"
+              >
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-700">Service Page</p>
+                <h3 className="mt-3 text-lg font-bold text-slate-950 group-hover:text-blue-800">
+                  {page.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{page.description}</p>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-800">
+                  View page
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

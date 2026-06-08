@@ -561,7 +561,7 @@ export const locationPages = {
   patrickSpaceForceBase: {
     path: '/location/patrick-space-force-base-area',
     city: 'Patrick Space Force Base Area',
-    seoTitle: 'Computer Repair Patrick Space Force Base Area | My Computer Tech',
+    seoTitle: 'Patrick Space Force Base Computer Repair | My Computer Tech',
     description:
       'Computer repair for the Patrick Space Force Base area, including laptops, desktops, Wi-Fi, printer setup, malware cleanup, and local support.',
     keywords:

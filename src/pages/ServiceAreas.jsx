@@ -254,6 +254,16 @@ const ServiceAreas = () => (
       <script type="application/ld+json">
         {JSON.stringify({
           '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: businessInfo.siteUrl },
+            { '@type': 'ListItem', position: 2, name: 'Service Areas', item: `${businessInfo.siteUrl}/service-areas` },
+          ],
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
           '@type': 'ItemList',
           name: 'My Computer Tech Service Areas',
           itemListElement: businessInfo.serviceAreas.map((area, index) => ({
@@ -393,6 +403,10 @@ const ServiceAreas = () => (
             If you are searching for computer repairs near me or the best computer repair in
             beachside Space Coast areas, My Computer Tech focuses on practical local support and
             clear service coverage.
+          </p>
+          <p className="mt-3 text-base leading-7 text-slate-600">
+            The goal is to make it obvious where to go for the best computer repair in beachside
+            communities without making the page feel stuffed with keywords.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {localSearchLinks.map((item) => (

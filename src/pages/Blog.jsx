@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowRight, FaCalendarAlt, FaTag } from 'react-icons/fa';
 import { blogPosts } from '../data/blogPosts';
 import { localServicePages } from '../data/localServicePages';
@@ -29,6 +30,19 @@ const Blog = () => {
 
   return (
     <>
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
+            { '@type': 'ListItem', position: 2, name: 'Blog', item: '/blog' },
+          ],
+        })}
+      </script>
+    </Helmet>
+
     <section className="relative isolate overflow-hidden bg-slate-950 py-12 text-white sm:py-20">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(20,184,166,0.28),transparent_35%),linear-gradient(135deg,#082f49_0%,#0f172a_58%,#134e4a_100%)]" />
       <div className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-[repeating-linear-gradient(170deg,rgba(125,211,252,0.12)_0px,rgba(125,211,252,0.12)_2px,transparent_2px,transparent_22px)]" />
